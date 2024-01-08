@@ -229,3 +229,4 @@ $route['ecomecers']='home/ecomecers';
 $route['real']='home/real';
 $route['login_user']='home/login_user';
 $route['register_user']='home/register_user';
+$route['client']='home/client';

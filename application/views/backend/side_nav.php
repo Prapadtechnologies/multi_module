@@ -110,7 +110,7 @@ if($this->session->userdata('role_id')=='1'){
                                                 </a>
                                             </li>
                                         </ul>
-                                    </li> -->
+                                    </li> --> 
                                     <li class="<?php if($page_name=='sms' || $page_name=='sended_sms'){echo 'nav-active';}?>">
                                         <a class="nav-link" href="<?=base_url('sms')?>">
                                             <i class="fas fa-external-link-alt" aria-hidden="true"></i>
@@ -382,40 +382,34 @@ if($this->session->userdata('role_id')=='1'){
                                             </ul>
                                         </li>
                                 <?php }
-                                if($login_user_details['row_status']==1 || $login_user_details['row_status']==3){?>
-                                    <li class="nav-parent  <?php if($page_name=='trailexams' || $page_name=='traildownload'){echo 'nav-expanded nav-active';}?>">
-                                        <a class="nav-link" href="#">
-                                            <i class="fas fa-tasks" aria-hidden="true"></i>
-                                            <span>Trial Exams</span>
-                                        </a>
-                                        <ul class="nav nav-children">
-                                            <li class="<?php if($page_name=='trailexams'){echo 'nav-active';}?>">
-                                                <a class="nav-link" href="<?=base_url('u_trailexams')?>">
-                                                    Trial Exams
-                                                </a>
-                                            </li>
-                                            <li class="<?php if($page_name=='traildownload'){echo 'nav-active';}?>">
-                                                <a class="nav-link" href="<?=base_url('u_traildownload')?>">
-                                                    Trial Download
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                <?php }?>
-<!--                                 <li> 
-                                        <a class="nav-link" href="<?php //base_url('u_myresults')?>">
-                                             <i class="fas fa-external-link-alt" aria-hidden="true"></i> -->
-<!--                                             <span>My Results</span> -->
-<!--                                         </a>                         -->
-<!--                                     </li> -->
-                                    
-                                    <li>
-                                        <a class="nav-link" href="<?=base_url('u_performancereport')?>">
+                                if($login_user_details['row_status']==3){?>
+
+
+                                    <li class="<?php if($page_name=='sms' || $page_name=='sended_sms'){echo 'nav-active';}?>">
+                                        <a class="nav-link" href="<?=base_url('sms')?>">
                                             <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                                            <span>Performance Report</span>
+                                            <span>SMS</span>
                                         </a>                        
                                     </li>
+
+                                   
+                                   <li class="<?php if($page_name=='support'){echo 'nav-active';}?>">
+                                        <a class="nav-link" href="<?=base_url('support')?>">
+                                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                            <span>Support</span>
+                                        </a>                        
+                                    </li>
+                                    <li class="<?php if($page_name=='u_videos'){echo 'nav-active';}?>">
+                                        <a class="nav-link" href="<?=base_url('u_videos')?>">
+                                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                            <span>Videos</span>
+                                        </a>                        
+                                    </li>
+                                <?php }?>
+
+
+                                    
+                                    
                                 <?php 
                                     if($login_user_details['row_status']==1){?>
                                     <li>
@@ -468,12 +462,12 @@ if($this->session->userdata('role_id')=='1'){
                                     </li>
                                 <?php }?>
                                 
-                                    <li>
+                                   <!--  <li>
                                         <a class="nav-link" href="<?=base_url('u_guidelines')?>">
                                             <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                                             <span>Guidelines</span>
                                         </a>                        
-                                    </li>
+                                    </li> -->
                                     <?php }?>
                                     <?php
                                 if($this->session->userdata('role_id')==3){

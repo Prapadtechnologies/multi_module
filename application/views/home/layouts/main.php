@@ -47,7 +47,14 @@
     include_once('script.php');
     ?>
     <!-- JavaScript Libraries -->
-<!--     <script>
+    $(document).ready(function() {
+    if (window.location.hash) {
+        $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+        }, 1000);
+    }
+});
+  <script>
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll('.navbar-nav a');
 
@@ -94,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateActiveNavLink(); // Initial check on page load
 });
 </script>
- -->
+
 </body>
 
 </html>
