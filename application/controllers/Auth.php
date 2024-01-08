@@ -40,6 +40,7 @@ class Auth extends CI_Controller
         }
         $this->load->view('backend/admin_login');           
     }
+    
     public function login_action() {
         $username = $this->input->post('email');
         $password = $this->input->post('password');       

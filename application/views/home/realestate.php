@@ -268,17 +268,24 @@
         </aside>
         <main>
             <h2>Product Information</h2>
+            <h2>Product Information</h2>
             <?php
-            $faqs = $this->crud_model->get_faqs_info_by_theme_type(4);
-            /*$faqs = $this->crud_model->get_faqs_info();*/
+            $faqs = $this->crud_model->get_faqs_info_with_clients(); 
+            $i = 0;
+            foreach ($faqs as $faq) {
+                $client = $this->crud_model->get_client_by_id($faq['client_id']);
 
-            foreach ($faqs as $row) {
-            ?>
-                <details>
-                    <summary><?= $row['question']; ?></summary>
-                    <p><?= $row['answer']; ?></p>
-                </details>
-            <?php
+
+                if ($client && $client['theme_type'] ==4) {
+                    ?>
+                    <details>
+                        <summary><?= $faq['question']; ?></summary>
+                        <p><?= $faq['answer']; ?></p>
+                        
+                    </details>
+                    <?php
+                    $i++;
+                }
             }
             ?>
         </main>

@@ -18,7 +18,6 @@ class Admin extends CI_Controller
             redirect('auth');
         }
     }
-
     
    public function index() {
         if ($this->session->userdata('role_id') != 1){ 
@@ -28,6 +27,9 @@ class Admin extends CI_Controller
             redirect(base_url() . 'dashboard', 'refresh');
         }
     }
+
+
+
     public function dashboard(){
         if($this->session->userdata('role_id')!=1){
         redirect('error_404');
@@ -318,72 +320,67 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
         $this->load->view('backend/index', $page_data);
     }
     /*Clients*/
-        public function addclient($id='')
-    {
-            if($this->session->userdata('role_id')!=1)
-        {
-            redirect('error_404');
+        public function addclient($id = '')
+{
+    if ($this->session->userdata('role_id') != 1) {
+        redirect('error_404');
+    }
+
+    if ($id != '') {
+        $id = base64_decode($id);
+        $page_data['edit_data'] = $this->crud_model->get_single_client_info($id);
+    } else {
+        $page_data['edit_data'] = '';
+    }
+
+    $page_data['page_title'] = "Add Clients";
+    $page_data['page_name'] = 'addclient';
+    $page_data['faqs'] = $this->crud_model->get_client_info();
+
+    // Set validation rules
+    $this->form_validation->set_rules('name', 'Name', 'required');
+    $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[client.email]');
+    $this->form_validation->set_rules('theme', 'Theme Type', 'required');
+
+    if ($this->form_validation->run() === True) {
+        $input = $this->input->post();
+        $input_data = array(
+            'first_name' => $input['name'],
+            'email' => $input['email'],
+            'password' => hash('sha256', $input['password']),
+            'theme_type' => $input['theme'],
+            'role_id'=>$input['role_id'],
+            'mobile'=>$input['mobile']
+        );
+
+        if ($id == '') {
+            $res = $this->crud_model->saving_insert_details('users', $input_data);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "Client Saved Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "Client Not Saved");
+            }
+        } elseif ($id != '') {
+            $where['id'] = $id;
+            $res = $this->crud_model->update_operation($input_data, 'client', $where);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "Client Updated Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "Client Not Updated");
+            }
         }
-        if($id!='')
-        {
-                $id=base64_decode($id);
-                $page_data['edit_data']=$this->crud_model->get_single_client_info($id);
-        }else{
-                $page_data['edit_data']='';
-            }
-            $page_data['page_title'] = "Add Clients";
-            $page_data['page_name'] = 'addclient';
-            $page_data['faqs'] = $this->crud_model->get_client_info();
-            if($this->input->post()){
-                $input=$this->input->post();
-                $input_data=array(
-                    'name'=>$input['name'],
-                    'mail'=>$input['mail'],
-                    'theme_type'=>$input['theme']
 
-                );
-               if($id==''){
-                $res=$this->crud_model->saving_insert_details('client',$input_data);
-                if($res>0){
-                    $this->session->set_flashdata('success_message',"Client Saved Successfully");
-                }else{
-                    $this->session->set_flashdata('error_message',"Client Not Saved");
-                }
-            }elseif($id!=''){
-                    $where['id']=$id;
-                    $res=$this->crud_model->update_operation($input_data,'client',$where);
-                if($res>0){
-                    $this->session->set_flashdata('success_message',"Client Updated Successfully");
-                }else{
-                    $this->session->set_flashdata('error_message',"Client Not Updated");
-                }
-                }
-                redirect('addclient');
-            }
-            $this->load->view('backend/index', $page_data);
-    }
-       public function open_page($client_id)
-    {
-        /*$client_id = base64_decode($client_id);
-        $theme_type = $this->crud_model->get_theme_type_by_client_id($client_id);
+        redirect('addclient');
+        
+       
+    } else {
+         $this->load->view('backend/index', $page_data);
 
-        switch ($theme_type) {
-            case 1:
-                
-                break;
-            case 2:
-                redirect('grocery');
-                break;
-            case 3:
-                redirect('ecommerce');
-                break;
-            // Add more cases for other theme types if needed
-            default:
-                redirect('default_page'); // Redirect to a default page if theme_type is not recognized
-                break;
-        }*/
-        echo "string";
+        
     }
+    }
+
+       
 
     /*Clients*/
     public function trailuser(){
@@ -1492,54 +1489,56 @@ function system_settings($param1 = '') {
        /*echo $this->crud_model->generateUniqueUserId(1);die;*/
        /* $this->load->view('backend/index', $page_data);
     }*/
-    public function faqs($id='')
+    public function faqs($id = '')
     {
-            if($this->session->userdata('role_id')!=1)
-        {
-            redirect('error_404');
-        }
-        if($id!='')
-        {
-                $id=base64_decode($id);
-                $page_data['edit_data']=$this->crud_model->get_single_faq_info($id);
-        }else{
-                $page_data['edit_data']='';
-            }
-        
-            $page_data['page_title'] = "FAQ's";
-            $page_data['page_name'] = 'faqs';
-            $page_data['faqs'] = $this->crud_model->get_faqs_info();
-            if($this->input->post()){
-                $input=$this->input->post();
-                $input_data=array(
-                    'question'=>$input['question'],
-                    'answer'=>$input['answer'],
-                    'client_id'=>$input['theme']
-
-                );
-               if($id==''){
-                $res=$this->crud_model->saving_insert_details('faqs',$input_data);
-                if($res>0){
-                    $this->session->set_flashdata('success_message',"FAQ's Saved Successfully");
-                }else{
-                    $this->session->set_flashdata('error_message',"FAQ's Not Saved");
-                }
-            }elseif($id!=''){
-                    $where['id']=$id;
-                    $res=$this->crud_model->update_operation($input_data,'faqs',$where);
-                if($res>0){
-                    $this->session->set_flashdata('success_message',"FAQ's Updated Successfully");
-                }else{
-                    $this->session->set_flashdata('error_message',"FAQ's Not Updated");
-                }
-                }
-                redirect('faqs');
-            }
-            $this->load->view('backend/index', $page_data);
+    if ($this->session->userdata('role_id') != 1) {
+        redirect('error_404');
     }
 
+    if ($id != '') {
+        $id = base64_decode($id);
+        $page_data['edit_data'] = $this->crud_model->get_single_faq_info($id);
+    } else {
+        $page_data['edit_data'] = '';
+    }
+
+    $page_data['page_title'] = "FAQ's";
+    $page_data['page_name'] = 'faqs';
+    $page_data['faqs'] = $this->crud_model->get_faqs_info_with_clients();
+
+    if ($this->input->post()) {
+        $input = $this->input->post();
+        $input_data = array(
+            'question' => $input['question'],
+            'answer' => $input['answer'],
+            'client_id' => $input['theme']
+        );
+
+        if ($id == '') {
+            $res = $this->crud_model->saving_insert_details('faqs', $input_data);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "FAQ's Saved Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "FAQ's Not Saved");
+            }
+        } elseif ($id != '') {
+            $where['id'] = $id;
+            $res = $this->crud_model->update_operation($input_data, 'faqs', $where);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "FAQ's Updated Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "FAQ's Not Updated");
+            }
+        }
+        redirect('faqs');
+    }
+
+    $this->load->view('backend/index', $page_data);
+    }
+
+
     /*testomonial*/
-        public function testomonial()
+        public function testomonial($id = '')
         {
             if($this->session->userdata('role_id')!=1)
             {
@@ -1554,7 +1553,7 @@ function system_settings($param1 = '') {
             $page_data['page_title'] = "Testomonial's";
             $page_data['page_name'] = 'testomonial';
             $page_data['testomonial'] = $this->crud_model->get_testomonial_info();
-            $this->load->view('backend/index', $page_data);
+            
             if($this->input->post())
             {
                 $input=$this->input->post();
@@ -1582,7 +1581,7 @@ function system_settings($param1 = '') {
                 }
                 redirect('testomonial');
             }
-            
+            $this->load->view('backend/index', $page_data);
         }
     /*testomonial*/
     

@@ -61,12 +61,15 @@ if($edit_data!=''){
                                                     <th>Sl.No</th>
                                                     <th>Question</th>
                                                     <th>Answer</th>
+                                                    <th>Client Name</th>
+                                                    
                                                     <th>Actions</th>
 
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <?php
+
                                                 $i=0;
                                                 foreach ($faqs as $row) {
                                                     ?>
@@ -74,6 +77,8 @@ if($edit_data!=''){
                                                     <td><?=$i+1;?></td>
                                                     <td><?=$row['question'];?></td>
                                                     <td><?=$row['answer'];?></td>
+                                                    <td><?=$row['client_name'];?></td>
+                                                    
                                                     <td>
                                                        <a href="<?=base_url('faqs/').base64_encode($row['id']);?>" class=" mr-2  text-primary">
                                                             <i class="fas fa-pencil-alt"></i>

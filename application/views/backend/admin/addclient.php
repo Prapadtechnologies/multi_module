@@ -2,7 +2,9 @@
  <?php
 if($edit_data!=''){
     $name=$edit_data['name'];
-    $mail=$edit_data['mail'];
+    $email=$edit_data['email'];
+    $password=$edit_data['password'];
+/*'password'=>md5($post['password'])*/
     $form_url='addclient/'.base64_encode($edit_data['id']);
 }else{
     $this->session->set_userdata('last_page',current_url());
@@ -27,6 +29,21 @@ if($edit_data!=''){
                                                 </select>
                                                 </div>
                                             </div>
+                                            <!--  -->
+                                            <div class="form-group row">
+                                                <label class="col-sm-4 control-label text-sm-right pt-2">Role Id: </label>
+                                                <div class="col-sm-5">
+                                                    <input type="Number" name="role_id" class="form-control" value="2" readonly required="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-4 control-label text-sm-right pt-2">Mobile No: </label>
+                                                <div class="col-sm-5">
+                                                    <input type="Number" name="mobile" class="form-control"  required="">
+                                                </div>
+                                            </div>
+
+                                            <!--  -->
                                             <div class="form-group row">
                                                 
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Client Name: </label>
@@ -37,7 +54,13 @@ if($edit_data!=''){
                                             <div class="form-group row">
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Email: </label>
                                                 <div class="col-sm-5">
-                                                    <input type="email" class="form-control" rows="3" id="mail" autocomplete="off" required="" name="mail"><?=$mail;?></textarea>
+                                                    <input type="email" class="form-control" rows="3" id="email" autocomplete="off" required="" name="email"  value="<?=$email;?>" ><?=$email;?></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-4 control-label text-sm-right pt-2">Password: </label>
+                                                <div class="col-sm-5">
+                                                    <input type="password" class="form-control" rows="3" id="password" autocomplete="off" required="" name="password"  value="<?=$password;?>" ><?=$password;?></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
@@ -57,9 +80,9 @@ if($edit_data!=''){
                                             <thead>
                                                 <tr>
                                                     <th>Sl.No</th>
-                                                    <th>Question</th>
-                                                    <th>Answer</th>
-                                                    <th>Theme Type</th>
+                                                    <th>Client Name</th>
+                                                    <th>Email</th>
+                                                    
                                                     <th>Actions</th>
 
                                                 </tr>
@@ -73,8 +96,8 @@ if($edit_data!=''){
                                                 <tr>
                                                     <td><?=$i+1;?></td>
                                                     <td><?=$row['name'];?></td>
-                                                    <td><?=$row['mail'];?></td>
-                                                    <td><?=$row['theme_type'];?></td>
+                                                    <td><?=$row['email'];?></td>
+                                                
                                                     <td>
                                                        <a href="<?=base_url('addclient/').base64_encode($row['id']);?>" class=" mr-2  text-primary">
                                                             <i class="fas fa-pencil-alt"></i>

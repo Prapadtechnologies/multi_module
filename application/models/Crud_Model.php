@@ -16,6 +16,22 @@ class Crud_Model extends CI_Model{
     	return $this->db->where($where)->get_where("users", array("password" => hash ( "sha256",$password)))->row_array();
         //echo $this->db->last_query();die;
     }
+    //clients
+    public function validate_clients_credentials($username, $password){
+        $where="( email ='".$username."' or unique_id ='".$username."' )";
+        return $this->db->where($where)->get_where("client", array("password" => hash ( "sha256",$password)))->row_array();
+        //echo $this->db->last_query();die;
+    }
+    //clients
+        public function get_client_by_email($email)
+    {
+        return $this->db->get_where('client', array('email' => $email))->row_array();
+    }
+    public function check_login($data)
+    {
+            $query=$this->db->get_where('client',$data);
+            return $query->row_array();
+    }
     function login_details(){
     $users_data=$this->db->get_where('login_details',array('user_id'=>$this->login_id));
     if($users_data->num_rows()>0){
@@ -891,6 +907,19 @@ return $rating;
     return $query->result_array();
     }*/
 
+        
+    public function get_faqs_info_with_clients()
+    {
+        $this->db->select('faqs.*, client.name as client_name, client.theme_type');
+        $this->db->from('faqs');
+        $this->db->join('client', 'client.id = faqs.client_id', 'left'); 
+
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
+
+
 
 
     public function get_faqs_client($client_id) {
@@ -901,6 +930,7 @@ return $rating;
                      ->result_array();
     return $theme;
     }
+
      /*public function getFaqDetails($client_id) {
         $query = "SELECT faqs.id, faqs.question, faqs.answer, client.theme_type
                   FROM faqs

@@ -1,5 +1,6 @@
-        <h1 class="text-center text-dark">Contact Us</h1>
-        <div class="container" id="contact">
+        
+        <div id="contact" class="container" >
+          <h1 class="text-center text-dark">Contact Us</h1>
     <div class="content">
 
       <div class="left-side">

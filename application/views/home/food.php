@@ -36,7 +36,7 @@
 <!-- Carousel End -->
 
 <!-- Products Start -->
-    <div class="container-fluid py-5" id="product">
+    <div id="product" class="container-fluid py-5" >
         <div class="container">
             <div class="mx-auto text-center mb-5" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase">Items</h6>
@@ -132,8 +132,8 @@
 
 
      <!-- About Start -->
-       <div class="container-fluid about pt-5" id="about">
-    <div class="container">
+       <div id="about" class="container-fluid about pt-5">
+    <div class="container" >
         <div class="row gx-5">
             <?php
             
@@ -224,7 +224,7 @@
     <!-- Facts End -->
     <!-- Team Start -->
     
-    <div class="container-fluid bg-testimonial-2 py-5 my-5" id="services">
+    <div id="services" class="container-fluid bg-testimonial-2 py-5 my-5">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 500px;">
             <h1 class="display-5">TEAM</h1>
@@ -258,6 +258,7 @@
 
 
     <!-- Dynamic FAQ -->
+    
     <div class="page">
     <div class="content">
         <aside>
@@ -268,16 +269,22 @@
         <main>
             <h2>Product Information</h2>
             <?php
-            $faqs = $this->crud_model->get_faqs_info_by_theme_type(1);
-            /*$faqs = $this->crud_model->get_faqs_info();*/
+            $faqs = $this->crud_model->get_faqs_info_with_clients(); 
+            $i = 0;
+            foreach ($faqs as $faq) {
+                $client = $this->crud_model->get_client_by_id($faq['client_id']);
 
-            foreach ($faqs as $row) {
-            ?>
-                <details>
-                    <summary><?= $row['question']; ?></summary>
-                    <p><?= $row['answer']; ?></p>
-                </details>
-            <?php
+
+                if ($client && $client['theme_type'] ==1) {
+                    ?>
+                    <details>
+                        <summary><?= $faq['question']; ?></summary>
+                        <p><?= $faq['answer']; ?></p>
+                        
+                    </details>
+                    <?php
+                    $i++;
+                }
             }
             ?>
         </main>
@@ -287,42 +294,4 @@
 
     <!-- Dynamic FAQ -->
 
-
-
-<!-- Dy -->
-<div class="page">
-    <div class="content">
-        <aside>
-            <h1>FAQ</h1>
-            <p>We understand that you may have questions about our baked goods, so we've compiled a list of frequently asked questions to help you find the information you need.</p>
-            <img src="<?php echo base_url('assets/home/plugins'); ?>/img/food/pizza.png">
-        </aside>
-        <main>
-                <?php
-$i = 0;
-foreach ($faqs as $faq) {
-    $client = $this->crud_model->get_client_by_id($faq['client_id']); // Assuming there's a method get_client_by_id in your model
-    
-    if ($client) {
-        ?>
-        
-         <details>
-                    <summary><?= $faq['question']; ?></summary>
-                    <p><?= $faq['answer']; ?></p>
-                    <p>Theme Type:-<?= $client['theme_type']; ?></p>
-                    <p>Theme Type:-<?= $client['name']; ?></p>
-
-                </details>
-        <?php
-        $i++;
-    }
-}
-?>
-
-
-        </main>
-    </div>
-</div>
-
-<!--Dy-->    
 

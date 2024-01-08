@@ -16,8 +16,64 @@ class Home extends CI_Controller {
 
         $this->system_name = $this->db->get_where('settings', array('setting_type' => 'system_name'))->row()->description;
         $this->login_id = $this->session->userdata('login_id');
+        
     }
-    public function index()
+     public function index()
+    {
+        
+        $this->load->view('backend/client_login');           
+    }
+	    public function login_user()
+{
+    if ($this->input->post()) {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password'); 
+
+        if (!empty($email) && !empty($password)) {
+            
+            $hashed_password = hash('sha256', $password);
+
+            $res = $this->crud_model->get_client_by_email($email);
+
+            if (!empty($res) && hash_equals($res['password'], $hashed_password)) {
+                
+                $this->session->set_userdata('user_id', $res['id']);
+
+                // Redirect based on theme_type
+                switch ($res['theme_type']) {
+                    case 1:
+                        redirect('food');
+                        break;
+                    case 2:
+                        redirect('grocery');
+                        break;
+                    case 3:
+                        redirect('ecomecers');
+                        break;
+                    case 4:
+                        redirect('realestate');
+                        break;
+                   
+
+                    default:
+                        redirect('home'); 
+                        break;
+                }
+            } else {
+                $this->session->set_flashdata('error_msg', 'Invalid Email/Password');
+            }
+        } else {
+            $this->session->set_flashdata('error_msg', 'Email and Password are required');
+        }
+        
+    }
+    $this->load->view('backend/client_login');
+}
+
+
+
+
+    public function client()
 	{
 		$data['page_name']='home';
 		$this->load->view('home/home');

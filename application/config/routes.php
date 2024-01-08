@@ -55,10 +55,10 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 /* Auth Controller */
-$route['register'] = 'home/register';
+$route['register'] = 'home_bk/register';
 $route['home'] = 'home/home';
 $route['about-us'] = 'home/about';
-$route['contact-us'] = 'home/contact';
+$route['contact-us'] = 'home_bk/contact';
 $route['our-exams'] = 'home/our_exams';
 $route['trailexams'] = 'home/trailexams';
 $route['plan'] = 'home/plan';
@@ -95,6 +95,9 @@ $route['privacy-policy'] = 'home/conditions/privacy';
 //$route['auth'] = 'auth';
 $route['login'] = 'auth/login';
 $route['logout'] = 'auth/logout';
+/*$route['loginuser']='admin/loginuser';*/
+// Userlogin
+/*$route['Clientlogin'] = 'clientlogin/index';*/
 
 /**
  * User Controller routes
@@ -224,3 +227,5 @@ $route['food']='home/food';
 $route['grocery']='home/grocery';
 $route['ecomecers']='home/ecomecers';
 $route['real']='home/real';
+$route['login_user']='home/login_user';
+$route['register_user']='home/register_user';
