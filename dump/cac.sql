@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 08, 2024 at 03:22 AM
+-- Generation Time: Jan 11, 2024 at 10:31 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -33,18 +33,22 @@ CREATE TABLE `aboutus` (
   `description` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1
+  `row_status` tinyint(4) NOT NULL DEFAULT 1,
+  `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `aboutus`
 --
 
-INSERT INTO `aboutus` (`id`, `theme_type`, `description`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, '1', '<h1>Terms &amp; Conditions(Food)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:07:27', NULL, 1),
-(2, '2', '<h1>Terms &amp; Conditions(Grocery)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:41:38', NULL, 1),
-(3, '3', '<h1>Terms &amp; Conditions(Ecommerce)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:50:27', NULL, 1),
-(4, '4', '<h1>Terms &amp; Conditions(Realestae)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:54:40', NULL, 1);
+INSERT INTO `aboutus` (`id`, `theme_type`, `description`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
+(1, '1', '<h1>Terms &amp; Conditions(Food)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:07:27', NULL, 1, 0),
+(2, '2', '<h1>Terms &amp; Conditions(Grocery)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:41:38', NULL, 1, 0),
+(3, '3', '<h1>Terms &amp; Conditions(Ecommerce)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:50:27', NULL, 1, 0),
+(4, '4', '<h1>Terms &amp; Conditions(Realestae)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:54:40', NULL, 1, 0),
+(5, '', '<p>Hi</p>\r\n', '2024-01-11 11:15:13', NULL, 1, 19),
+(6, '', '<p>404 Page Not Found</p>\r\n\r\n<div id=\"container\">\r\n<h1>404 Page Not Found</h1>\r\n\r\n<p>The page you requested was not found.</p>\r\n</div>\r\n', '2024-01-11 12:18:56', NULL, 1, 15),
+(7, '', '<div id=\"container\">&nbsp;\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h1>&nbsp;</h1>\r\n</div>\r\n', '2024-01-11 12:20:55', NULL, 1, 17);
 
 -- --------------------------------------------------------
 
@@ -55,25 +59,23 @@ INSERT INTO `aboutus` (`id`, `theme_type`, `description`, `created_at`, `modifie
 CREATE TABLE `banner` (
   `id` int(11) NOT NULL,
   `name` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `theme_type` varchar(1) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL COMMENT '1=Food,2=Grocery,3=Ecommerce,4=Real estate	',
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive',
+  `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `banner`
 --
 
-INSERT INTO `banner` (`id`, `name`, `theme_type`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 'Food', '1', '2023-12-28 16:17:33', '2023-12-28 16:17:33', 1),
-(2, 'Food', '1', '2023-12-28 16:18:49', '2023-12-28 16:18:49', 1),
-(3, 'Grocery', '2', '2023-12-28 16:23:31', '2023-12-28 16:23:31', 1),
-(4, 'Grocery', '2', '2023-12-28 16:23:48', '2023-12-28 16:23:48', 1),
-(5, 'Eco', '3', '2023-12-28 16:26:08', '2023-12-28 16:26:08', 1),
-(6, 'Eco', '3', '2023-12-28 16:26:36', '2023-12-28 16:26:36', 1),
-(7, 'Real estate', '4', '2023-12-28 16:27:02', '2023-12-28 16:27:02', 1),
-(8, 'Real Estate', '4', '2023-12-28 16:27:21', '2023-12-28 16:27:21', 1);
+INSERT INTO `banner` (`id`, `name`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
+(1, '', '2024-01-10 15:52:41', '2024-01-10 15:52:41', 1, 15),
+(2, '', '2024-01-10 15:52:51', '2024-01-10 15:52:51', 1, 15),
+(3, '', '2024-01-10 15:53:54', '2024-01-10 15:53:54', 1, 14),
+(4, '', '2024-01-10 15:54:06', '2024-01-10 15:54:06', 1, 17),
+(5, '', '2024-01-10 16:21:07', '2024-01-10 16:21:07', 1, 16),
+(6, '', '2024-01-10 16:35:01', '2024-01-10 16:35:01', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -102,103 +104,6 @@ INSERT INTO `blog` (`id`, `title`, `description`, `created_at`, `modified_at`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `client`
---
-
-CREATE TABLE `client` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(150) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `theme_type` varchar(1) NOT NULL COMMENT '1=Food,2=Grocery,3=Ecommerce,4=Real estate	',
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime NOT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `client`
---
-
-INSERT INTO `client` (`id`, `name`, `email`, `password`, `theme_type`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 'Alison B', 'alison@gmail.com', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '2024-01-06 12:50:26', '0000-00-00 00:00:00', 1),
-(2, ' Julia L', 'julia@gmail.com', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '2024-01-06 12:51:25', '0000-00-00 00:00:00', 1),
-(3, 'Harika', 'harika@gmail.com', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', '2024-01-06 12:51:52', '0000-00-00 00:00:00', 1),
-(4, 'Mohan', 'mohan@gmail.com', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '2024-01-06 12:52:13', '0000-00-00 00:00:00', 1),
-(5, 'Raghu', 'raghu@gmail.com', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '2024-01-06 12:52:28', '0000-00-00 00:00:00', 1),
-(6, 'Ram', 'ram@gmail.com', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '2024-01-06 12:52:42', '0000-00-00 00:00:00', 1),
-(7, 'Lakshmi', 'lakshmi@gmail.com', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', '2024-01-06 12:53:09', '0000-00-00 00:00:00', 1),
-(8, 'Krishna', 'krishna@gmail.com', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '2024-01-06 12:53:48', '0000-00-00 00:00:00', 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `exam_category`
---
-
-CREATE TABLE `exam_category` (
-  `id` int(11) NOT NULL,
-  `exam_type_id` int(11) NOT NULL,
-  `exam_category` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `exam_downloads`
---
-
-CREATE TABLE `exam_downloads` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `exam_id` int(11) NOT NULL,
-  `plan_id` int(11) NOT NULL,
-  `evaluator_id` int(11) NOT NULL,
-  `marks` decimal(5,2) NOT NULL,
-  `out_of` decimal(5,2) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Downloaded,2= Answer Upload, 3 = Eva Download, 4 = Eva Upload, 5= Closed tab'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `exam_type`
---
-
-CREATE TABLE `exam_type` (
-  `id` int(11) NOT NULL,
-  `exam` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `e_brochers`
---
-
-CREATE TABLE `e_brochers` (
-  `id` int(11) NOT NULL,
-  `course_id` int(11) NOT NULL,
-  `course` varchar(100) NOT NULL,
-  `file_name` varchar(100) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `e_brochers`
---
-
-INSERT INTO `e_brochers` (`id`, `course_id`, `course`, `file_name`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 0, 'IPCC(NEW)', 'IPCC(NEW)-2020-01-02.pdf', '2020-01-02 19:20:48', NULL, 1),
-(2, 0, 'Pass Guarantee Inter', 'Pass Guarantee Inter-2020-01-02.pdf', '2020-01-02 19:20:55', NULL, 1);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `faqs`
 --
 
@@ -209,65 +114,25 @@ CREATE TABLE `faqs` (
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime DEFAULT NULL,
   `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive',
-  `client_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `faqs`
 --
 
-INSERT INTO `faqs` (`id`, `question`, `answer`, `created_at`, `modified_at`, `row_status`, `client_id`) VALUES
-(1, 'Is flat available', 'Yes\r\n', '2024-01-06 12:58:02', NULL, 1, 8),
-(2, 'Free Shipping available', 'No', '2024-01-06 12:58:33', NULL, 1, 7),
-(3, 'Any Discount', 'No', '2024-01-06 12:58:55', NULL, 1, 7),
-(4, 'Groceries Extra Discount', 'Yes', '2024-01-06 12:59:11', NULL, 1, 6),
-(5, 'How the Food taste', 'Good', '2024-01-06 13:02:18', NULL, 1, 5);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `faqs_2`
---
-
-CREATE TABLE `faqs_2` (
-  `id` int(11) NOT NULL,
-  `name` varchar(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `client` varchar(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `faqs_2`
---
-
-INSERT INTO `faqs_2` (`id`, `name`, `client`, `created_at`, `modified_at`) VALUES
-(1, 'xyz', 'some ideas change any times', '2023-12-20 15:26:57', NULL),
-(2, 'yzx', 'These is client 2 ', '2023-12-20 15:40:37', NULL),
-(3, 'ABC', 'client information text here', '2023-12-21 08:42:22', NULL),
-(4, 'Bhanu', 'BKHbaskckjhckjadkjdkjb aclkdnchdkjalhckadjh', '2023-12-21 17:44:39', NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `feedback`
---
-
-CREATE TABLE `feedback` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `message` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 2 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `feedback`
---
-
-INSERT INTO `feedback` (`id`, `user_id`, `message`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 2, 'gfgfg', '2019-12-18 17:46:55', '2019-12-31 16:13:26', 1);
+INSERT INTO `faqs` (`id`, `question`, `answer`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
+(1, 'Is flat available', 'Yes\r\n', '2024-01-06 12:58:02', NULL, 1, 16),
+(2, 'Free Shipping available', 'No', '2024-01-06 12:58:33', NULL, 1, 15),
+(3, 'Any Discount', 'No', '2024-01-06 12:58:55', NULL, 1, 15),
+(4, 'Groceries Extra Discount', 'Yes', '2024-01-06 12:59:11', NULL, 1, 14),
+(5, 'How the Food taste', 'Good', '2024-01-06 13:02:18', NULL, 1, 4),
+(6, 'New Grocery added', 'Yes\r\n', '2024-01-09 12:55:06', NULL, 1, 16),
+(7, 'Grocery', 'Good', '2024-01-09 13:07:14', NULL, 1, 16),
+(8, 'Food', 'food', '2024-01-09 13:08:47', NULL, 1, 15),
+(9, 'Grocery', 'Grocery Good', '2024-01-09 14:04:29', NULL, 1, 14),
+(10, 'Ecommerce have safe delivery', 'yes', '2024-01-09 15:13:43', NULL, 1, 16),
+(11, 'Grocery have expired', 'No', '2024-01-09 15:17:54', NULL, 1, 14);
 
 -- --------------------------------------------------------
 
@@ -313,247 +178,14 @@ CREATE TABLE `login_details` (
 --
 
 INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
-(1, 1, '2024-01-06 15:49:05', '2024-01-06 16:00:50'),
+(1, 1, '2024-01-11 12:07:52', '2024-01-11 11:52:57'),
 (2, 2, '2020-01-03 15:35:27', '2020-01-03 12:39:29'),
 (3, 3, '2019-12-20 16:39:05', '2019-12-20 16:40:17'),
 (4, 4, '2019-12-26 18:44:32', '2019-12-26 18:38:58'),
 (5, 5, '2019-12-27 16:16:21', '0000-00-00 00:00:00'),
-(6, 6, '2024-01-06 16:01:02', '2024-01-06 15:48:56');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `main_videos`
---
-
-CREATE TABLE `main_videos` (
-  `id` int(11) NOT NULL,
-  `course_id` int(11) NOT NULL,
-  `subject_id` int(11) NOT NULL,
-  `title` text NOT NULL,
-  `url` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Completed,2=Pending'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `main_videos`
---
-
-INSERT INTO `main_videos` (`id`, `course_id`, `subject_id`, `title`, `url`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 2, 1, 'Video1', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:13:57', NULL, 1),
-(2, 2, 1, 'bhkbh', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:14:16', NULL, 1),
-(3, 2, 4, 'TTTTT', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 16:50:41', NULL, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `mcq`
---
-
-CREATE TABLE `mcq` (
-  `id` int(11) NOT NULL,
-  `type_id` int(11) NOT NULL,
-  `question` varchar(225) NOT NULL,
-  `choice1` varchar(225) NOT NULL,
-  `choice2` varchar(225) NOT NULL,
-  `choice3` varchar(225) NOT NULL,
-  `choice4` varchar(225) NOT NULL,
-  `answer` varchar(225) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `mcq`
---
-
-INSERT INTO `mcq` (`id`, `type_id`, `question`, `choice1`, `choice2`, `choice3`, `choice4`, `answer`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 1, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
-(2, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
-(3, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
-(4, 1, 'Question4', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
-(5, 1, 'Question5', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
-(6, 1, 'Question6', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
-(7, 1, 'Question7', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
-(8, 1, 'Question8', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
-(9, 1, 'Question9', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
-(10, 1, 'Question10', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
-(11, 2, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:52:50', NULL, 1),
-(12, 2, 'Question2', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:52:50', NULL, 1),
-(13, 3, 'dfgdfdsafds', 'sdsds', 'sdsdsd', 'sdsdsdsds', 'sdsdsdsds', 'sdsds', '2020-01-02 19:38:51', NULL, 1),
-(14, 3, 'Question2', 'xcxzcxzcx', 'xcxzcxzcxzcxc', 'xzczxcxzcxzcxzcxzcxz', 'xcxzcxzcxzcxzcxzcxzcxzcxzc', 'xcxzcxzcxzcxc', '2020-01-02 19:38:51', NULL, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `mcq_results`
---
-
-CREATE TABLE `mcq_results` (
-  `id` int(11) NOT NULL,
-  `name` varchar(60) NOT NULL,
-  `email` varchar(60) NOT NULL,
-  `mobile` varchar(20) NOT NULL,
-  `type_id` int(11) NOT NULL,
-  `total` int(11) NOT NULL,
-  `scored` int(11) NOT NULL,
-  `answers` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `mcq_results`
---
-
-INSERT INTO `mcq_results` (`id`, `name`, `email`, `mobile`, `type_id`, `total`, `scored`, `answers`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 'Mahesh', 'mahi@g.com', '8121815502', 1, 10, 4, '[\"Choice1\",\"Choice3\",\"Choice3\",\"Choice1\",\"Choice1\",\"Choice3\",\"Choice1\",\"Choice4\",\"Choice4\",\"Choice1\"]', '2019-12-13 17:54:14', NULL, 1),
-(2, 'Yesh', 'tgy@gmai.com', '1234567892', 1, 10, 4, '[\"Choice2\",\"Choice1\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\"]', '2019-12-20 16:29:53', NULL, 1),
-(3, 'mahesh', 'maheshbt.grepthor@gmail.com', '8121815502', 3, 2, 1, '[\"sdsds\",\"xcxzcxzcxzcxzcxzcxzcxzcxzc\"]', '2020-01-02 19:44:36', NULL, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `mcq_type`
---
-
-CREATE TABLE `mcq_type` (
-  `id` int(11) NOT NULL,
-  `course` varchar(60) NOT NULL,
-  `test` varchar(60) NOT NULL,
-  `no_of_questions` int(11) NOT NULL,
-  `description` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `mcq_type`
---
-
-INSERT INTO `mcq_type` (`id`, `course`, `test`, `no_of_questions`, `description`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 'IPCC', 'Test1', 10, 'Noting', '2019-12-13 17:51:43', NULL, 1),
-(2, 'IPCC', 'Test2', 2, 'noting', '2019-12-13 17:52:50', NULL, 1),
-(3, 'IPCC', 'Test3', 2, 'sdssdsdsdsdsdsdsdsd', '2020-01-02 19:38:51', NULL, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `notes`
---
-
-CREATE TABLE `notes` (
-  `id` int(11) NOT NULL,
-  `course_id` int(11) NOT NULL,
-  `subject_id` int(11) NOT NULL,
-  `title` text NOT NULL,
-  `url` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `notes`
---
-
-INSERT INTO `notes` (`id`, `course_id`, `subject_id`, `title`, `url`, `created_at`, `row_status`) VALUES
-(1, 2, 1, 'bhkbh', '', '2019-12-18 15:11:54', 1),
-(2, 2, 2, 'Law', '', '2019-12-18 15:12:35', 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `notifications`
---
-
-CREATE TABLE `notifications` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `title` varchar(100) NOT NULL,
-  `notification` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `row_status` tinyint(4) NOT NULL DEFAULT 2 COMMENT '0=Deleted,1=Completed,2=Pending'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `notifications`
---
-
-INSERT INTO `notifications` (`id`, `user_id`, `title`, `notification`, `created_at`, `row_status`) VALUES
-(1, 1, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-12 11:12:27', 2),
-(2, 2, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-13 17:30:07', 2),
-(3, 3, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-20 16:39:05', 2),
-(4, 4, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-24 16:36:47', 2),
-(5, 5, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-27 16:12:25', 2),
-(6, 6, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2024-01-06 15:47:17', 2);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `packages`
---
-
-CREATE TABLE `packages` (
-  `id` int(11) NOT NULL,
-  `course_id` int(11) NOT NULL,
-  `plan_id` int(11) NOT NULL,
-  `type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '0 = General, 1 = Group 1, 2 = Group 2, 3 = Both Groups',
-  `subject_id` int(11) DEFAULT NULL,
-  `subject_name` varchar(100) NOT NULL,
-  `actual_price` float NOT NULL,
-  `discount_price` float NOT NULL,
-  `description` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `packages`
---
-
-INSERT INTO `packages` (`id`, `course_id`, `plan_id`, `type`, `subject_id`, `subject_name`, `actual_price`, `discount_price`, `description`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 2, 5, 1, NULL, 'Group 1', 1996, 1799, '12 Unit Exams:@8 Full Syllabus Exams:@100% Coverage:@Systematic Schedule:@Description5', '2019-12-13 13:33:47', NULL, 1),
-(2, 2, 5, 2, NULL, 'Group 2', 1500, 1200, 'Description1:@Description2:@Description3:@Description4:@Description5', '2019-12-13 18:52:35', NULL, 1),
-(3, 2, 1, 1, 0, 'Group 1', 1500, 1200, 'Description5:@Description5:@Description5:@Description5:@Description5', '2019-12-27 16:15:38', NULL, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `package_purchase`
---
-
-CREATE TABLE `package_purchase` (
-  `id` int(11) NOT NULL,
-  `track_id` varchar(30) NOT NULL,
-  `cart_packages` text NOT NULL,
-  `subtotal` decimal(10,0) NOT NULL,
-  `discount` decimal(10,0) NOT NULL,
-  `grand_total` decimal(10,0) NOT NULL,
-  `discount_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `package_purchase`
---
-
-INSERT INTO `package_purchase` (`id`, `track_id`, `cart_packages`, `subtotal`, `discount`, `grand_total`, `discount_id`, `user_id`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, '123456', '2', 1200, 120, 1080, 1, 1, '2020-01-03 15:14:11', NULL, 1),
-(2, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:35:52', NULL, 1),
-(3, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:37:24', NULL, 1),
-(4, '123456', '2', 1200, 0, 1200, 0, 1, '2020-01-03 15:48:49', NULL, 1),
-(5, '123456', '', 0, 0, 0, 0, 1, '2020-01-03 15:48:56', NULL, 1),
-(6, '123456', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:16:38', NULL, 1),
-(7, '2020010351', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:17:32', NULL, 1);
+(6, 6, '2024-01-11 11:53:03', '2024-01-11 12:07:46'),
+(7, 8, '2024-01-09 17:07:34', '2024-01-09 17:09:26'),
+(8, 7, '2024-01-11 10:29:45', '2024-01-11 10:30:51');
 
 -- --------------------------------------------------------
 
@@ -649,30 +281,6 @@ INSERT INTO `roles` (`id`, `role`, `code`, `unique_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `schedules`
---
-
-CREATE TABLE `schedules` (
-  `id` int(11) NOT NULL,
-  `course_id` int(11) NOT NULL,
-  `plan_id` int(11) NOT NULL,
-  `file_name` varchar(100) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `schedules`
---
-
-INSERT INTO `schedules` (`id`, `course_id`, `plan_id`, `file_name`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 2, 2, 'dummy.pdf', '2019-12-13 16:18:48', NULL, 1),
-(2, 2, 3, 'dummy.pdf', '2019-12-13 16:19:10', NULL, 1);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `settings`
 --
 
@@ -716,68 +324,6 @@ INSERT INTO `settings` (`settings_id`, `setting_type`, `description`, `created_b
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shopbooks`
---
-
-CREATE TABLE `shopbooks` (
-  `id` int(11) NOT NULL,
-  `book_type` enum('softcopy','hardcopy','','') NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `author` varchar(100) NOT NULL,
-  `pages` varchar(100) NOT NULL,
-  `actual_price` float NOT NULL,
-  `discount_price` float NOT NULL,
-  `type` varchar(100) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `shopbooks`
---
-
-INSERT INTO `shopbooks` (`id`, `book_type`, `name`, `author`, `pages`, `actual_price`, `discount_price`, `type`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 'softcopy', 'mahesh', 'Mahesh', '150', 1500, 1200, 'Majnbndkjcdjk', '2019-12-24 13:24:34', NULL, 1),
-(2, 'hardcopy', 'Bhanu', 'Bhanu', '120', 1500, 50, 'Book', '2023-12-26 11:50:00', '2023-12-26 11:50:09', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `shopimages`
---
-
-CREATE TABLE `shopimages` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `theme_type` varchar(1) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL COMMENT '1=Food,2=Grocery,3=Ecommerce,4=Real estate',
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive	'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `shopimages`
---
-
-INSERT INTO `shopimages` (`id`, `name`, `theme_type`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 'Bhanu', '1', '2023-12-22 15:37:07', '2023-12-22 18:42:17', 0),
-(2, 'Alison B', '1', '2023-12-22 16:07:51', '2023-12-22 16:07:51', 1),
-(3, 'B Alison', '1', '2023-12-22 16:16:21', '2023-12-22 16:16:21', 1),
-(4, 'Julia L', '3', '2023-12-22 17:20:08', '2023-12-22 17:20:08', 1),
-(5, 'Julia L', '3', '2023-12-22 17:23:05', '2023-12-22 17:23:05', 1),
-(6, 'Deidre S', '2', '2023-12-22 17:25:17', '2023-12-22 17:25:17', 1),
-(7, 'Grocery', '2', '2023-12-22 17:25:53', '2023-12-22 17:25:53', 1),
-(8, 'Real esate', '4', '2023-12-22 17:27:58', '2023-12-22 17:27:58', 1),
-(9, 'Real estate', '4', '2023-12-22 17:28:22', '2023-12-22 17:28:22', 1),
-(10, 'Bhanu', '2', '2023-12-22 18:41:00', '2023-12-26 11:37:10', 0),
-(11, 'Real', '2', '2023-12-28 16:05:56', '2023-12-28 16:05:56', 1),
-(12, 'real', '1', '2023-12-28 16:06:49', '2023-12-28 16:06:49', 1),
-(13, 'Gro', '3', '2023-12-28 16:08:12', '2023-12-28 16:08:12', 1);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `sms`
 --
 
@@ -811,57 +357,6 @@ CREATE TABLE `sms_by_plan` (
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0 = deleted, 1 = Active, 2 = Inactive'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `student_videos`
---
-
-CREATE TABLE `student_videos` (
-  `id` int(11) NOT NULL,
-  `url` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `student_videos`
---
-
-INSERT INTO `student_videos` (`id`, `url`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2020-01-02 18:17:27', NULL, 1),
-(2, 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2020-01-02 18:17:38', NULL, 1),
-(3, 'https://www.youtube.com/embed/RBkjrqtsebQ', '2020-01-02 18:51:28', NULL, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `subjects`
---
-
-CREATE TABLE `subjects` (
-  `id` int(11) NOT NULL,
-  `subject` varchar(100) NOT NULL,
-  `type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '0 = General, 1 = Group 1, 2 = Group 2',
-  `course_id` int(11) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `subjects`
---
-
-INSERT INTO `subjects` (`id`, `subject`, `type`, `course_id`, `created_at`, `row_status`) VALUES
-(1, 'Accounts', 1, 2, '2019-12-02 15:43:50', 1),
-(2, 'LAW', 1, 2, '2019-12-16 11:52:55', 1),
-(3, 'Costing & FM', 1, 2, '2019-12-16 11:53:29', 1),
-(4, 'Taxation', 1, 2, '2019-12-16 11:54:08', 1),
-(5, 'ADV.Accounting', 2, 2, '2019-12-16 11:54:37', 1),
-(6, 'Auditing', 2, 2, '2019-12-16 11:54:54', 1),
-(7, 'IT & SM', 2, 2, '2019-12-16 11:55:09', 1);
 
 -- --------------------------------------------------------
 
@@ -905,27 +400,28 @@ INSERT INTO `support` (`id`, `from_id`, `to_id`, `message`, `read_status`, `crea
 
 CREATE TABLE `teams` (
   `id` int(11) NOT NULL,
-  `theme_type` varchar(1) NOT NULL,
-  `name` varchar(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `review` varchar(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime NOT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive'
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive',
+  `user_id` int(11) NOT NULL,
+  `theme_type` varchar(11) NOT NULL,
+  `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `teams`
 --
 
-INSERT INTO `teams` (`id`, `theme_type`, `name`, `review`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, '1', 'Alison B', 'Customer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” button n', '2023-12-28 15:18:51', '0000-00-00 00:00:00', 1),
-(2, '2', 'Ravi', 'Customer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” button next to each product on your website, or you can contact customers a few days after they’ve made a ', '2023-12-28 15:29:36', '0000-00-00 00:00:00', 1),
-(3, '1', 'Deidre S', 'Before choosing a real estate agent, I conducted a lot of research to see who would be the best choice based on the investment they make into selling the property (time and effort, not necessarily financially)', '2023-12-28 15:30:21', '0000-00-00 00:00:00', 1),
-(4, '2', 'Ram', 'The quote testimonial here is featured with an image and a Call-To-Action (CTA). The image makes that quote more eye-catching, and the CTA provides more chances for conversions.', '2023-12-28 15:35:24', '0000-00-00 00:00:00', 1),
-(5, '3', 'D Alison ', 'ustomer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” butto', '2023-12-28 15:36:00', '0000-00-00 00:00:00', 1),
-(6, '3', 'Deidre Y', 'Before choosing a real estate agent, I conducted a lot of research to see who would be the best choice based on the investment they make into selling the property (time and e', '2023-12-28 15:36:28', '0000-00-00 00:00:00', 1),
-(7, '4', 'Ravi', 'Before choosing a real estate agent, I conducted a lot of research to see who would be the best choice based on the investment they make into selling the proper', '2023-12-28 15:37:23', '0000-00-00 00:00:00', 1),
-(8, '4', 'Alison F', 'The quote testimonial here is featured with an image and a Call-To-Action (CTA). The image makes that quote more eye-catching, and the CTA provides more chances for conversion', '2023-12-28 15:37:53', '0000-00-00 00:00:00', 1);
+INSERT INTO `teams` (`id`, `review`, `created_at`, `modified_at`, `row_status`, `user_id`, `theme_type`, `name`) VALUES
+(1, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-09 16:26:45', '0000-00-00 00:00:00', 1, 17, '1', ''),
+(2, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking ', '2024-01-09 16:29:49', '0000-00-00 00:00:00', 1, 14, '2', ''),
+(3, 'We went only to the supermarket to buy some groceries. It was not crowded during lunchtime.', '2024-01-09 16:30:26', '0000-00-00 00:00:00', 1, 16, '3', ''),
+(4, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:31:29', '0000-00-00 00:00:00', 1, 14, '4', ''),
+(5, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:32:36', '0000-00-00 00:00:00', 1, 15, '1', ''),
+(6, 'you can get everythng here at decent prices. you need to bargain a lot. 40% of the original price', '2024-01-09 16:35:38', '0000-00-00 00:00:00', 1, 4, '2', ''),
+(7, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-10 12:35:06', '0000-00-00 00:00:00', 1, 19, '', ''),
+(8, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking', '2024-01-10 12:52:25', '0000-00-00 00:00:00', 1, 18, '', '');
 
 -- --------------------------------------------------------
 
@@ -935,115 +431,29 @@ INSERT INTO `teams` (`id`, `theme_type`, `name`, `review`, `created_at`, `modifi
 
 CREATE TABLE `testomonial` (
   `id` int(11) NOT NULL,
-  `theme_type` varchar(1) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL COMMENT '1=Food,2=Grocery,3=Ecommerce,4=Real estate	',
+  `user_id` int(11) NOT NULL,
   `name` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `review` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive'
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive',
+  `theme_type` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `testomonial`
 --
 
-INSERT INTO `testomonial` (`id`, `theme_type`, `name`, `review`, `created_at`, `modified_at`, `row_status`) VALUES
-(2, '1', 'Alison B', 'Their brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well', '2023-12-22 11:32:14', '2023-12-22 11:32:14', 1),
-(3, '1', 'B Alison ', 'Brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well', '2023-12-22 11:52:30', '2023-12-22 11:52:30', 1),
-(5, '2', ' Ellen H', 'Best Pizza EVER! Not just on the lower Cape…. anywhere!', '2023-12-22 12:05:06', '2023-12-22 12:05:06', 1),
-(6, '4', ' Julia L', 'Working together as the Joe Hayden Real Estate Team, we are very thankful for our loyal clients.  Our business is one of close relationships and we are very fortunate to be able to share so many positive real estate experiences with our clients.  Your satisfaction is the ultimate reward for our work and it is why we strive to be Your Louisville Real Estate Experts', '2023-12-22 12:30:59', '2023-12-22 12:30:59', 1),
-(7, '4', 'Deidre S', 'Before choosing a real estate agent, I conducted a lot of research to see who would be the best choice based on the investment they make into selling the property (time and effort, not necessarily financially) ', '2023-12-22 12:32:52', '2023-12-22 12:32:52', 1),
-(8, '3', 'Ram', 'The quote testimonial here is featured with an image and a Call-To-Action (CTA). The image makes that quote more eye-catching, and the CTA provides more chances for conversions. ', '2023-12-22 12:36:21', '2023-12-22 12:36:21', 1),
-(9, '3', 'Ravi', 'Customer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” button next to each product on your website, or you can contact customers a few days after they’ve made a purchase and ask them to leave a review. ', '2023-12-22 12:36:44', '2023-12-22 12:36:44', 1),
-(10, '3', 'Alison B', 'Customer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” button n', '2023-12-22 18:26:07', '2023-12-22 18:26:07', 1),
-(11, '1', 'Ramanji', 'customers ', '2024-01-06 14:31:17', '2024-01-06 14:31:17', 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `trail_dashboard`
---
-
-CREATE TABLE `trail_dashboard` (
-  `id` int(11) NOT NULL,
-  `course` int(11) NOT NULL,
-  `url` text NOT NULL,
-  `instructions` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `trail_dashboard`
---
-
-INSERT INTO `trail_dashboard` (`id`, `course`, `url`, `instructions`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 2, 'https://www.youtube.com/embed/QQJjI1CB0eM:@https://www.youtube.com/embed/QQJjI1CB0eM:@https://www.youtube.com/embed/QQJjI1CB0eM', 'Introduction1:@Introduction2:@Introduction3:@Introduction4:@Introduction5', '2019-12-13 17:33:03', NULL, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `trail_exams`
---
-
-CREATE TABLE `trail_exams` (
-  `id` int(11) NOT NULL,
-  `course` int(11) NOT NULL,
-  `exam` varchar(60) NOT NULL,
-  `subject` varchar(60) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `trail_exams`
---
-
-INSERT INTO `trail_exams` (`id`, `course`, `exam`, `subject`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 2, 'My Exam', 'Accounts', '2019-12-26 13:02:37', NULL, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `trail_exam_downloads`
---
-
-CREATE TABLE `trail_exam_downloads` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `exam_id` int(11) NOT NULL,
-  `evaluator_id` int(11) NOT NULL,
-  `marks` decimal(5,2) NOT NULL,
-  `out_of` decimal(5,2) NOT NULL,
-  `modified_at` datetime DEFAULT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Downloaded,2= Answer Upload, 3 = Eva Download, 4 = Eva Upload'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `trail_exam_downloads`
---
-
-INSERT INTO `trail_exam_downloads` (`id`, `user_id`, `exam_id`, `evaluator_id`, `marks`, `out_of`, `modified_at`, `created_at`, `row_status`) VALUES
-(1, 2, 1, 4, 100.00, 120.00, '2019-12-26 18:55:39', '2019-12-26 18:50:44', 4);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `trail_results`
---
-
-CREATE TABLE `trail_results` (
-  `id` bigint(20) NOT NULL,
-  `trail_exam_downloads_id` int(11) NOT NULL,
-  `marks` decimal(10,0) NOT NULL,
-  `out_of` decimal(10,0) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0 = deleted, 1 = Active, 2 = Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+INSERT INTO `testomonial` (`id`, `user_id`, `name`, `review`, `created_at`, `modified_at`, `row_status`, `theme_type`) VALUES
+(2, 4, 'Alison B', 'Their brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well', '2023-12-22 11:32:14', '2023-12-22 11:32:14', 1, '1'),
+(3, 5, 'B Alison ', 'Brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well', '2023-12-22 11:52:30', '2023-12-22 11:52:30', 1, '2'),
+(5, 15, ' Ellen H', 'Best Pizza EVER! Not just on the lower Cape…. anywhere!', '2023-12-22 12:05:06', '2023-12-22 12:05:06', 1, '3'),
+(6, 17, ' Julia L', 'Working together as the Joe Hayden Real Estate Team, we are very thankful for our loyal clients.  Our business is one of close relationships and we are very fortunate to be able to share so many positive real estate experiences with our clients.  Your satisfaction is the ultimate reward for our work and it is why we strive to be Your Louisville Real Estate Experts', '2023-12-22 12:30:59', '2023-12-22 12:30:59', 1, '4'),
+(7, 16, 'Deidre S', 'Before choosing a real estate agent, I conducted a lot of research to see who would be the best choice based on the investment they make into selling the property (time and effort, not necessarily financially) ', '2023-12-22 12:32:52', '2023-12-22 12:32:52', 1, '1'),
+(8, 14, 'Ram', 'The quote testimonial here is featured with an image and a Call-To-Action (CTA). The image makes that quote more eye-catching, and the CTA provides more chances for conversions. ', '2023-12-22 12:36:21', '2023-12-22 12:36:21', 1, '2'),
+(9, 15, 'Ravi', 'Customer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” button next to each product on your website, or you can contact customers a few days after they’ve made a purchase and ask them to leave a review. ', '2023-12-22 12:36:44', '2023-12-22 12:36:44', 1, '3'),
+(10, 17, 'Alison B', 'Customer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” button n', '2023-12-22 18:26:07', '2023-12-22 18:26:07', 1, '4'),
+(11, 16, 'Ramanji', 'customers ', '2024-01-06 14:31:17', '2024-01-06 14:31:17', 1, '1');
 
 -- --------------------------------------------------------
 
@@ -1077,10 +487,14 @@ INSERT INTO `users` (`id`, `role_id`, `unique_id`, `icai_reg_no`, `first_name`, 
 (1, 1, '9119', 0, 'Super Admin', '', 'admin@gmail.com', '8121815502', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '', '', '2019-07-20 15:18:30', NULL, 1),
 (2, 2, '120057345', 1244564, 'mahesh', '', 'mahi@gmail.com', '8121815501', '2', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '', '', '2019-12-13 17:28:55', '2019-12-13 17:28:55', 1),
 (3, 2, 'ipcc19_100002', 123, 'sujith', '', 'yeswanth@gmail.com', '8143671872', '2', '7ca49b480f4ad303e77d35fc0ba426e30332ec95051a34a75affedf485054e2a', '', '', '2019-12-20 16:38:43', '2019-12-20 16:38:43', 4),
-(4, 3, 'EVA_100001', 0, 'Mahesh', '', 'mahie@gmail.com', '8121815555', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '', '', '2019-12-24 16:12:09', '2019-12-24 16:12:09', 3),
-(5, 2, 'ipcc19_100003', 45556556, 'mahesh', '', 'maheshbt.grepthor@gmail.com', '8121815500', '2', '101b6224f1df589da6537ab8a72aaeb8e36ebf169d85d8c0d7d04d8fd21ac62c', '', '', '2019-12-27 16:11:19', '2019-12-27 16:11:19', 3),
-(6, 2, '', 0, 'Bhanu', '', 'bhanu@gmail.com', '', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '', '2024-01-06 15:46:30', NULL, 1),
-(7, 2, '', 0, 'Hari', '', 'hari@gmail.com', '9390060633', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-06 15:56:04', NULL, 3);
+(4, 3, 'EVA_100001', 0, 'Mahesh', '', 'mahie@gmail.com', '8121815555', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '', '2019-12-24 16:12:09', '2019-12-24 16:12:09', 3),
+(5, 2, 'ipcc19_100003', 45556556, 'mahesh', '', 'maheshbt.grepthor@gmail.com', '8121815500', '2', '101b6224f1df589da6537ab8a72aaeb8e36ebf169d85d8c0d7d04d8fd21ac62c', '3', '', '2019-12-27 16:11:19', '2019-12-27 16:11:19', 4),
+(14, 2, '', 0, 'Bhanu', '', 'bhanu@gmail.com', '7788554477', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '', '2024-01-11 14:01:06', NULL, 3),
+(15, 2, '', 0, 'Hari', '', 'hari@gmail.com', '8855224411', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-11 14:02:07', NULL, 3),
+(16, 2, '', 0, 'Shiva', '', 'shiva@gmail.com', '7788221144', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', '', '2024-01-11 14:03:03', NULL, 3),
+(17, 2, '', 0, 'Sam', '', 'sam@gmail.com', '6302154897', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '', '2024-01-11 14:03:39', NULL, 3),
+(18, 2, '', 0, 'Ashwin', '', 'ashwin@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-11 14:04:18', NULL, 3),
+(19, 2, '', 0, 'Ravi', '', 'ravi@gmail.com', '6987321548', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-11 14:05:21', NULL, 3);
 
 -- --------------------------------------------------------
 
@@ -1110,29 +524,6 @@ INSERT INTO `users_plan_relation` (`id`, `user_id`, `plan_id`, `package_id`, `cr
 (5, 2, 5, 2, '2020-01-03 16:16:38', NULL, 1),
 (6, 2, 5, 2, '2020-01-03 16:17:32', NULL, 1);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `videos`
---
-
-CREATE TABLE `videos` (
-  `id` int(11) NOT NULL,
-  `course_id` int(11) NOT NULL,
-  `page_name` varchar(100) NOT NULL,
-  `url` text NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `modified_at` datetime DEFAULT NULL,
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `videos`
---
-
-INSERT INTO `videos` (`id`, `course_id`, `page_name`, `url`, `created_at`, `modified_at`, `row_status`) VALUES
-(1, 2, 'Contact Us', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-24 16:09:38', NULL, 1);
-
 --
 -- Indexes for dumped tables
 --
@@ -1156,51 +547,9 @@ ALTER TABLE `blog`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `client`
---
-ALTER TABLE `client`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `exam_category`
---
-ALTER TABLE `exam_category`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `exam_downloads`
---
-ALTER TABLE `exam_downloads`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `exam_type`
---
-ALTER TABLE `exam_type`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `e_brochers`
---
-ALTER TABLE `e_brochers`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `faqs`
 --
 ALTER TABLE `faqs`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `faqs_2`
---
-ALTER TABLE `faqs_2`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `feedback`
---
-ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1213,54 +562,6 @@ ALTER TABLE `feeling_formal`
 -- Indexes for table `login_details`
 --
 ALTER TABLE `login_details`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `main_videos`
---
-ALTER TABLE `main_videos`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `mcq`
---
-ALTER TABLE `mcq`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `mcq_results`
---
-ALTER TABLE `mcq_results`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `mcq_type`
---
-ALTER TABLE `mcq_type`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `notes`
---
-ALTER TABLE `notes`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `notifications`
---
-ALTER TABLE `notifications`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `packages`
---
-ALTER TABLE `packages`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `package_purchase`
---
-ALTER TABLE `package_purchase`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1288,28 +589,10 @@ ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `schedules`
---
-ALTER TABLE `schedules`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `settings`
 --
 ALTER TABLE `settings`
   ADD PRIMARY KEY (`settings_id`);
-
---
--- Indexes for table `shopbooks`
---
-ALTER TABLE `shopbooks`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `shopimages`
---
-ALTER TABLE `shopimages`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `sms`
@@ -1321,18 +604,6 @@ ALTER TABLE `sms`
 -- Indexes for table `sms_by_plan`
 --
 ALTER TABLE `sms_by_plan`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `student_videos`
---
-ALTER TABLE `student_videos`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `subjects`
---
-ALTER TABLE `subjects`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1354,30 +625,6 @@ ALTER TABLE `testomonial`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `trail_dashboard`
---
-ALTER TABLE `trail_dashboard`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `trail_exams`
---
-ALTER TABLE `trail_exams`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `trail_exam_downloads`
---
-ALTER TABLE `trail_exam_downloads`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `trail_results`
---
-ALTER TABLE `trail_results`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -1390,12 +637,6 @@ ALTER TABLE `users_plan_relation`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `videos`
---
-ALTER TABLE `videos`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -1403,13 +644,13 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT for table `aboutus`
 --
 ALTER TABLE `aboutus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `blog`
@@ -1418,52 +659,10 @@ ALTER TABLE `blog`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `client`
---
-ALTER TABLE `client`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT for table `exam_category`
---
-ALTER TABLE `exam_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `exam_downloads`
---
-ALTER TABLE `exam_downloads`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `exam_type`
---
-ALTER TABLE `exam_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `e_brochers`
---
-ALTER TABLE `e_brochers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT for table `faqs`
 --
 ALTER TABLE `faqs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `faqs_2`
---
-ALTER TABLE `faqs_2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `feedback`
---
-ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `feeling_formal`
@@ -1475,55 +674,7 @@ ALTER TABLE `feeling_formal`
 -- AUTO_INCREMENT for table `login_details`
 --
 ALTER TABLE `login_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `main_videos`
---
-ALTER TABLE `main_videos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `mcq`
---
-ALTER TABLE `mcq`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT for table `mcq_results`
---
-ALTER TABLE `mcq_results`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `mcq_type`
---
-ALTER TABLE `mcq_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `notes`
---
-ALTER TABLE `notes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `notifications`
---
-ALTER TABLE `notifications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `packages`
---
-ALTER TABLE `packages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `package_purchase`
---
-ALTER TABLE `package_purchase`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `promocodes`
@@ -1550,28 +701,10 @@ ALTER TABLE `roles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `schedules`
---
-ALTER TABLE `schedules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT for table `settings`
 --
 ALTER TABLE `settings`
   MODIFY `settings_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
-
---
--- AUTO_INCREMENT for table `shopbooks`
---
-ALTER TABLE `shopbooks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `shopimages`
---
-ALTER TABLE `shopimages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `sms`
@@ -1584,18 +717,6 @@ ALTER TABLE `sms`
 --
 ALTER TABLE `sms_by_plan`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `student_videos`
---
-ALTER TABLE `student_videos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `subjects`
---
-ALTER TABLE `subjects`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `support`
@@ -1616,46 +737,16 @@ ALTER TABLE `testomonial`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `trail_dashboard`
---
-ALTER TABLE `trail_dashboard`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `trail_exams`
---
-ALTER TABLE `trail_exams`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `trail_exam_downloads`
---
-ALTER TABLE `trail_exam_downloads`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `trail_results`
---
-ALTER TABLE `trail_results`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `users_plan_relation`
 --
 ALTER TABLE `users_plan_relation`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `videos`
---
-ALTER TABLE `videos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

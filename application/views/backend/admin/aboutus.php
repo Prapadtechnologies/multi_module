@@ -28,21 +28,26 @@ $this->session->set_userdata('last_page', current_url());
                             </div>
                                                 
                         </div>
-                       
-                    <div class="form-group row">
-                        <label class="col-sm-4 control-label text-sm-right pt-2">Theme: </label>
-                        <div class="col-sm-6">
-                            <select name="theme_type" class="form-control" required="" id="themeSelect">
-                                <option>Select Theme</option>
-                                <option value="1">Food</option>
-                                <option value="2">Grocery</option>
-                                <option value="3">Ecommerce</option>
-                                <option value="4">Real Estate</option>
+                           
+                       <div class="form-group row">
+                                                    
+                            <label class="col-sm-4 control-label text-sm-right pt-2">Select Client: </label>
+                            <div class="col-sm-5">
 
-                            </select>
-                            <?php echo form_error('theme_type', '<div class="error">', '</div>'); ?>
+                                <select name="theme" class="form-control" required="" id="themeSelect">
+                                    <option>Select Client</option>
+                                                            <?php
+                                                                $client=$this->crud_model->get_client_info();
+                                                                foreach ($client as $row) {
+                                                                echo '<option value="' . $row['id'] . '">' . $row['first_name'] . '</option>';
+                                                            }
+                                                            ?>
+                                </select>
+                                <?php echo form_error('theme_type', '<div class="error">', '</div>'); ?>
+                                                    
+                            </div>
                         </div>
-                    </div>
+
                     <div class="form-group row">
                         <div class="col-sm-12">
                             <textarea type="text" class="form-control" name="message" id="message"></textarea>
@@ -72,7 +77,8 @@ $this->session->set_userdata('last_page', current_url());
                                                 <tr>
                                                     <th>SNo</th>
                                                     <th>Image</th>
-                                                    <th>Theme Type</th>
+                                                    <th>Name</th>
+
                                                     <th>Description</th>
                                                      <th>Actions</th>
 
@@ -80,7 +86,7 @@ $this->session->set_userdata('last_page', current_url());
                                             </thead>
                                             <tbody>
                                                 <?php
-                                        $about=$this->crud_model->get_aboutus_info();
+                                        $about=$this->crud_model->get_aboutus_info_with_clients();
                                         $i=0;
                                         foreach ($about as $row) {
                                                 ?>
@@ -88,6 +94,7 @@ $this->session->set_userdata('last_page', current_url());
                                                     <td><?=$i+1;?></td>
                                                     <td><?=$row['id'].'jpg';?></td>
                                                     <td><?=$row['theme_type'];?></td>
+                                                     <td><?=$row['first_name'];?></td>
                                                     <td><?=$row['description'];?></td>
                                                     
                                                     <td>
@@ -106,7 +113,6 @@ $this->session->set_userdata('last_page', current_url());
 
 
 <script type="text/javascript" src="<?php echo base_url(); ?>/assets/vendor/ckeditor/ckeditor.js"></script>
-
 <script>
     CKEDITOR.replace('message');
 
@@ -125,3 +131,4 @@ $this->session->set_userdata('last_page', current_url());
         }
     });
 </script>
+

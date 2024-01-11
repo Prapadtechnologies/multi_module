@@ -355,6 +355,7 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
 
         if ($id == '') {
             $res = $this->crud_model->saving_insert_details('users', $input_data);
+            move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/client/". $res.'.jpg');
             /*print_r($input_data);
             die();*/
             if ($res > 0) {
@@ -1600,7 +1601,7 @@ function system_settings($param1 = '') {
             if ($this->input->post()) {
                 $input = $this->input->post();
                
-                $data['theme_type'] = $input['theme_type'];
+                $data['user_id'] = $input['theme'];
                 $data['description'] = $input['message'];
 
                 // Check if a record with the same theme_type already exists
@@ -1815,9 +1816,9 @@ function system_settings($param1 = '') {
     }*/
     /*Aboutus dynamic*/
     
-    public function get_content_by_theme($themeId)
+    public function get_content_by_theme($user_id)
     {
-        $content = $this->crud_model->get_content_by_theme($themeId);
+        $content = $this->crud_model->get_content_by_theme($user_id);
         header('Content-Type: text/plain');
         echo $content;
     }

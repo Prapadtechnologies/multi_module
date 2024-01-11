@@ -945,7 +945,15 @@ return $rating;
         $query = $this->db->get();
         return $query->result_array();
     }
+    public function get_aboutus_info_with_clients()
+    {
+        $this->db->select('aboutus.*, users.first_name as first_name, users.theme_type');
+        $this->db->from('aboutus');
+        $this->db->join('users', 'users.id = aboutus.user_id', 'left'); 
 
+        $query = $this->db->get();
+        return $query->result_array();
+    }
 
 
     public function get_faqs_client($client_id) {
@@ -1057,10 +1065,10 @@ return $rating;
     $this->db->update('aboutus', $data);
     }
     
-       public function get_content_by_theme($themeId)
+       public function get_content_by_theme($user_id)
     {
 
-        $query = $this->db->get_where('aboutus', array('theme_type' => $themeId));
+        $query = $this->db->get_where('aboutus', array('user_id' => $user_id));
         $result = $query->row();
         return $result ? $result->description : '';
     }

@@ -68,6 +68,7 @@
         </section>
     </div>
 </div>
+                
 <?php
     include_once('layouts/script.php');
     ?>
