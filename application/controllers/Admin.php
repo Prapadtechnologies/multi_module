@@ -355,6 +355,8 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
 
         if ($id == '') {
             $res = $this->crud_model->saving_insert_details('users', $input_data);
+            /*print_r($input_data);
+            die();*/
             if ($res > 0) {
                 $this->session->set_flashdata('success_message', "Client Saved Successfully");
             } else {
@@ -1172,15 +1174,14 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
                 if($this->input->post()){
                     $input=$this->input->post();
                     $input_data=array(
-                        'name'=>$input['name'],
-                        'theme_type'=>$input['theme_type']
+                        'user_id' => $input['theme']
 
                     );
                    if($id==''){
                     $res=$this->crud_model->saving_insert_details('banner',$input_data);
                     if($res>0){
                         $this->session->set_flashdata('success_message',"Banner Saved Successfully");
-                        move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/banner/". $res.'.jpg');
+                        move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/wrapper/". $res.'.jpg');
 
                     }else{
                         $this->session->set_flashdata('error_message',"Banner Not Saved");
@@ -1511,7 +1512,7 @@ function system_settings($param1 = '') {
         $input_data = array(
             'question' => $input['question'],
             'answer' => $input['answer'],
-            'client_id' => $input['theme']
+            'user_id' => $input['theme']
         );
 
         if ($id == '') {
@@ -1552,7 +1553,7 @@ function system_settings($param1 = '') {
             }
             $page_data['page_title'] = "Testomonial's";
             $page_data['page_name'] = 'testomonial';
-            $page_data['testomonial'] = $this->crud_model->get_testomonial_info();
+            $page_data['testomonial'] = $this->crud_model->get_testomonial_info_with_clients();
             
             if($this->input->post())
             {
@@ -1560,7 +1561,7 @@ function system_settings($param1 = '') {
                 $input_data=array(
                     'name'=>$input['name'],
                     'review'=>$input['client'],
-                    'theme_type'=>$input['theme']
+                    'user_id'=>$input['theme']
 
                 );
                if($id==''){
@@ -1632,9 +1633,6 @@ function system_settings($param1 = '') {
         }
     /*About us*/
 
-
-
-
     /*Team*/
          public function team($id='')
         {
@@ -1651,20 +1649,19 @@ function system_settings($param1 = '') {
                 }
                 $page_data['page_title'] = "Team Members";
                 $page_data['page_name'] = 'team';
-                $page_data['team'] = $this->crud_model->get_team_info();
+                $page_data['team'] = $this->crud_model->get_team_info_with_clients();
                 if($this->input->post()){
                     $input=$this->input->post();
                     $input_data=array(
-                        'name'=>$input['question'],
                         'review'=>$input['answer'],
-                        'theme_type'=>$input['theme']
+                        'user_id'=>$input['theme']
 
                     );
                    if($id==''){
                     $res=$this->crud_model->saving_insert_details('teams',$input_data);
                     if($res>0){
                         $this->session->set_flashdata('success_message',"team Saved Successfully");
-                        move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/team/". $res.'.jpg');
+                        move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/team2/". $res.'.jpg');
 
                     }else{
                         $this->session->set_flashdata('error_message',"team Not Saved");

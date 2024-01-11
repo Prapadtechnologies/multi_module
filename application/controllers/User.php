@@ -26,6 +26,12 @@ class User extends CI_Controller
             redirect(base_url() . 'u_dashboard', 'refresh');
         }
     }
+    /*public function board()
+    {
+       $page_data['page_title'] = 'Dashboard';
+        $page_data['page_name'] = 'dashboard';
+        $this->load->view('backend/index', $page_data);
+    }*/
     public function dashboard(){
         if($this->session->userdata('role_id')!=2){
         redirect('error_404');
@@ -270,6 +276,143 @@ if ($this->form_validation->run() == TRUE) {
        
         $this->load->view('backend/index', $page_data);
     }
+
+    public function faqs($id = '')
+    {
+    if ($this->session->userdata('role_id') != 2) {
+        redirect('error_404');
+    }
+
+    if ($id != '') {
+        $id = base64_decode($id);
+        $page_data['edit_data'] = $this->crud_model->get_single_faq_info($id);
+    } else {
+        $page_data['edit_data'] = '';
+    }
+
+    $page_data['page_title'] = "FAQ's";
+    $page_data['page_name'] = 'faqs';
+    $page_data['faqs'] = $this->crud_model->get_faqs_info_with_clients();
+
+    if ($this->input->post()) {
+        $input = $this->input->post();
+        $input_data = array(
+            'question' => $input['question'],
+            'answer' => $input['answer'],
+            'user_id' => $input['client_id']
+        );
+
+        if ($id == '') {
+            $res = $this->crud_model->saving_insert_details('faqs', $input_data);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "FAQ's Saved Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "FAQ's Not Saved");
+            }
+        } elseif ($id != '') {
+            $where['id'] = $id;
+            $res = $this->crud_model->update_operation($input_data, 'faqs', $where);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "FAQ's Updated Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "FAQ's Not Updated");
+            }
+        }
+        redirect('u_faqs');
+    }
+
+    $this->load->view('backend/index', $page_data);
+    }
+    public function team($id='')
+        {
+                if($this->session->userdata('role_id')!=2)
+            {
+                redirect('error_404');
+            }
+            if($id!='')
+            {
+                    $id=base64_decode($id);
+                    $page_data['edit_data']=$this->crud_model->get_single_team_info($id);
+            }else{
+                    $page_data['edit_data']='';
+                }
+                $page_data['page_title'] = "Team Members";
+                $page_data['page_name'] = 'team';
+                $page_data['team'] = $this->crud_model->get_team_info_with_clients();
+                if($this->input->post()){
+                    $input=$this->input->post();
+                    $input_data=array(
+                        'review'=>$input['answer'],
+                        'user_id'=>$input['theme']
+
+                    );
+                   if($id==''){
+                    $res=$this->crud_model->saving_insert_details('teams',$input_data);
+                    if($res>0){
+                        $this->session->set_flashdata('success_message',"team Saved Successfully");
+                        move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/team2/". $res.'.jpg');
+
+                    }else{
+                        $this->session->set_flashdata('error_message',"team Not Saved");
+                    }
+                }elseif($id!=''){
+                        $where['id']=$id;
+                        $res=$this->crud_model->update_operation($input_data,'team',$where);
+                    if($res>0){
+                        $this->session->set_flashdata('success_message',"team Updated Successfully");
+                    }else{
+                        $this->session->set_flashdata('error_message',"team Not Updated");
+                    }
+                    }
+                    redirect('team');
+                }
+                $this->load->view('backend/index', $page_data);
+        }
+         public function testomonial($id = '')
+        {
+            if($this->session->userdata('role_id')!=2)
+            {
+            redirect('error_404');
+            }
+            if($id!=''){
+                $id=base64_decode($id);
+                $page_data['edit_data']=$this->crud_model->get_single_testomonial_info($id);
+            }else{
+                $page_data['edit_data']='';
+            }
+            $page_data['page_title'] = "Testomonial's";
+            $page_data['page_name'] = 'testomonial';
+            $page_data['testomonial'] = $this->crud_model->get_testomonial_info_with_clients();
+            
+            if($this->input->post())
+            {
+                $input=$this->input->post();
+                $input_data=array(
+                    'review'=>$input['client'],
+                    'user_id'=>$input['client_id']
+
+                );
+               if($id==''){
+                    $res=$this->crud_model->saving_insert_details('testomonial',$input_data);
+                    if($res>0){
+                        $this->session->set_flashdata('success_message',"testomonial's Saved Successfully");
+                    }else{
+                    $this->session->set_flashdata('error_message',"testomonial's Not Saved");
+                    }
+                }elseif($id!=''){
+                    $where['id']=$id;
+                    $res=$this->crud_model->update_operation($input_data,'testomonial',$where);
+                    if($res>0){
+                        $this->session->set_flashdata('success_message',"testomonial's Updated Successfully");
+                    }else{
+                        $this->session->set_flashdata('error_message',"testomonial's Not Updated");
+                    }
+                }
+                redirect('testomonial');
+            }
+            $this->load->view('backend/index', $page_data);
+        }
+
 
 }
 ?>

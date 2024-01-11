@@ -392,6 +392,8 @@ if($this->session->userdata('role_id')=='1'){
                                         </a>                        
                                     </li>
 
+
+
                                    
                                    <li class="<?php if($page_name=='support'){echo 'nav-active';}?>">
                                         <a class="nav-link" href="<?=base_url('support')?>">
@@ -405,6 +407,40 @@ if($this->session->userdata('role_id')=='1'){
                                             <span>Videos</span>
                                         </a>                        
                                     </li>
+                                    <!-- Settings -->
+                                    <li class="nav-parent <?php if($page_name=='settings' || $page_name=='faqs' || $page_name=='testomonial'){echo 'nav-expanded nav-active';}?>">
+                                        <a class="nav-link" href="#">
+                                            <i class="fas fa-table" aria-hidden="true"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                        <ul class="nav nav-children">
+                                            
+                                            <li class="<?php if($page_name=='client_faq'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('u_faqs')?>">
+                                                    FAQ's
+                                                </a>
+                                            </li>
+                                            <!-- Extra Added -->
+                                           
+                                            <li class="<?php if($page_name=='team'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('u_team')?>">
+                                                    Team
+                                                </a>
+                                            </li>
+                                             <li class="<?php if($page_name=='testomonial'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('u_testomonial')?>">
+                                                    Testomonial
+                                                </a>
+                                            </li>
+                                            
+                                            
+                                            <!-- Extra Added -->
+                                            
+                                        </ul>
+                                    </li>
+                                    <!-- Settings -->
+
+
                                 <?php }?>
 
 

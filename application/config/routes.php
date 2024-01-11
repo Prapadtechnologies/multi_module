@@ -227,6 +227,13 @@ $route['food']='home/food';
 $route['grocery']='home/grocery';
 $route['ecomecers']='home/ecomecers';
 $route['real']='home/real';
-$route['login_user']='home/login_user';
+$route['select_client']='home/select_client';
+
+$route['u_faqs'] = 'user/faqs';
+$route['u_team'] = 'user/team';
+$route['u_testomonial'] = 'user/testomonial';
+
+/*$route['login_user']='home/login_user';
 $route['register_user']='home/register_user';
-$route['client']='home/client';
+$route['client']='home/client';*/
+/*$route['board']='user/board';*/

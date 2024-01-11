@@ -10,7 +10,7 @@
                                                     <div class="custom-file">
                                                         <input type="file" class="form-control custom-file-input" id="sapaper" name="img" required="">
                                                         <label class="custom-file-label" for="sapaper">Choose file</label>
-                                                  </div>
+                                                  </div>    
                                                   <?php 
                                                             if($this->session->flashdata('img_error')!=''){echo '
                                                             <div class="error">'.$this->session->flashdata('img_error').'</div>';}?>
@@ -20,25 +20,21 @@
                                             </div>
                                            
                                             <div class="form-group row">
-                                                <label class="col-sm-4 control-label text-sm-right pt-2" placeholder="">Name: </label>
-                                                <div class="col-sm-6">
-                                                    <input type="text" name="name" class="form-control" required="" value="<?=set_value('name');?>">
-                                                    <?php echo form_error('name', '<div class="error">', '</div>'); ?>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label class="col-sm-4 control-label text-sm-right pt-2" placeholder="">Theme: </label>
-                                                <div class="col-sm-6">
-                                                    <select  name="theme_type" class="form-control" required="" value="<?=set_value('author');?>">
-                                                        <option>Select Theme</option>
-                                                    <option value="1">Food</option>
-                                                    <option value="2">Grocery</option>
-                                                    <option value="3">Ecomercers</option>
-                                                    <option value="4">Real Estate</option>
-                                                    </select>
-                                                    <?php echo form_error('author', '<div class="error">', '</div>'); ?>
-                                                </div>
                                                 
+                                                <label class="col-sm-4 control-label text-sm-right pt-2">Select Client: </label>
+                                                <div class="col-sm-5">
+
+                                                    <select name="theme" class="form-control" required>
+                                                     <option>Select Client</option>
+                                                        <?php
+                                                            $client=$this->crud_model->get_client_info();
+                                                            foreach ($client as $row) {
+                                                            echo '<option value="' . $row['id'] . '">' . $row['first_name'] . '</option>';
+                                                        }
+                                                        ?>
+                                                </select>
+                                                
+                                                </div>
                                             </div>
                                             
                                             <div class="form-group row">

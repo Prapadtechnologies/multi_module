@@ -16,24 +16,20 @@ if($edit_data!=''){
                                         <form method="post" action="<?=base_url().$form_url;?>" enctype="multipart/form-data" novalidate="novalidate" class="form-horizontal" id="form">
                                             <div class="form-group row">
                                                 
-                                                <label class="col-sm-4 control-label text-sm-right pt-2">Select Theme: </label>
+                                                <label class="col-sm-4 control-label text-sm-right pt-2">Select Client: </label>
                                                 <div class="col-sm-5">
                                                     <select name="theme" class="form-control" required>
-                                                    <option>Select Theme</option>
-                                                    <option value="1">Food</option>
-                                                    <option value="2">Grocery</option>
-                                                    <option value="3">Ecomercers</option>
-                                                    <option value="4">Real Estate</option>
+                                                     <option>Select Client</option>
+                                                        <?php
+                                                            $client=$this->crud_model->get_client_info();
+                                                            foreach ($client as $row) {
+                                                            echo '<option value="' . $row['id'] . '">' . $row['first_name'] . '</option>';
+                                                        }
+                                                        ?>
                                                 </select>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-                                                
-                                                <label class="col-sm-4 control-label text-sm-right pt-2">Client Name: </label>
-                                                <div class="col-sm-5">
-                                                    <input type="text" name="name" class="form-control" required="" value="<?=$name;?>">
-                                                </div>
-                                            </div>
+                                            
                                             <div class="form-group row">
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Client Review: </label>
                                                 <div class="col-sm-5">
@@ -71,7 +67,7 @@ if($edit_data!=''){
                                                     ?>
                                                 <tr>
                                                     <td><?=$i+1;?></td>
-                                                    <td><?=$row['name'];?></td>
+                                                    <td><?=$row['first_name'];?></td>
                                                     <td><?=$row['review'];?></td>
                                                     <td>
                                                        <a href="<?=base_url('testomonial/').base64_encode($row['id']);?>" class=" mr-2  text-primary">

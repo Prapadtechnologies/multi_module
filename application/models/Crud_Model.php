@@ -910,15 +910,41 @@ return $rating;
         
     public function get_faqs_info_with_clients()
     {
-        $this->db->select('faqs.*, client.name as client_name, client.theme_type');
+        $this->db->select('faqs.*, users.first_name as first_name, users.theme_type');
         $this->db->from('faqs');
-        $this->db->join('client', 'client.id = faqs.client_id', 'left'); 
+        $this->db->join('users', 'users.id = faqs.user_id', 'left'); 
 
         $query = $this->db->get();
         return $query->result_array();
     }
 
+    public function get_team_info_with_clients()
+    {
+        $this->db->select('teams.*, users.first_name as first_name, users.theme_type, users.id as u_id');
+        $this->db->from('teams');
+        $this->db->join('users', 'users.id = teams.user_id', 'left'); 
 
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+    public function get_testomonial_info_with_clients()
+    {
+        $this->db->select('testomonial.*, users.first_name as first_name, users.theme_type');
+        $this->db->from('testomonial');
+        $this->db->join('users', 'users.id = testomonial.user_id', 'left'); 
+
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+    public function get_banner_info_with_clients()
+    {
+        $this->db->select('banner.*, users.first_name as first_name, users.theme_type,users.id as u_id');
+        $this->db->from('banner');
+        $this->db->join('users', 'users.id = banner.user_id', 'left'); 
+
+        $query = $this->db->get();
+        return $query->result_array();
+    }
 
 
 
@@ -952,9 +978,9 @@ return $rating;
         return $query->result_array();
     }*/
     public function get_client_by_id($client_id) {
-    $this->db->select('client.*');
-    $this->db->from('client');
-    $this->db->where('client.id', $client_id);
+    $this->db->select('users.*');
+    $this->db->from('users');
+    $this->db->where('users.id', $client_id);
     
     $query = $this->db->get();
     return $query->row_array();
@@ -987,12 +1013,30 @@ return $rating;
     function get_shopimages_info(){
         return $this->db->order_by('id','DESC')->get_where('banner',array('row_status !='=>0))->result_array();
     }
-    public function get_shopimages_theme_type($theme_type) {
+    /*public function get_shopimages_theme_type($theme_type) {
 
     $query = $this->db->query("SELECT * FROM banner WHERE theme_type = $theme_type");
     return $query->result_array();
+    }*/
+    public function get_shopimages_theme_type($theme_type) {
+    $this->db->select('banner.*, users.theme_type as user_theme_type');
+    $this->db->from('banner');
+    $this->db->join('users', 'users.id = banner.user_id', 'left');
+    $this->db->where('users.theme_type', $theme_type);
+
+    $query = $this->db->get();
+    return $query->result_array();
+}
+    public function get_team_theme_type($theme_type) {
+        $this->db->select('teams.*, users.theme_type as user_theme_type');
+        $this->db->from('teams');
+        $this->db->join('users', 'users.id = teams.user_id', 'left'); // Corrected join condition
+
+        $query = $this->db->get();
+        return $query->result_array();
     }
-    
+
+
 
 
     function get_single_aboutus_info($id){
@@ -1038,16 +1082,16 @@ return $rating;
     }
     // clients
     function get_single_client_info($id){
-        return $this->db->get_where('client',array('id'=>$id))->row_array();
+        return $this->db->get_where('users',array('id'=>$id))->row_array();
     }
     function get_client_info(){
-        return $this->db->order_by('id','DESC')->get_where('client',array('row_status'=>1))->result_array();
+        return $this->db->order_by('id','DESC')->get_where('users',array('row_status'=>3))->result_array();
     }
     public function get_theme_type_by_client_id($client_id)
     {
     $this->db->select('theme_type');
     $this->db->where('id', $client_id);
-    $query = $this->db->get('client');
+    $query = $this->db->get('users');
 
     if ($query->num_rows() > 0) {
         $result = $query->row_array();
@@ -1056,9 +1100,13 @@ return $rating;
 
     return false;
     }
+    // Added img for nav
+    // Add this function in the crud_model.php file
+    public function get_nav_img($user_id) {
 
-
-    
-}
+    $query = $this->db->query("SELECT * FROM users WHERE id = $user_id");
+    return $query->result_array();
+    }
+}   
 
 ?>

@@ -18,15 +18,17 @@ if($edit_data!=''){
                                                 
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Select Client: </label>
                                                 <div class="col-sm-5">
+
                                                     <select name="theme" class="form-control" required>
                                                      <option>Select Client</option>
                                                         <?php
                                                             $client=$this->crud_model->get_client_info();
                                                             foreach ($client as $row) {
-                                                            echo '<option value="' . $row['id'] . '">' . $row['name'] . '</option>';
+                                                            echo '<option value="' . $row['id'] . '">' . $row['first_name'] . '</option>';
                                                         }
                                                         ?>
                                                 </select>
+                                                
                                                 </div>
                                             </div>
                                             <div class="form-group row">
@@ -77,7 +79,7 @@ if($edit_data!=''){
                                                     <td><?=$i+1;?></td>
                                                     <td><?=$row['question'];?></td>
                                                     <td><?=$row['answer'];?></td>
-                                                    <td><?=$row['client_name'];?></td>
+                                                    <td><?=$row['first_name'];?></td>
                                                     
                                                     <td>
                                                        <a href="<?=base_url('faqs/').base64_encode($row['id']);?>" class=" mr-2  text-primary">

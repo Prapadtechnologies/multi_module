@@ -218,6 +218,7 @@
                             <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
                                 <span class="name"><?=$login_user_details['first_name'];?> </span>
                                 <span class="role"><?=$login_role_details['role'];?></span>
+                                <span class="role"><?=$login_role_details['email'];?></span>
                             </div>
             
                             <i class="fa custom-caret"></i>

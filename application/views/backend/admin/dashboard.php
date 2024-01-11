@@ -103,7 +103,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-12">
+                        <!-- <div class="col-xl-12">
                             <section class="card">
                                 <header class="card-header card-header-transparent">
                                     <div class="card-actions">
@@ -215,3 +215,4 @@
                         </div>
 </div>
 
+ -->

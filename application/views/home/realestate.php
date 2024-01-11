@@ -1,5 +1,5 @@
 <!-- Carousel Start -->
-<div class="container-fluid p-0">
+<!-- <div id="home" class="container-fluid p-0">
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php
@@ -10,6 +10,40 @@
             ?>
                 <div class="carousel-item <?= $active_class; ?>">
                     <img class="w-100" src="<?= base_url('uploads/banner/' . $book['id'] . '.jpg'); ?>" alt="Image">
+                    <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
+                        <div class="text-start p-5" style="max-width: 900px;">
+                            
+                            <a href="<?= base_url('addshopitem'); ?>" class="btn btn-primary py-md-3 px-md-5 me-3" style="margin-left: 250px;">Order</a>
+                        </div>
+                    </div>
+                </div>
+            <?php
+                $i++;
+            }
+            ?>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+ -->
+ <div id="home" class="container-fluid p-0">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <?php
+            $shopbooks = $this->crud_model->get_shopimages_theme_type(4); 
+            $i = 0;
+            foreach ($shopbooks as $book) {
+                $active_class = ($i == 0) ? 'active' : ''; 
+            ?>
+                <div class="carousel-item <?= $active_class; ?>">
+                    <img class="w-100" src="<?= base_url('uploads/wrapper/' . $book['id'] . '.jpg'); ?>" alt="Image">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
                         <div class="text-start p-5" style="max-width: 900px;">
                             <!-- Additional carousel content here -->
@@ -104,28 +138,30 @@
 
         <!-- Testimonial Start -->
     <div class="container-fluid bg-testimonial-gro py-5 my-5">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="owl-carousel testimonial-carousel p-5">
-                          <?php
-                    $testomonial = $this->crud_model->get_testomonial_info_by_theme_type(4);
-
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="owl-carousel testimonial-carousel p-5">
+                    
+                    <?php
+                    $testomonial = $this->crud_model->get_testomonial_info_with_clients();
                     foreach ($testomonial as $row) {
-                    ?>
-                        <div class="testimonial-item text-center text-dark">
+                        if ($row['theme_type'] == 4) {
+                            ?>
+                            <div class="testimonial-item text-center text-dark">
                             <p class="fs-5"><?= $row['review']; ?></p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-dark mb-0"><?= $row['name']; ?></h4>
+                            <h4 class="text-dark mb-0"><?= $row['first_name']; ?></h4>
                         </div>
-                    <?php
+                            <?php
+                        }
                     }
                     ?>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- Testimonial End -->
 
    
@@ -235,19 +271,27 @@
             <div class="col-lg-7">
                 <div class="owl-carousel testimonial-carousel p-5">
                     <?php
-                    $teams = $this->crud_model->get_team_by_theme(4);
+                    $teams = $this->crud_model->get_team_info_with_clients();
                     foreach ($teams as $row) {
-                        ?>
-                        <div class="testimonial-item text-center text-white">
-                            <?php
-                            $image_path = base_url('uploads/team/') . $row['id'] . '.jpg';
+                        if ($row['theme_type'] == 4) {
                             ?>
-                            <img class="img-fluid mx-auto p-2 border border-5 rounded-circle mb-4" src="<?= $image_path ?>" alt="">
-                            <p class="fs-5"><?= $row['name']; ?></p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0"><?= $row['review']; ?></h4>
-                        </div>
-                        <?php
+                            <div class="testimonial-item text-center text-white">
+                                <?php
+                                $image_path = base_url('uploads/team2/') . $row['id'] . '.jpg';
+                                /*echo "<p>File Path: $image_path</p>"; */
+                                
+                                ?>
+                                <img class="img-fluid mx-auto p-2 border border-5 rounded-circle mb-4" src="<?= $image_path ?>" alt="">
+                                <p class="fs-5"><?= $row['name']; ?></p>
+                                <hr class="mx-auto w-25">
+                                <h4 class="text-white mb-0"><?= $row['review']; ?></h4>
+                                 <!-- <p><?= $row['id']; ?></p> -->
+                               
+
+
+                            </div>
+                            <?php
+                        }
                     }
                     ?>
                 </div>

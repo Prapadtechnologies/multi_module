@@ -12,21 +12,23 @@
                                                     <th>SNo</th>
                                                     <th>Image</th>
                                                     <th>Name</th>
-                                                    
+                                                    <th>Theme</th>
+
                                                      <th>Actions</th>
 
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <?php
-                                        $shop=$this->crud_model->get_shopimages_info();
+                                        $shop=$this->crud_model->get_banner_info_with_clients();
                                         $i=0;
                                         foreach ($shop as $row) {
                                                 ?>
                                                 <tr>
                                                     <td><?=$i+1;?></td>
                                                     <td><?=$row['id'].'jpg';?></td>
-                                                    <td><?=$row['name'];?></td>
+                                                    <td><?=$row['first_name'];?></td>
+                                                    <td><?=$row['theme_type'];?></td>
                                                   
                                                     <td>
                                                         <a href="#" class="mr-2  text-danger" onclick="return delete_row('<?=base_url('set_row_status/').'banner/id/'.$row['id'].'/0';?>');">

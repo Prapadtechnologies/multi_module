@@ -47,13 +47,7 @@
     include_once('script.php');
     ?>
     <!-- JavaScript Libraries -->
-    $(document).ready(function() {
-    if (window.location.hash) {
-        $('html, body').animate({
-            scrollTop: $(window.location.hash).offset().top
-        }, 1000);
-    }
-});
+    
   <script>
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll('.navbar-nav a');

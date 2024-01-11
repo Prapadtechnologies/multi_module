@@ -18,66 +18,89 @@ class Home extends CI_Controller {
         $this->login_id = $this->session->userdata('login_id');
         
     }
-     public function index()
+     /*public function index()
     {
         
         $this->load->view('backend/client_login');           
-    }
-	    public function login_user()
-{
-    if ($this->input->post()) {
-        $email = $this->input->post('email');
-        $password = $this->input->post('password'); 
+    }*/
+	/*public function login_user()
+	{
+	    if ($this->input->post()) {
+	        $email = $this->input->post('email');
+	        $password = $this->input->post('password'); 
 
-        if (!empty($email) && !empty($password)) {
-            
-            $hashed_password = hash('sha256', $password);
+	        if (!empty($email) && !empty($password)) {
+	            
+	            $hashed_password = hash('sha256', $password);
 
-            $res = $this->crud_model->get_client_by_email($email);
+	            $res = $this->crud_model->get_client_by_email($email);
 
-            if (!empty($res) && hash_equals($res['password'], $hashed_password)) {
-                
-                $this->session->set_userdata('user_id', $res['id']);
+	            if (!empty($res) && hash_equals($res['password'], $hashed_password)) {
+	                
+	                $this->session->set_userdata('user_id', $res['id']);
 
-                // Redirect based on theme_type
-                switch ($res['theme_type']) {
-                    case 1:
-                        redirect('food');
-                        break;
-                    case 2:
-                        redirect('grocery');
-                        break;
-                    case 3:
-                        redirect('ecomecers');
-                        break;
-                    case 4:
-                        redirect('realestate');
-                        break;
-                   
+	                // Redirect based on theme_type
+	                switch ($res['theme_type']) {
+	                    case 1:
+	                        redirect('food');
+	                        break;
+	                    case 2:
+	                        redirect('grocery');
+	                        break;
+	                    case 3:
+	                        redirect('ecomecers');
+	                        break;
+	                    case 4:
+	                        redirect('realestate');
+	                        break;
+	                   
 
-                    default:
-                        redirect('home'); 
-                        break;
-                }
-            } else {
-                $this->session->set_flashdata('error_msg', 'Invalid Email/Password');
-            }
-        } else {
-            $this->session->set_flashdata('error_msg', 'Email and Password are required');
-        }
-        
-    }
-    $this->load->view('backend/client_login');
-}
+	                    default:
+	                        redirect('home'); 
+	                        break;
+	                }
+	            } else {
+	                $this->session->set_flashdata('error_msg', 'Invalid Email/Password');
+	            }
+	        } else {
+	            $this->session->set_flashdata('error_msg', 'Email and Password are required');
+	        }
+	        
+	    }
+	    $this->load->view('backend/client_login');
+	}
+*/
 
 
 
-
-    public function client()
+    public function index()
 	{
 		$data['page_name']='home';
 		$this->load->view('home/home');
 	}
+	/*Added*/
+	// Home.php
+/*public function select_client($clientId)
+{
+    $this->session->set_userdata('selected_client_id', $clientId);
+    redirect('home');
+}
+*/
+
+
+
+	
+/*	public function index()
+{
+    $page_data['clients'] = $this->crud_model->get_client_info();
+    $page_data['home'] = $this->crud_model->get_team_info_with_clients();
+    
+    
+    $data['page_name'] = 'home/home';
+    $data['page_data'] = $page_data;
+
+    $this->load->view('home/index', $data);
+}*/
 
 	public function food()
 	{
@@ -127,28 +150,5 @@ class Home extends CI_Controller {
         $page_data['type'] = $type;
         $this->load->view('front/index', $page_data);
     }
-    /*Added*/
-	   public function open_page1($client_id)
-    {
-        /*$client_id = base64_decode($client_id);
-        $theme_type = $this->crud_model->get_theme_type_by_client_id($client_id);
-
-        switch ($theme_type) {
-            case 1:
-                
-                break;
-            case 2:
-                redirect('grocery');
-                break;
-            case 3:
-                redirect('ecommerce');
-                break;
-            // Add more cases for other theme types if needed
-            default:
-                redirect('default_page'); // Redirect to a default page if theme_type is not recognized
-                break;
-        }*/
-        echo "string";
-    }
-    /*Added*/     
+         
 }

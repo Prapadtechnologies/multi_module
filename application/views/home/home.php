@@ -40,15 +40,24 @@
                 <div class="row">
                     <?php 
                     $client = $this->crud_model->get_client_info();
+
                     $i = 0;
+                    $themeTypeNames = array(
+                        1 => 'Food',
+                        2 => 'Grocery',
+                        3 => 'Ecommerce',
+                        4 => 'Realestate'
+                    );
+
                     foreach ($client as $row) { ?>
                         <div class="col-md-4 mt-2">
-                            <a href="#" onclick="redirectToTheme(<?= $row['theme_type']; ?>, <?= $i; ?>)"><!-- Client <?= $i + 1; ?> -->
+                            <a href="#" onclick="redirectToTheme(<?= $row['theme_type']; ?>, <?= $i; ?>, '<?= $row['first_name']; ?>', '<?= $row['email']; ?>', '<?= $row['id']; ?>')">
                             <div class="client-details">
                                 <h1 class="mt-3"></h1>
-                                <p>Name: <?= $row['name']; ?></p>
-                                <p>Email: <?= $row['mail']; ?></p>
-                                <p>Theme Type: <?= $row['theme_type']; ?></p>
+                                <p>Name: <?= $row['first_name']; ?></p>
+                                <p>Email: <?= $row['email']; ?></p>
+                                <p>user table Id: <?= $row['id']; ?></p>
+                                <p>Theme Type: <?= $themeTypeNames[$row['theme_type']]; ?></p>
 
                             </div>
                         </a>
@@ -68,24 +77,28 @@
 
 </html>
 
-
 <script>
-    function redirectToTheme(themeType, clientId) {
+    function redirectToTheme(themeType, clientId, clientName, clientEmail) {
+        var url = '';
         switch (themeType) {
             case 1:
-                window.location.href = '<?= base_url('food'); ?>';
+                url = '<?= base_url('food'); ?>';
                 break;
             case 2:
-                window.location.href = '<?= base_url('grocery'); ?>';
+                url = '<?= base_url('grocery'); ?>';
                 break;
             case 3:
-                window.location.href = '<?= base_url('ecomecers'); ?>';
+                url = '<?= base_url('ecomecers'); ?>';
                 break;
             case 4:
-                window.location.href = '<?= base_url('real'); ?>';
+                url = '<?= base_url('real'); ?>';
                 break;
             default:
-               
         }
+
+        
+        url += '?id=' + clientId + '&first_name=' + encodeURIComponent(clientName) + '&email=' + encodeURIComponent(clientEmail);
+        
+        window.location.href = url;
     }
 </script>
