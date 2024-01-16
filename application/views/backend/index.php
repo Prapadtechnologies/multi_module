@@ -77,11 +77,11 @@ $system_title   = $this->db->get_where('settings', array('setting_type' => 'syst
                     </header>
 
                     <!-- start: page -->
-                    <?php if($this->session->flashdata('error_message')!=''){
+                    <!-- <?php if($this->session->flashdata('error_message')!=''){
                                         echo '<div class="alert alert-danger alert_message">'.$this->session->flashdata('error_message').'</div>';
                                     }elseif($this->session->flashdata('success_message')!=''){
                                         echo '<div class="alert alert-success alert_message">'.$this->session->flashdata('success_message').'</div>';
-                                    }?>
+                                    }?> -->
                     <?php 
                     include $folder.'/'.$page_name.'.php';
                     ?>

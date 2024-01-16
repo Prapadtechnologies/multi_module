@@ -27,20 +27,24 @@ if($this->session->userdata('role_id')=='1'){
                                     <li class="nav-parent <?php if($page_name=='mainuser' || $page_name=='addclient' || $page_name=='faileduser' || $page_name=='addplans' || $page_name=='trailuser' || $page_name=='feelingformal' || $page_name=='feedback'){echo 'nav-expanded nav-active';}?>">
                                         <a class="nav-link" href="#">
                                             <i class="fas fa-columns" aria-hidden="true"></i>
-                                            <span>Users</span>
+                                            <span>Clients</span>
                                         </a>
                                         <ul class="nav nav-children">
-                                            <li class="<?php if($page_name=='mainuser'){echo 'nav-active';}?>">
+                                            <!-- <li class="<?php if($page_name=='mainuser'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('mainuser')?>">
                                                     Main User Details
                                                 </a>
-                                            </li>
+                                            </li> -->
                                             <li class="<?php if($page_name=='addclient'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('addclient')?>">
-                                                    Add Users
+                                                    Add Clients
                                                 </a>
                                             </li>
-                                            
+                                            <!-- <li class="<?php if($page_name=='clientlist'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('clientlist')?>">
+                                                    Client List
+                                                </a>
+                                            </li> -->
                                             <li class="<?php if($page_name=='faileduser'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('faileduser')?>">
                                                     Failed Users(Failed)
@@ -49,7 +53,7 @@ if($this->session->userdata('role_id')=='1'){
                                             
                                             <li class="<?php if($page_name=='addplans'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('addplans')?>">
-                                                    Add Plans/Subjects(Main USer)
+                                                    Add Plans
                                                 </a>
                                             </li>
                                             <li class="<?php if($page_name=='trailuser'){echo 'nav-active';}?>">
@@ -57,17 +61,17 @@ if($this->session->userdata('role_id')=='1'){
                                                     Trial User Details
                                                 </a>
                                             </li>
-                                            <li class="<?php if($page_name=='feelingformal'){echo 'nav-active';}?>">
+                                            <!-- <li class="<?php if($page_name=='feelingformal'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('feelingformal')?>">
                                                    Feeling Formal
                                                 </a>
-                                            </li>
+                                            </li> -->
                                             
-                                            <li class="<?php if($page_name=='feedback'){echo 'nav-active';}?>">
+                                            <!-- <li class="<?php if($page_name=='feedback'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('feedback')?>">
                                                     Feed Back
                                                 </a>
-                                            </li>
+                                            </li> -->
                                     
                                         </ul>
                                     </li>
@@ -432,7 +436,11 @@ if($this->session->userdata('role_id')=='1'){
                                                     Testomonial
                                                 </a>
                                             </li>
-                                            
+                                            <li class="<?php if($page_name=='aboutus'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('u_aboutus')?>">
+                                                    Aboutus
+                                                </a>
+                                            </li>
                                             
                                             <!-- Extra Added -->
                                             

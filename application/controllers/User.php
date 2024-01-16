@@ -412,6 +412,49 @@ if ($this->form_validation->run() == TRUE) {
             }
             $this->load->view('backend/index', $page_data);
         }
+         /*Aboutus*/
+            public function aboutus()
+        {
+
+            if ($this->session->userdata('role_id') !=2 ) {
+                redirect('error_404');
+            }
+
+            if ($this->input->post()) {
+                $input = $this->input->post();
+               
+                $data['user_id'] = $input['theme'];
+                $data['description'] = $input['message'];
+
+                // Check if a record with the same theme_type already exists
+                $existing_record = $this->db->get_where('aboutus', array('theme_type' => $input['theme_type']))->row();
+                /*print_r($existing_record);*/
+                if ($existing_record) {
+                    // If a record exists, update it
+                    $this->crud_model->update_aboutus($input['theme_type'], $data, $file_name);
+                    $this->session->set_flashdata('success_message', "Aboutus Updated Successfully");
+                    $img_id=$existing_record->id;
+                } else {
+                    // If a record doesn't exist, insert a new one
+                    $img_id=$this->crud_model->insertabout($data, $file_name);
+                    $this->session->set_flashdata('success_message', "Aboutus Inserted Successfully");
+
+                }
+                /*echo $img_id;
+                die();*/
+                if ($img_id>0) {
+                    move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/about/". $img_id.'.jpg');
+
+                }
+                redirect($this->session->userdata('last_page'));
+            }
+
+            $page_data['page_title'] = 'About Us';
+            $page_data['page_name'] = 'aboutus';
+
+            $this->load->view('backend/index', $page_data);
+        }
+    /*About us*/
 
 
 }

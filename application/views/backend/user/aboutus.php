@@ -19,16 +19,8 @@ $this->session->set_userdata('last_page', current_url());
                                                     
                             <label class="col-sm-4 control-label text-sm-right pt-2">Select Client: </label>
                             <div class="col-sm-5">
-
-                                <select name="theme" class="form-control" required="" id="themeSelect">
-                                    <option>Select Client</option>
-                                        <?php
-                                            $client=$this->crud_model->get_client_info();
-                                            foreach ($client as $row) {
-                                                echo '<option value="' . $row['id'] . '">' . $row['first_name'] . '</option>';
-                                            }
-                                        ?>
-                                </select>
+                                    <input name="theme" type="text" class="form-control" id="themeSelect" value="<?=$login_user_details['first_name'];?>" readonly>
+                                
                                 <?php echo form_error('theme_type', '<div class="error">', '</div>'); ?>
                                                     
                             </div>
@@ -68,52 +60,7 @@ $this->session->set_userdata('last_page', current_url());
     </div>
 </div>
  <!--add books here-->
-                    <div class="row">
-                        <div class="col">
-                                <section class="card">
-                                    
-                                    <div class="card-body">
-                                        <table class="table table-bordered table-striped mb-0" id="addbookshere">
-                                            <thead>
-                                                <tr>
-                                                    <th>SNo</th>
-                                                    <th>Image</th>
-                                                    <th>Name</th>
-
-                                                    <th>Description</th>
-                                                    <th>Images</th>
-                                                     <th>Actions</th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php
-                                        $about=$this->crud_model->get_aboutus_info_with_clients();
-                                        $i=0;
-                                        foreach ($about as $row) {
-                                                ?>
-                                                <tr>
-                                                    <td><?=$i+1;?></td>
-                                                
-                                                     <td><?=$row['first_name'];?></td>
-                                                    <td><?=$row['description'];?></td>
-                                                        <td><img height="100px" width="150px" src="<?= base_url('uploads/about/' . $row['image']); ?>" alt="Image"></td>
-
-                                                    
-                                                    <td>
-                                                        <a href="#" class="mr-2  text-danger" onclick="return delete_row('<?=base_url('set_row_status/').'aboutus/id/'.$row['id'].'/0';?>');">
-                                                            <i class="far fa-trash-alt"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            <?php $i++;}?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-
+                  
 
 <script type="text/javascript" src="<?php echo base_url(); ?>/assets/vendor/ckeditor/ckeditor.js"></script>
 <script>

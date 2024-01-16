@@ -320,8 +320,8 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
         $this->load->view('backend/index', $page_data);
     }
     /*Clients*/
-        public function addclient($id = '')
-{
+    public function addclient($id = '')
+    {
     if ($this->session->userdata('role_id') != 1) {
         redirect('error_404');
     }
@@ -339,10 +339,10 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
 
     // Set validation rules
     $this->form_validation->set_rules('name', 'Name', 'required');
-    $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[client.email]');
+    $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[users.email]');
     $this->form_validation->set_rules('theme', 'Theme Type', 'required');
 
-    if ($this->form_validation->run() === True) {
+    if ($this->form_validation->run() === TRUE) {
         $input = $this->input->post();
         $input_data = array(
             'first_name' => $input['name'],
@@ -352,10 +352,13 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
             'role_id'=>$input['role_id'],
             'mobile'=>$input['mobile']
         );
-
+        
+         /*print_r($input_data);
+            die();*/
         if ($id == '') {
             $res = $this->crud_model->saving_insert_details('users', $input_data);
             move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/client/". $res.'.jpg');
+            move_uploaded_file($_FILES["logo"]["tmp_name"], "uploads/logo/". $res.'.png');
             /*print_r($input_data);
             die();*/
             if ($res > 0) {
@@ -365,7 +368,7 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
             }
         } elseif ($id != '') {
             $where['id'] = $id;
-            $res = $this->crud_model->update_operation($input_data, 'client', $where);
+            $res = $this->crud_model->update_operation($input_data, 'users', $where);
             if ($res > 0) {
                 $this->session->set_flashdata('success_message', "Client Updated Successfully");
             } else {
@@ -376,7 +379,9 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
         redirect('addclient');
         
        
-    } else {
+    } 
+
+    else {
          $this->load->view('backend/index', $page_data);
 
         
@@ -1539,6 +1544,23 @@ function system_settings($param1 = '') {
     }
 
 
+    /*public function delete_operation($id)
+    {
+       
+
+        if ($this->session->userdata('role_id') != 1) {
+            redirect('error_404');
+        }
+        $where['id'] = $id;
+            $res = $this->crud_model->delete_operation('faqs', $where);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "FAQ's Deleted Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "FAQ's Not Deleted");
+            }
+            redirect('faqs');   
+    }
+*/
     /*testomonial*/
         public function testomonial($id = '')
         {
@@ -1560,13 +1582,15 @@ function system_settings($param1 = '') {
             {
                 $input=$this->input->post();
                 $input_data=array(
+                    'review'=>$input['review'],
                     'name'=>$input['name'],
-                    'review'=>$input['client'],
                     'user_id'=>$input['theme']
 
                 );
                if($id==''){
                     $res=$this->crud_model->saving_insert_details('testomonial',$input_data);
+                    move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/testomonial/". $res.'.jpg');
+
                     if($res>0){
                         $this->session->set_flashdata('success_message',"testomonial's Saved Successfully");
                     }else{
@@ -1591,47 +1615,65 @@ function system_settings($param1 = '') {
 
 
     /*Aboutus*/
-            public function aboutus()
-        {
+    public function aboutus()
+{
+    if ($this->session->userdata('role_id') != 1) {
+        redirect('error_404');
+    }
 
-            if ($this->session->userdata('role_id') != 1) {
-                redirect('error_404');
-            }
+    if ($this->input->post()) {
+        $input = $this->input->post();
 
-            if ($this->input->post()) {
-                $input = $this->input->post();
-               
-                $data['user_id'] = $input['theme'];
-                $data['description'] = $input['message'];
+        $data['user_id'] = $input['theme'];
+        $data['description'] = $input['message'];
 
-                // Check if a record with the same theme_type already exists
-                $existing_record = $this->db->get_where('aboutus', array('theme_type' => $input['theme_type']))->row();
-                /*print_r($existing_record);*/
-                if ($existing_record) {
-                    // If a record exists, update it
-                    $this->crud_model->update_aboutus($input['theme_type'], $data, $file_name);
-                    $this->session->set_flashdata('success_message', "Aboutus Updated Successfully");
-                    $img_id=$existing_record->id;
-                } else {
-                    // If a record doesn't exist, insert a new one
-                    $img_id=$this->crud_model->insertabout($data, $file_name);
-                    $this->session->set_flashdata('success_message', "Aboutus Inserted Successfully");
+        // Check if a file is uploaded
+        if (!empty($_FILES['img']['name'])) {
+            // File upload configuration
+            $config['upload_path']   = './uploads/about/';
+            $config['allowed_types'] = 'jpg';
+            $config['max_size']      = 1024; // 1 MB
 
-                }
-                /*echo $img_id;
-                die();*/
-                if ($img_id>0) {
-                    move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/about/". $img_id.'.jpg');
+            $this->load->library('upload', $config);
 
-                }
+            if ($this->upload->do_upload('img')) {
+                $data['image'] = $this->upload->data('file_name');
+            } else {
+                // File upload error
+                $this->session->set_flashdata('img_error', $this->upload->display_errors());
                 redirect($this->session->userdata('last_page'));
             }
-
-            $page_data['page_title'] = 'About Us';
-            $page_data['page_name'] = 'aboutus';
-
-            $this->load->view('backend/index', $page_data);
         }
+
+        // Check if a record with the same theme_type already exists
+        $existing_record = $this->db->get_where('aboutus', array('user_id' => $input['theme']))->row();
+
+        if ($existing_record) {
+            // If a record exists, update it
+            $this->crud_model->update_aboutus($input['theme'], $data);
+            $this->session->set_flashdata('success_message', "Aboutus Updated Successfully");
+            $img_id = $existing_record->id;
+        } else {
+            // If a record doesn't exist, insert a new one
+            $img_id = $this->crud_model->insertabout($data);
+            $this->session->set_flashdata('success_message', "Aboutus Inserted Successfully");
+        }
+
+        if ($img_id > 0) {
+            // Move the uploaded file to the destination
+            move_uploaded_file($_FILES["img"]["tmp_name"], $config['upload_path'] . $data['image']);
+        }
+
+        redirect($this->session->userdata('last_page'));
+    }
+
+    $page_data['page_title'] = 'About Us';
+    $page_data['page_name'] = 'aboutus';
+
+    $this->load->view('backend/index', $page_data);
+}
+
+
     /*About us*/
 
     /*Team*/
@@ -1654,7 +1696,7 @@ function system_settings($param1 = '') {
                 if($this->input->post()){
                     $input=$this->input->post();
                     $input_data=array(
-                        'review'=>$input['answer'],
+                        'review'=>$input['review'],
                         'user_id'=>$input['theme']
 
                     );
@@ -1669,7 +1711,7 @@ function system_settings($param1 = '') {
                     }
                 }elseif($id!=''){
                         $where['id']=$id;
-                        $res=$this->crud_model->update_operation($input_data,'team',$where);
+                        $res=$this->crud_model->update_operation($input_data,'teams',$where);
                     if($res>0){
                         $this->session->set_flashdata('success_message',"team Updated Successfully");
                     }else{

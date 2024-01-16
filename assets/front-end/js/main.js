@@ -319,6 +319,13 @@
             delay: 15,
             time: 5500,
         });
+        
+
+        // Counter
+        $(".count").counterUp({
+            delay: 15,
+            time: 5500,
+        });
 
         // Popup Gallery
 		$('.popup-btn').magnificPopup({

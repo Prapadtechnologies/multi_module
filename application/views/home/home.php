@@ -36,7 +36,7 @@
             <div class="card-header">
             </div>
             <div class="card-body">
-                <h1 class="text-center mt-5 mb-5" >Client details</h1>
+                
                 <div class="row">
                     <?php 
                     $client = $this->crud_model->get_client_info();
@@ -51,12 +51,12 @@
 
                     foreach ($client as $row) { ?>
                         <div class="col-md-4 mt-2">
-                            <a href="#" onclick="redirectToTheme(<?= $row['theme_type']; ?>, <?= $i; ?>, '<?= $row['first_name']; ?>', '<?= $row['email']; ?>', '<?= $row['id']; ?>')">
+                             <a href="#" onclick="redirectToTheme(<?= $row['theme_type']; ?>, <?= $row['id']; ?>, '<?= $row['first_name']; ?>', '<?= $row['email']; ?>')">
                             <div class="client-details">
                                 <h1 class="mt-3"></h1>
                                 <p>Name: <?= $row['first_name']; ?></p>
                                 <p>Email: <?= $row['email']; ?></p>
-                                <p>user table Id: <?= $row['id']; ?></p>
+                                <!-- <p>user table Id: <?= $row['id']; ?></p> -->
                                 <p>Theme Type: <?= $themeTypeNames[$row['theme_type']]; ?></p>
 
                             </div>
@@ -68,7 +68,7 @@
         </section>
     </div>
 </div>
-                
+
 <?php
     include_once('layouts/script.php');
     ?>
@@ -79,27 +79,52 @@
 </html>
 
 <script>
-    function redirectToTheme(themeType, clientId, clientName, clientEmail) {
-        var url = '';
-        switch (themeType) {
-            case 1:
-                url = '<?= base_url('food'); ?>';
-                break;
-            case 2:
-                url = '<?= base_url('grocery'); ?>';
-                break;
-            case 3:
-                url = '<?= base_url('ecomecers'); ?>';
-                break;
-            case 4:
-                url = '<?= base_url('real'); ?>';
-                break;
-            default:
-        }
-
-        
-        url += '?id=' + clientId + '&first_name=' + encodeURIComponent(clientName) + '&email=' + encodeURIComponent(clientEmail);
+    function redirectToTheme(themeType, clientId) {
+    var url = '';
+    switch (themeType) {
+        case 1:
+            url = '<?= base_url('food'); ?>';
+            break;
+        case 2:
+            url = '<?= base_url('grocery'); ?>';
+            break;
+        case 3:
+            url = '<?= base_url('ecomecers'); ?>';
+            break;
+        case 4:
+            url = '<?= base_url('real'); ?>';
+            break;
+        default:
+    }
+    
+    url += '?id=' + clientId;
         
         window.location.href = url;
     }
 </script>
+ 
+ <!-- <script>
+    function redirectToTheme(themeType, clientId, clientName, clientEmail) {
+    var url = '';
+    switch (themeType) {
+        case 1:
+            url = '<?= base_url('food'); ?>';
+            break;
+        case 2:
+            url = '<?= base_url('grocery'); ?>';
+            break;
+        case 3:
+            url = '<?= base_url('ecomecers'); ?>';
+            break;
+        case 4:
+            url = '<?= base_url('real'); ?>';
+            break;
+        default:
+    }
+    
+    url += '?id=' + clientId + '&first_name=' + encodeURIComponent(clientName) + '&email=' + encodeURIComponent(clientEmail);
+        
+        window.location.href = url;
+    }
+</script>
+  -->

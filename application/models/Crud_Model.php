@@ -489,7 +489,9 @@ function generateUniqueUserId($course_id) {
 
     function get_single_faq_info($id){
         return $this->db->get_where('faqs',array('id'=>$id))->row_array();
+
     }
+
     function get_blog_info(){
         return $this->db->order_by('id','DESC')->get_where('blog',array('row_status'=>1))->result_array();
     }
@@ -570,6 +572,10 @@ function generateUniqueUserId($course_id) {
 function update_operation($inputdata,$table, $where)
     {
         return $this->db->where($where)->update($table,$inputdata);
+    }
+    function delete_operation($table, $where)
+    {
+        return $this->db->where($where)->delete($table);
     }
     /*function update_operation( $inputdata, $table, $where ){
         $result  = $this->db->update($table,$inputdata, $where);
@@ -913,6 +919,7 @@ return $rating;
         $this->db->select('faqs.*, users.first_name as first_name, users.theme_type');
         $this->db->from('faqs');
         $this->db->join('users', 'users.id = faqs.user_id', 'left'); 
+        $this->db->where('faqs.row_status', 1);
 
         $query = $this->db->get();
         return $query->result_array();
@@ -922,16 +929,70 @@ return $rating;
     {
         $this->db->select('teams.*, users.first_name as first_name, users.theme_type, users.id as u_id');
         $this->db->from('teams');
-        $this->db->join('users', 'users.id = teams.user_id', 'left'); 
+        $this->db->join('users', 'users.id = teams.user_id', 'left');
+        $this->db->where('teams.row_status', 1); 
 
         $query = $this->db->get();
         return $query->result_array();
     }
+     /*   public function get_content_by_team($user_id)
+    {
+        $this->db->select('review');
+        $this->db->from('teams');
+        $this->db->where('user_id', $user_id);
+        $this->db->where('row_status', 1); 
+
+        $query = $this->db->get();
+        $result = $query->result();  
+        
+        return $result ? $result : array();
+    }*/
+    public function get_content_by_team($user_id)
+    {
+    $this->db->select('teams.*, users.first_name as first_name');
+    $this->db->from('teams');
+    $this->db->join('users', 'users.id = teams.user_id', 'left');
+    $this->db->where('teams.user_id', $user_id);
+    $this->db->where('teams.row_status', 1); 
+
+    $query = $this->db->get();
+    $result = $query->result();  
+    
+    return $result ? $result : array();
+    }
+    public function get_content_by_testomonial($user_id)
+{
+    $this->db->select('testomonial.*, users.first_name as first_name');
+    $this->db->from('testomonial');
+    $this->db->join('users', 'users.id = testomonial.user_id', 'left');
+    $this->db->where('testomonial.user_id', $user_id);
+    $this->db->where('testomonial.row_status', 1); 
+
+    $query = $this->db->get();
+    $result = $query->result_array();
+
+    
+
+    return $result ? $result : array();
+}
+
+    public function get_content_by_banner($user_id) {
+        $this->db->select('banner.*');
+        $this->db->from('banner');
+        $this->db->join('users', 'users.id = banner.user_id', 'left');
+        $this->db->where('banner.user_id', $user_id);
+        $this->db->where('banner.row_status', 1);
+
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
     public function get_testomonial_info_with_clients()
     {
         $this->db->select('testomonial.*, users.first_name as first_name, users.theme_type');
         $this->db->from('testomonial');
-        $this->db->join('users', 'users.id = testomonial.user_id', 'left'); 
+        $this->db->join('users', 'users.id = testomonial.user_id', 'left');
+        $this->db->where('testomonial.row_status', 1); 
 
         $query = $this->db->get();
         return $query->result_array();
@@ -941,6 +1002,7 @@ return $rating;
         $this->db->select('banner.*, users.first_name as first_name, users.theme_type,users.id as u_id');
         $this->db->from('banner');
         $this->db->join('users', 'users.id = banner.user_id', 'left'); 
+        $this->db->where('banner.row_status', 1);
 
         $query = $this->db->get();
         return $query->result_array();
@@ -950,6 +1012,7 @@ return $rating;
         $this->db->select('aboutus.*, users.first_name as first_name, users.theme_type');
         $this->db->from('aboutus');
         $this->db->join('users', 'users.id = aboutus.user_id', 'left'); 
+        $this->db->where('aboutus.row_status', 1);
 
         $query = $this->db->get();
         return $query->result_array();
@@ -965,26 +1028,7 @@ return $rating;
     return $theme;
     }
 
-     /*public function getFaqDetails($client_id) {
-        $query = "SELECT faqs.id, faqs.question, faqs.answer, client.theme_type
-                  FROM faqs
-                  INNER JOIN client ON faqs.client_id = client.id
-                  WHERE faqs.client_id = :client_id";
-
-        $stmt = $this->db->prepare($query);
-        $stmt->bindParam(':client_id', $client_id);
-        $stmt->execute();
-
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }*/
-     /*   public function get_matching_clients($client_id) {
-        $this->db->select('client.*');
-        $this->db->from('client');
-        $this->db->where('client.theme_type', $client_id);
-        
-        $query = $this->db->get();
-        return $query->result_array();
-    }*/
+     
     public function get_client_by_id($client_id) {
     $this->db->select('users.*');
     $this->db->from('users');
@@ -1026,15 +1070,7 @@ return $rating;
     $query = $this->db->query("SELECT * FROM banner WHERE theme_type = $theme_type");
     return $query->result_array();
     }*/
-    public function get_shopimages_theme_type($theme_type) {
-    $this->db->select('banner.*, users.theme_type as user_theme_type');
-    $this->db->from('banner');
-    $this->db->join('users', 'users.id = banner.user_id', 'left');
-    $this->db->where('users.theme_type', $theme_type);
-
-    $query = $this->db->get();
-    return $query->result_array();
-}
+ 
     public function get_team_theme_type($theme_type) {
         $this->db->select('teams.*, users.theme_type as user_theme_type');
         $this->db->from('teams');
@@ -1059,19 +1095,87 @@ return $rating;
             return $this->db->insert_id();
     }
     
-    public function update_aboutus($theme_type, $data)
+    /*public function update_aboutus($theme_type, $data)
     {
     $this->db->where('theme_type', $theme_type);
     $this->db->update('aboutus', $data);
-    }
-    
+    }*/
+    /*
        public function get_content_by_theme($user_id)
     {
 
         $query = $this->db->get_where('aboutus', array('user_id' => $user_id));
         $result = $query->row();
         return $result ? $result->description : '';
+    }*/
+    public function get_content_by_theme($user_id)
+    {
+    $this->db->select('description');
+    $this->db->from('aboutus');
+    $this->db->where('user_id', $user_id);
+    $this->db->where('row_status', 1); 
+
+    $query = $this->db->get();
+    $result = $query->row();
+    
+    return $result ? $result->description : '';
     }
+    public function get_content_by_about($user_id)
+    {
+        $this->db->select('description, image');
+        $this->db->from('aboutus');
+        $this->db->where('user_id', $user_id);
+        $this->db->where('row_status', 1); 
+
+        $query = $this->db->get();
+        $result = $query->row();
+        
+        return $result ? $result : null;
+    }
+    /*
+    public function get_content_by_faq($user_id)
+    {
+        $this->db->select('question, answer');
+        $this->db->from('faqs');
+        $this->db->where('user_id', $user_id);
+        $this->db->where('row_status', 1); 
+
+        $query = $this->db->get();
+        $result = $query->row();
+        
+        return $result ? $result : null;
+    }
+    */
+    /*
+    public function get_content_by_faq($user_id)
+    {
+        $this->db->select('question, answer');
+        $this->db->from('faqs');
+        $this->db->where('user_id', $user_id);
+        $this->db->where('row_status', 1); 
+
+        $query = $this->db->get();
+        $result = $query->row();
+
+
+        return $result ? $result : null;
+    }*/
+    public function get_content_by_faq($user_id)
+    {
+        $this->db->select('question, answer');
+        $this->db->from('faqs');
+        $this->db->where('user_id', $user_id);
+        $this->db->where('row_status', 1); 
+
+        $query = $this->db->get();
+        $result = $query->result();  
+        
+        return $result ? $result : array();
+    }
+
+
+
+
     public function get_about_image_by_theme($theme_type) {
 
     $query = $this->db->query("SELECT * FROM aboutus WHERE theme_type = $theme_type");
@@ -1115,6 +1219,13 @@ return $rating;
     $query = $this->db->query("SELECT * FROM users WHERE id = $user_id");
     return $query->result_array();
     }
+    public function update_aboutus($user_id, $data)
+{
+    $this->db->where('user_id', $user_id);
+    $this->db->update('aboutus', $data);
+}
+
 }   
+
 
 ?>

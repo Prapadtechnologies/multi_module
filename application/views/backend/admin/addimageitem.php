@@ -10,10 +10,10 @@
                                             <thead>
                                                 <tr>
                                                     <th>SNo</th>
-                                                    <th>Image</th>
+                                                    
                                                     <th>Name</th>
-                                                    <th>Theme</th>
-
+                                                    <th>Image</th>
+                                                    <!-- <th>Theme</th> -->
                                                      <th>Actions</th>
 
                                                 </tr>
@@ -26,9 +26,10 @@
                                                 ?>
                                                 <tr>
                                                     <td><?=$i+1;?></td>
-                                                    <td><?=$row['id'].'jpg';?></td>
+                                                    
                                                     <td><?=$row['first_name'];?></td>
-                                                    <td><?=$row['theme_type'];?></td>
+                                                    <td><img  height="60px" width="100px"  src="<?= base_url('uploads/wrapper/' . $row['id'] . '.jpg'); ?> " alt="Image"></td>
+                                                    <!-- <td><?=$row['theme_type'];?></td> -->
                                                   
                                                     <td>
                                                         <a href="#" class="mr-2  text-danger" onclick="return delete_row('<?=base_url('set_row_status/').'banner/id/'.$row['id'].'/0';?>');">

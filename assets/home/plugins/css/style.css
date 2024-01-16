@@ -12,7 +12,6 @@
     font-weight: 700;
     transition: .5s;
 }
-
 .btn-primary,
 .btn-secondary {
     color: #FFFFFF;
@@ -667,29 +666,36 @@ ul {
   .container .content{
     flex-direction: column-reverse;
   }
- .container .content .left-side{
-   width: 100%;
-   flex-direction: row;
-   margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
- }
- .container .content .left-side::before{
-   display: none;
- }
- .container .content .right-side{
-   width: 100%;
-   margin-left: 0;
- }
+   .container .content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .container .content .left-side::before{
+     display: none;
+   }
+   .container .content .right-side{
+     width: 100%;
+     margin-left: 0;
+   }
 }
 
 
-/*Contact US*/
-.co-img{
-    background: url(../img/eco/bg1.webp) top center no-repeat;
-    background-size: cover;
-}
-}
+  /*Contact US*/
+  .co-img{
+      background: url(../img/eco/bg1.webp) top center no-repeat;
+      background-size: cover;
+  }
+  .whatsapp1{
+    position: fixed;
+    right: 38px;
+    bottom: 150px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+  }
 
 
-}
+

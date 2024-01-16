@@ -4,6 +4,7 @@ if($edit_data!=''){
     $name=$edit_data['name'];
     $email=$edit_data['email'];
     $password=$edit_data['password'];
+    $mobile=$edit_data['mobile'];
 /*'password'=>md5($post['password'])*/
     $form_url='addclient/'.base64_encode($edit_data['id']);
 }else{
@@ -20,7 +21,21 @@ if($edit_data!=''){
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Upload Image: </label>
                                                 <div class="col-sm-6">
                                                     <div class="custom-file">
-                                                        <input type="file" class="form-control custom-file-input" id="sapaper" name="img" required="">
+                                                        <input type="file" class="form-control custom-file-input" id="sapaper" name="img" >
+                                                        <label class="custom-file-label" for="sapaper">Choose file</label>
+                                                  </div>    
+                                                  <?php 
+                                                            if($this->session->flashdata('img_error')!=''){echo '
+                                                            <div class="error">'.$this->session->flashdata('img_error').'</div>';}?>
+                                                <?php echo form_error('img', '<div class="error">', '</div>'); ?>
+                                                </div>
+                                                
+                                            </div>
+                                           <div class="form-group row">
+                                                <label class="col-sm-4 control-label text-sm-right pt-2">Upload Logo: </label>
+                                                <div class="col-sm-6">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="form-control custom-file-input" id="sapaper" name="logo" >
                                                         <label class="custom-file-label" for="sapaper">Choose file</label>
                                                   </div>    
                                                   <?php 
@@ -49,7 +64,7 @@ if($edit_data!=''){
                                             <div class="form-group row">
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Mobile No: </label>
                                                 <div class="col-sm-5">
-                                                    <input type="Number" name="mobile" class="form-control"  required="">
+                                                    <input type="Number" id="mobile" class="form-control" name="mobile" value="<?=$mobile;?>" required="">
                                                 </div>
                                             </div>
 
@@ -58,7 +73,7 @@ if($edit_data!=''){
                                                 
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Client Name: </label>
                                                 <div class="col-sm-5">
-                                                    <input type="text" name="name" class="form-control" required="" value="<?=$name;?>">
+                                                    <input type="text" id="name" class="form-control"id="name" name="name" value="<?=$name;?>" required=""><?=$name;?>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
@@ -96,10 +111,10 @@ if($edit_data!=''){
                                             <thead>
                                                 <tr>
                                                     <th>Sl.No</th>
-                                                    <th>Image</th>
                                                     <th>Client Name</th>
                                                     <th>Email</th>
-                                                    
+                                                    <th>Mobile</th>
+                                                    <th>Images </th>
                                                     <th>Actions</th>
 
                                                 </tr>
@@ -112,15 +127,15 @@ if($edit_data!=''){
                                                     ?>
                                                 <tr>
                                                     <td><?=$i+1;?></td>
-                                                    <td><?=$row['id'].'jpg';?></td>
                                                     <td><?=$row['first_name'];?></td>
                                                     <td><?=$row['email'];?></td>
-                                                
+                                                    <td><?=$row['mobile'];?></td>
+                                                    <td><img  height="100px" width="150px"  src="<?= base_url('uploads/client/' . $row['id'] . '.jpg'); ?> " alt="Image"></td>                                                
                                                     <td>
                                                        <a href="<?=base_url('addclient/').base64_encode($row['id']);?>" class=" mr-2  text-primary">
                                                             <i class="fas fa-pencil-alt"></i>
                                                         </a>
-                                                        <a href="#" class="mr-2  text-danger" onclick="return delete_row('<?=base_url('set_row_status/').'addclient/id/'.$row['id'].'/0';?>');">
+                                                        <a href="#" class="mr-2  text-danger" onclick="return delete_row('<?=base_url('set_row_status/').'users/id/'.$row['id'].'/0';?>');">
                                                             <i class="far fa-trash-alt"></i>
                                                         </a>
                                                     </td>

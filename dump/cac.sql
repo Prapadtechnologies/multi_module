@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2024 at 10:31 AM
+-- Generation Time: Jan 16, 2024 at 12:57 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `aboutus` (
   `id` int(11) NOT NULL,
-  `theme_type` varchar(1) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL COMMENT '1=Food,2=Grocery,3=Ecommerce,4=Real estate	',
+  `image` varchar(600) NOT NULL,
   `description` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime DEFAULT NULL,
@@ -41,14 +41,13 @@ CREATE TABLE `aboutus` (
 -- Dumping data for table `aboutus`
 --
 
-INSERT INTO `aboutus` (`id`, `theme_type`, `description`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
-(1, '1', '<h1>Terms &amp; Conditions(Food)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:07:27', NULL, 1, 0),
-(2, '2', '<h1>Terms &amp; Conditions(Grocery)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:41:38', NULL, 1, 0),
-(3, '3', '<h1>Terms &amp; Conditions(Ecommerce)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:50:27', NULL, 1, 0),
-(4, '4', '<h1>Terms &amp; Conditions(Realestae)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2023-12-28 14:54:40', NULL, 1, 0),
-(5, '', '<p>Hi</p>\r\n', '2024-01-11 11:15:13', NULL, 1, 19),
-(6, '', '<p>404 Page Not Found</p>\r\n\r\n<div id=\"container\">\r\n<h1>404 Page Not Found</h1>\r\n\r\n<p>The page you requested was not found.</p>\r\n</div>\r\n', '2024-01-11 12:18:56', NULL, 1, 15),
-(7, '', '<div id=\"container\">&nbsp;\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h1>&nbsp;</h1>\r\n</div>\r\n', '2024-01-11 12:20:55', NULL, 1, 17);
+INSERT INTO `aboutus` (`id`, `image`, `description`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
+(1, 'chef.jpg', '<h1>Terms &amp; Conditions(Hari)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:30:59', NULL, 1, 15),
+(2, 'about1.jpg', '<h1>Terms &amp; Conditions(Sam)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:31:29', NULL, 1, 17),
+(3, 'about.jpg', '<h1>Terms &amp; Conditions(Shiva)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:32:26', NULL, 1, 16),
+(4, 'about2.jpg', '<h1>Terms &amp; Conditions(Ramesh)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:37:13', NULL, 1, 20),
+(5, 'about3.jpg', '<h1>Terms &amp; Conditions(Harshi)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:44:16', NULL, 1, 22),
+(6, 'about4.jpg', '<h1>Terms &amp; Conditions(Ashwin)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 15:39:06', NULL, 1, 18);
 
 -- --------------------------------------------------------
 
@@ -75,7 +74,9 @@ INSERT INTO `banner` (`id`, `name`, `created_at`, `modified_at`, `row_status`, `
 (3, '', '2024-01-10 15:53:54', '2024-01-10 15:53:54', 1, 14),
 (4, '', '2024-01-10 15:54:06', '2024-01-10 15:54:06', 1, 17),
 (5, '', '2024-01-10 16:21:07', '2024-01-10 16:21:07', 1, 16),
-(6, '', '2024-01-10 16:35:01', '2024-01-10 16:35:01', 1, 4);
+(6, '', '2024-01-10 16:35:01', '2024-01-10 16:35:01', 1, 4),
+(7, '', '2024-01-12 15:14:40', '2024-01-12 15:16:53', 0, 18),
+(8, '', '2024-01-16 17:23:23', '2024-01-16 17:23:23', 1, 22);
 
 -- --------------------------------------------------------
 
@@ -122,17 +123,18 @@ CREATE TABLE `faqs` (
 --
 
 INSERT INTO `faqs` (`id`, `question`, `answer`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
-(1, 'Is flat available', 'Yes\r\n', '2024-01-06 12:58:02', NULL, 1, 16),
-(2, 'Free Shipping available', 'No', '2024-01-06 12:58:33', NULL, 1, 15),
+(2, 'Free Shipping available', 'No', '2024-01-06 12:58:33', '2024-01-12 14:08:05', 0, 15),
 (3, 'Any Discount', 'No', '2024-01-06 12:58:55', NULL, 1, 15),
 (4, 'Groceries Extra Discount', 'Yes', '2024-01-06 12:59:11', NULL, 1, 14),
 (5, 'How the Food taste', 'Good', '2024-01-06 13:02:18', NULL, 1, 4),
 (6, 'New Grocery added', 'Yes\r\n', '2024-01-09 12:55:06', NULL, 1, 16),
 (7, 'Grocery', 'Good', '2024-01-09 13:07:14', NULL, 1, 16),
 (8, 'Food', 'food', '2024-01-09 13:08:47', NULL, 1, 15),
-(9, 'Grocery', 'Grocery Good', '2024-01-09 14:04:29', NULL, 1, 14),
-(10, 'Ecommerce have safe delivery', 'yes', '2024-01-09 15:13:43', NULL, 1, 16),
-(11, 'Grocery have expired', 'No', '2024-01-09 15:17:54', NULL, 1, 14);
+(9, 'How the price of grocery', 'Low price', '2024-01-09 14:04:29', NULL, 1, 22),
+(10, 'Ecommerce have safe delivery', 'yes', '2024-01-09 15:13:43', '2024-01-12 13:06:26', 0, 16),
+(13, 'Ecommerce service good', 'yes', '2024-01-12 13:00:58', NULL, 1, 20),
+(14, 'Ecommerce service good', 'No', '2024-01-12 13:28:30', '2024-01-12 15:03:12', 1, 22),
+(15, 'How the prices', 'Low only', '2024-01-16 15:38:21', NULL, 1, 18);
 
 -- --------------------------------------------------------
 
@@ -178,14 +180,16 @@ CREATE TABLE `login_details` (
 --
 
 INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
-(1, 1, '2024-01-11 12:07:52', '2024-01-11 11:52:57'),
+(1, 1, '2024-01-16 10:22:44', '2024-01-12 11:00:10'),
 (2, 2, '2020-01-03 15:35:27', '2020-01-03 12:39:29'),
 (3, 3, '2019-12-20 16:39:05', '2019-12-20 16:40:17'),
 (4, 4, '2019-12-26 18:44:32', '2019-12-26 18:38:58'),
 (5, 5, '2019-12-27 16:16:21', '0000-00-00 00:00:00'),
 (6, 6, '2024-01-11 11:53:03', '2024-01-11 12:07:46'),
 (7, 8, '2024-01-09 17:07:34', '2024-01-09 17:09:26'),
-(8, 7, '2024-01-11 10:29:45', '2024-01-11 10:30:51');
+(8, 7, '2024-01-11 10:29:45', '2024-01-11 10:30:51'),
+(9, 18, '2024-01-11 16:12:56', '0000-00-00 00:00:00'),
+(10, 14, '2024-01-16 09:14:17', '2024-01-16 10:22:35');
 
 -- --------------------------------------------------------
 
@@ -414,14 +418,17 @@ CREATE TABLE `teams` (
 --
 
 INSERT INTO `teams` (`id`, `review`, `created_at`, `modified_at`, `row_status`, `user_id`, `theme_type`, `name`) VALUES
-(1, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-09 16:26:45', '0000-00-00 00:00:00', 1, 17, '1', ''),
-(2, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking ', '2024-01-09 16:29:49', '0000-00-00 00:00:00', 1, 14, '2', ''),
+(1, 'For fresh vegetables and fruit be aware that prices shown are often per 100rs', '2024-01-09 16:26:45', '0000-00-00 00:00:00', 1, 17, '1', ''),
+(2, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% .', '2024-01-09 16:29:49', '0000-00-00 00:00:00', 1, 14, '2', ''),
 (3, 'We went only to the supermarket to buy some groceries. It was not crowded during lunchtime.', '2024-01-09 16:30:26', '0000-00-00 00:00:00', 1, 16, '3', ''),
 (4, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:31:29', '0000-00-00 00:00:00', 1, 14, '4', ''),
 (5, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:32:36', '0000-00-00 00:00:00', 1, 15, '1', ''),
 (6, 'you can get everythng here at decent prices. you need to bargain a lot. 40% of the original price', '2024-01-09 16:35:38', '0000-00-00 00:00:00', 1, 4, '2', ''),
-(7, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-10 12:35:06', '0000-00-00 00:00:00', 1, 19, '', ''),
-(8, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking', '2024-01-10 12:52:25', '0000-00-00 00:00:00', 1, 18, '', '');
+(7, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-10 12:35:06', '0000-00-00 00:00:00', 1, 20, '', ''),
+(8, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking', '2024-01-10 12:52:25', '0000-00-00 00:00:00', 1, 20, '', ''),
+(9, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-12 10:56:29', '0000-00-00 00:00:00', 1, 18, '', ''),
+(10, 'review\r\n', '2024-01-12 11:48:47', '2024-01-12 15:05:29', 0, 15, '', ''),
+(11, 'Harshitha reviews displying here', '2024-01-16 16:25:48', '0000-00-00 00:00:00', 1, 22, '', '');
 
 -- --------------------------------------------------------
 
@@ -436,24 +443,22 @@ CREATE TABLE `testomonial` (
   `review` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime NOT NULL DEFAULT current_timestamp(),
-  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive',
-  `theme_type` varchar(1) NOT NULL
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `testomonial`
 --
 
-INSERT INTO `testomonial` (`id`, `user_id`, `name`, `review`, `created_at`, `modified_at`, `row_status`, `theme_type`) VALUES
-(2, 4, 'Alison B', 'Their brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well', '2023-12-22 11:32:14', '2023-12-22 11:32:14', 1, '1'),
-(3, 5, 'B Alison ', 'Brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well', '2023-12-22 11:52:30', '2023-12-22 11:52:30', 1, '2'),
-(5, 15, ' Ellen H', 'Best Pizza EVER! Not just on the lower Cape…. anywhere!', '2023-12-22 12:05:06', '2023-12-22 12:05:06', 1, '3'),
-(6, 17, ' Julia L', 'Working together as the Joe Hayden Real Estate Team, we are very thankful for our loyal clients.  Our business is one of close relationships and we are very fortunate to be able to share so many positive real estate experiences with our clients.  Your satisfaction is the ultimate reward for our work and it is why we strive to be Your Louisville Real Estate Experts', '2023-12-22 12:30:59', '2023-12-22 12:30:59', 1, '4'),
-(7, 16, 'Deidre S', 'Before choosing a real estate agent, I conducted a lot of research to see who would be the best choice based on the investment they make into selling the property (time and effort, not necessarily financially) ', '2023-12-22 12:32:52', '2023-12-22 12:32:52', 1, '1'),
-(8, 14, 'Ram', 'The quote testimonial here is featured with an image and a Call-To-Action (CTA). The image makes that quote more eye-catching, and the CTA provides more chances for conversions. ', '2023-12-22 12:36:21', '2023-12-22 12:36:21', 1, '2'),
-(9, 15, 'Ravi', 'Customer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” button next to each product on your website, or you can contact customers a few days after they’ve made a purchase and ask them to leave a review. ', '2023-12-22 12:36:44', '2023-12-22 12:36:44', 1, '3'),
-(10, 17, 'Alison B', 'Customer reviews are another easy form of testimonials because you can gather them in several ways. For example, you can add a “write a review” button n', '2023-12-22 18:26:07', '2023-12-22 18:26:07', 1, '4'),
-(11, 16, 'Ramanji', 'customers ', '2024-01-06 14:31:17', '2024-01-06 14:31:17', 1, '1');
+INSERT INTO `testomonial` (`id`, `user_id`, `name`, `review`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 20, 'Harish', 'Their brunch is awesome, I love the avocado .', '2024-01-12 16:52:19', '2024-01-12 16:52:19', 1),
+(2, 18, 'Raju', 'a critical article or report, as in a periodical, on a book, play, recital, or the like; critique', '2024-01-12 16:57:35', '2024-01-12 16:57:35', 1),
+(3, 17, 'Pavan', 'the process of going over a subject again in study or recitation in order to fix it in the memory or summarize the facts.', '2024-01-12 16:58:21', '2024-01-12 16:58:21', 1),
+(4, 16, 'Lakshmi', 'to go over (lessons, studies, work, etc.) in review.', '2024-01-12 16:58:56', '2024-01-12 16:58:56', 1),
+(5, 15, 'Rakesh', 'to write reviews; review books, movies, etc., as for a newspaper or periodical:', '2024-01-12 16:59:37', '2024-01-12 16:59:37', 1),
+(6, 14, 'Shannu', 'Review, criticism imply careful examination of something, formulation of a judgment, and statement of the judgmen', '2024-01-12 17:00:24', '2024-01-12 17:00:24', 1),
+(7, 16, 'Purushu', 'Their brunch is awesome, I love the avocado .', '2024-01-16 16:42:43', '2024-01-16 16:42:43', 1),
+(8, 22, 'Raghu', 'the process of going over a subject again in study or recitation in order to fix it in the memory or summarize the facts.', '2024-01-16 16:45:56', '2024-01-16 16:45:56', 1);
 
 -- --------------------------------------------------------
 
@@ -462,7 +467,7 @@ INSERT INTO `testomonial` (`id`, `user_id`, `name`, `review`, `created_at`, `mod
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `id` int(111) NOT NULL,
   `role_id` int(11) NOT NULL,
   `unique_id` varchar(20) NOT NULL,
   `icai_reg_no` bigint(30) NOT NULL,
@@ -487,14 +492,16 @@ INSERT INTO `users` (`id`, `role_id`, `unique_id`, `icai_reg_no`, `first_name`, 
 (1, 1, '9119', 0, 'Super Admin', '', 'admin@gmail.com', '8121815502', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '', '', '2019-07-20 15:18:30', NULL, 1),
 (2, 2, '120057345', 1244564, 'mahesh', '', 'mahi@gmail.com', '8121815501', '2', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '', '', '2019-12-13 17:28:55', '2019-12-13 17:28:55', 1),
 (3, 2, 'ipcc19_100002', 123, 'sujith', '', 'yeswanth@gmail.com', '8143671872', '2', '7ca49b480f4ad303e77d35fc0ba426e30332ec95051a34a75affedf485054e2a', '', '', '2019-12-20 16:38:43', '2019-12-20 16:38:43', 4),
-(4, 3, 'EVA_100001', 0, 'Mahesh', '', 'mahie@gmail.com', '8121815555', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '', '2019-12-24 16:12:09', '2019-12-24 16:12:09', 3),
+(4, 3, 'EVA_100001', 0, 'Mahesh', '', 'mahie@gmail.com', '8121815555', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '', '2019-12-24 16:12:09', '2024-01-12 16:30:09', 0),
 (5, 2, 'ipcc19_100003', 45556556, 'mahesh', '', 'maheshbt.grepthor@gmail.com', '8121815500', '2', '101b6224f1df589da6537ab8a72aaeb8e36ebf169d85d8c0d7d04d8fd21ac62c', '3', '', '2019-12-27 16:11:19', '2019-12-27 16:11:19', 4),
 (14, 2, '', 0, 'Bhanu', '', 'bhanu@gmail.com', '7788554477', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '', '2024-01-11 14:01:06', NULL, 3),
 (15, 2, '', 0, 'Hari', '', 'hari@gmail.com', '8855224411', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-11 14:02:07', NULL, 3),
 (16, 2, '', 0, 'Shiva', '', 'shiva@gmail.com', '7788221144', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', '', '2024-01-11 14:03:03', NULL, 3),
 (17, 2, '', 0, 'Sam', '', 'sam@gmail.com', '6302154897', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '', '2024-01-11 14:03:39', NULL, 3),
-(18, 2, '', 0, 'Ashwin', '', 'ashwin@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-11 14:04:18', NULL, 3),
-(19, 2, '', 0, 'Ravi', '', 'ravi@gmail.com', '6987321548', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-11 14:05:21', NULL, 3);
+(18, 2, '', 0, 'Ashwin', '', 'ashwin@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', '', '2024-01-11 14:04:18', NULL, 3),
+(20, 2, '', 0, 'Ramesh', '', 'ramesh@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '', '2024-01-12 12:06:31', NULL, 3),
+(21, 2, '', 0, 'Vinay', '', 'vinay@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-12 12:15:40', '2024-01-12 16:04:44', 0),
+(22, 2, '', 0, 'Harshi', '', 'harshi@gmail.com', '7780668877', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-16 10:23:59', NULL, 3);
 
 -- --------------------------------------------------------
 
@@ -644,13 +651,13 @@ ALTER TABLE `users_plan_relation`
 -- AUTO_INCREMENT for table `aboutus`
 --
 ALTER TABLE `aboutus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `blog`
@@ -662,7 +669,7 @@ ALTER TABLE `blog`
 -- AUTO_INCREMENT for table `faqs`
 --
 ALTER TABLE `faqs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `feeling_formal`
@@ -674,7 +681,7 @@ ALTER TABLE `feeling_formal`
 -- AUTO_INCREMENT for table `login_details`
 --
 ALTER TABLE `login_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `promocodes`
@@ -728,19 +735,19 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `testomonial`
 --
 ALTER TABLE `testomonial`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `users_plan_relation`

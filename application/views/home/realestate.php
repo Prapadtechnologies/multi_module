@@ -37,22 +37,29 @@
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php
-            $shopbooks = $this->crud_model->get_shopimages_theme_type(4); 
-            $i = 0;
-            foreach ($shopbooks as $book) {
-                $active_class = ($i == 0) ? 'active' : ''; 
-            ?>
-                <div class="carousel-item <?= $active_class; ?>">
-                    <img class="w-100" src="<?= base_url('uploads/wrapper/' . $book['id'] . '.jpg'); ?>" alt="Image">
-                    <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="text-start p-5" style="max-width: 900px;">
-                            <!-- Additional carousel content here -->
-                            <a href="<?= base_url('addshopitem'); ?>" class="btn btn-primary py-md-3 px-md-5 me-3" style="margin-left: 250px;">Order</a>
-                        </div>
-                    </div>
-                </div>
-            <?php
-                $i++;
+            if (isset($_GET['id'])) {
+                $clientID = $_GET['id'];
+
+                $banners = $this->crud_model->get_content_by_banner($clientID);
+
+                if ($banners) {
+                    $i = 0;
+                    foreach ($banners as $banner) {
+                        $image_path = base_url('uploads/wrapper/') . $banner['id'] . '.jpg';
+                        $active_class = ($i == 0) ? 'active' : ''; 
+                        echo '<div class="carousel-item ' . $active_class . '">';
+                        echo '<img class="w-100" src="' . $image_path . '" alt="">';
+                        echo '<div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">';
+                        echo '<div class="text-start p-5" style="max-width: 900px;">';
+                        echo '<a href="#" class="btn btn-primary py-md-3 px-md-5 me-3" style="margin-left: 250px;">Order</a>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                        $i++;
+                    }
+                } else {
+                    echo '<p>No banners found for the specified ID.</p>';
+                }
             }
             ?>
         </div>
@@ -66,7 +73,6 @@
         </button>
     </div>
 </div>
-
 
      <!-- Products Start -->
     <div class="container-fluid py-5" id="product">
@@ -142,18 +148,25 @@
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="owl-carousel testimonial-carousel p-5">
-                    
                     <?php
-                    $testomonial = $this->crud_model->get_testomonial_info_with_clients();
-                    foreach ($testomonial as $row) {
-                        if ($row['theme_type'] == 4) {
-                            ?>
-                            <div class="testimonial-item text-center text-dark">
-                            <p class="fs-5"><?= $row['review']; ?></p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-dark mb-0"><?= $row['first_name']; ?></h4>
-                        </div>
-                            <?php
+                    if (isset($_GET['id'])) {
+                        $clientID = $_GET['id'];
+                        
+                        $faqs = $this->crud_model->get_content_by_testomonial($clientID);
+
+                        if ($faqs) {
+                            foreach ($faqs as $faq) {
+                                echo '<div class="testimonial-item text-center text-white">';
+                                $image_path = base_url('uploads/testomonial/') . $faq['id'] . '.jpg';
+                                echo '<img class="img-fluid mx-auto p-2 border border-5 rounded-circle mb-4" src="' . $image_path . '" alt="">';
+
+                                echo '<p class="fs-5">' . $faq['name'] . '</p>';
+                                echo '<hr class="mx-auto w-25">';
+                                echo '<h4 class="text-white mb-0">' . $faq['review'] . '</h4>';
+                                echo '</div>';
+                            }
+                        } else {
+                            echo '<p>No team members found for the specified ID.</p>';
                         }
                     }
                     ?>
@@ -162,45 +175,52 @@
         </div>
     </div>
 </div>
+
     <!-- Testimonial End -->
 
    
     <!-- Banner Start -->
+    <!-- Dynamic -->
+  <?php
+if (isset($_GET['id'])) {
+    $clientID = $_GET['id'];
+    $clientName = $_GET['first_name'];
+    $clientEmail = $_GET['image'];
 
+    $clientData = $this->crud_model->get_content_by_about($clientID);
 
-    <!-- About Start -->
-    <div class="container-fluid about pt-5" id="about">
-    <div class="container">
-        <div class="row gx-5">
-            <?php
-            
-            $about = $this->crud_model->get_about_image_by_theme(4);
-            $i = 0;
-            foreach ($about as $row) {
-                ?>
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="d-flex h-100 border border-5 border-primary border-bottom-0 pt-4">
-                        <?php
+    // Display client details
+    echo '<div class="container-fluid about pt-5" id="about">';
+    echo '<div class="container">';
+    echo '<div class="row gx-5">';
+    echo '<div class="col-lg-5 mb-5 mb-lg-0">';
+    echo '<div class="d-flex h-100 border border-5 border-primary border-bottom-0 pt-4">';
 
-                        $image_path = base_url('uploads/about/') . $row['id'] . '.jpg';
-                        ?>
-                        <img class="img-fluid mt-auto mx-auto" src="<?= $image_path ?>" style="height: 1000px;">
-                    </div>
-                </div>
-                <div class="col-lg-7 pb-5">
-                    <div class="mb-3 pb-2">
-                        <h6 class="text-primary text-uppercase">About Us</h6>
-                        <?= $row['description']; ?>
-                    </div>
-                </div>
-                <?php
-                $i++;
-            }
-            ?>
-        </div>
-    </div>
-</div>
-    <!-- About End -->
+    // Display the client image
+    $imageFilename = $clientData ? $clientData->image : ''; // Get the image filename from the fetched data
+    $imagePath = $imageFilename ? base_url('uploads/about/') . $imageFilename  : ''; // Construct the full image path
+
+    echo '<img class="img-fluid mt-auto mx-auto" src="' . $imagePath . '" style="height: 1000px;">';
+
+    echo '</div>';
+    echo '</div>';
+    echo '<div class="col-lg-7 pb-5">';
+    echo '<div class="mb-3 pb-2">';
+
+    // Display the client description
+    $description = $clientData ? $clientData->description : 'No description available';
+    echo $description;
+
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+}
+?>
+
+    <!-- Dynamic -->
+
     
     <!-- About End -->
 
@@ -261,6 +281,7 @@
 
    
     <!-- Team Start -->
+
     
     <div class="container-fluid bg-testimonial-2 py-5 my-5" id="services">
     <div class="container py-5">
@@ -271,26 +292,24 @@
             <div class="col-lg-7">
                 <div class="owl-carousel testimonial-carousel p-5">
                     <?php
-                    $teams = $this->crud_model->get_team_info_with_clients();
-                    foreach ($teams as $row) {
-                        if ($row['theme_type'] == 4) {
-                            ?>
-                            <div class="testimonial-item text-center text-white">
-                                <?php
-                                $image_path = base_url('uploads/team2/') . $row['id'] . '.jpg';
-                                /*echo "<p>File Path: $image_path</p>"; */
-                                
-                                ?>
-                                <img class="img-fluid mx-auto p-2 border border-5 rounded-circle mb-4" src="<?= $image_path ?>" alt="">
-                                <p class="fs-5"><?= $row['name']; ?></p>
-                                <hr class="mx-auto w-25">
-                                <h4 class="text-white mb-0"><?= $row['review']; ?></h4>
-                                 <!-- <p><?= $row['id']; ?></p> -->
-                               
+                    if (isset($_GET['id'])) {
+                        $clientID = $_GET['id'];
+                        $faqs = $this->crud_model->get_content_by_team($clientID);
 
+                        if ($faqs) {
+                            
+                            foreach ($faqs as $faq) {
+                                echo '<div class="testimonial-item text-center text-white">';
+                                $image_path = base_url('uploads/team2/') . $faq->id . '.jpg';
+                                echo '<img class="img-fluid mx-auto p-2 border border-5 rounded-circle mb-4" src="' . $image_path . '" alt="">';
 
-                            </div>
-                            <?php
+                                echo '<p class="fs-5">' . $faq->first_name . '</p>';
+                                echo '<hr class="mx-auto w-25">';
+                                echo '<h4 class="text-white mb-0">' . $faq->review . '</h4>';
+                                echo '</div>';
+                            }
+                        } else {
+                            echo '<p>No team members found for the specified ID.</p>';
                         }
                     }
                     ?>
@@ -302,33 +321,35 @@
 
     <!-- Team End -->
     
-    <!-- Dynamic FAQ -->
-    <div class="page">
+       
+        <!-- Dynamic FAQ -->
+<div class="page">
     <div class="content">
         <aside>
             <h1>FAQ</h1>
             <p>We understand that you may have questions about our baked goods, so we've compiled a list of frequently asked questions to help you find the information you need.</p>
-            <img src="<?php echo base_url('assets/home/plugins'); ?>/img/eco/bp1.png">
+            <img src="<?php echo base_url('assets/home/plugins'); ?>/img/food/pizza.png">
         </aside>
         <main>
             <h2>Product Information</h2>
-            <h2>Product Information</h2>
+
             <?php
-            $faqs = $this->crud_model->get_faqs_info_with_clients(); 
-            $i = 0;
-            foreach ($faqs as $faq) {
-                $client = $this->crud_model->get_client_by_id($faq['client_id']);
+            if (isset($_GET['id'])) {
+                $clientID = $_GET['id'];
 
+                
+                $faqs = $this->crud_model->get_content_by_faq($clientID);
 
-                if ($client && $client['theme_type'] ==4) {
-                    ?>
-                    <details>
-                        <summary><?= $faq['question']; ?></summary>
-                        <p><?= $faq['answer']; ?></p>
-                        
-                    </details>
-                    <?php
-                    $i++;
+                if ($faqs) {
+                    // Loop through each FAQ and display it
+                    foreach ($faqs as $faq) {
+                        echo '<details>';
+                        echo '<summary>' . $faq->question . '</summary>';
+                        echo '<p>' . $faq->answer . '</p>';
+                        echo '</details>';
+                    }
+                } else {
+                    echo '<p>No FAQs found for the specified ID.</p>';
                 }
             }
             ?>
@@ -336,6 +357,3 @@
     </div>
 </div>
 
-
-    <!-- Dynamic FAQ -->
-   
