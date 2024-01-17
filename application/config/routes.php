@@ -234,6 +234,7 @@ $route['select_client']='home/select_client';
 
 $route['u_faqs'] = 'user/faqs';
 $route['u_team'] = 'user/team';
+$route['u_addimage']= 'user/add_image';
 $route['u_testomonial'] = 'user/testomonial';
 $route['u_aboutus'] = 'user/aboutus';
 /*$route['clientlist'] = 'admin/clientlist';*/

@@ -436,6 +436,11 @@ if($this->session->userdata('role_id')=='1'){
                                                     Testomonial
                                                 </a>
                                             </li>
+                                            <li class="<?php if($page_name=='addimage'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('u_addimage')?>">
+                                                    Banner
+                                                </a>
+                                            </li>
                                             <li class="<?php if($page_name=='aboutus'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('u_aboutus')?>">
                                                     Aboutus

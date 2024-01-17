@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2024 at 12:57 PM
+-- Generation Time: Jan 17, 2024 at 07:55 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -76,7 +76,9 @@ INSERT INTO `banner` (`id`, `name`, `created_at`, `modified_at`, `row_status`, `
 (5, '', '2024-01-10 16:21:07', '2024-01-10 16:21:07', 1, 16),
 (6, '', '2024-01-10 16:35:01', '2024-01-10 16:35:01', 1, 4),
 (7, '', '2024-01-12 15:14:40', '2024-01-12 15:16:53', 0, 18),
-(8, '', '2024-01-16 17:23:23', '2024-01-16 17:23:23', 1, 22);
+(8, '', '2024-01-17 12:08:24', '2024-01-17 12:08:24', 1, 20),
+(9, '', '2024-01-17 12:12:06', '2024-01-17 12:12:06', 1, 22),
+(10, '', '2024-01-17 12:22:23', '2024-01-17 12:22:23', 1, 14);
 
 -- --------------------------------------------------------
 
@@ -134,7 +136,8 @@ INSERT INTO `faqs` (`id`, `question`, `answer`, `created_at`, `modified_at`, `ro
 (10, 'Ecommerce have safe delivery', 'yes', '2024-01-09 15:13:43', '2024-01-12 13:06:26', 0, 16),
 (13, 'Ecommerce service good', 'yes', '2024-01-12 13:00:58', NULL, 1, 20),
 (14, 'Ecommerce service good', 'No', '2024-01-12 13:28:30', '2024-01-12 15:03:12', 1, 22),
-(15, 'How the prices', 'Low only', '2024-01-16 15:38:21', NULL, 1, 18);
+(15, 'How the prices', 'Low only', '2024-01-16 15:38:21', NULL, 1, 18),
+(16, 'Is it high cost', 'No', '2024-01-17 11:42:49', NULL, 1, 14);
 
 -- --------------------------------------------------------
 
@@ -180,7 +183,7 @@ CREATE TABLE `login_details` (
 --
 
 INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
-(1, 1, '2024-01-16 10:22:44', '2024-01-12 11:00:10'),
+(1, 1, '2024-01-17 12:07:55', '2024-01-17 12:12:24'),
 (2, 2, '2020-01-03 15:35:27', '2020-01-03 12:39:29'),
 (3, 3, '2019-12-20 16:39:05', '2019-12-20 16:40:17'),
 (4, 4, '2019-12-26 18:44:32', '2019-12-26 18:38:58'),
@@ -189,7 +192,9 @@ INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
 (7, 8, '2024-01-09 17:07:34', '2024-01-09 17:09:26'),
 (8, 7, '2024-01-11 10:29:45', '2024-01-11 10:30:51'),
 (9, 18, '2024-01-11 16:12:56', '0000-00-00 00:00:00'),
-(10, 14, '2024-01-16 09:14:17', '2024-01-16 10:22:35');
+(10, 14, '2024-01-17 12:12:36', '2024-01-17 11:52:46'),
+(11, 16, '2024-01-17 11:53:27', '2024-01-17 11:57:59'),
+(12, 20, '2024-01-17 11:58:25', '2024-01-17 12:07:48');
 
 -- --------------------------------------------------------
 
@@ -409,7 +414,6 @@ CREATE TABLE `teams` (
   `modified_at` datetime NOT NULL,
   `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive',
   `user_id` int(11) NOT NULL,
-  `theme_type` varchar(11) NOT NULL,
   `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -417,18 +421,23 @@ CREATE TABLE `teams` (
 -- Dumping data for table `teams`
 --
 
-INSERT INTO `teams` (`id`, `review`, `created_at`, `modified_at`, `row_status`, `user_id`, `theme_type`, `name`) VALUES
-(1, 'For fresh vegetables and fruit be aware that prices shown are often per 100rs', '2024-01-09 16:26:45', '0000-00-00 00:00:00', 1, 17, '1', ''),
-(2, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% .', '2024-01-09 16:29:49', '0000-00-00 00:00:00', 1, 14, '2', ''),
-(3, 'We went only to the supermarket to buy some groceries. It was not crowded during lunchtime.', '2024-01-09 16:30:26', '0000-00-00 00:00:00', 1, 16, '3', ''),
-(4, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:31:29', '0000-00-00 00:00:00', 1, 14, '4', ''),
-(5, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:32:36', '0000-00-00 00:00:00', 1, 15, '1', ''),
-(6, 'you can get everythng here at decent prices. you need to bargain a lot. 40% of the original price', '2024-01-09 16:35:38', '0000-00-00 00:00:00', 1, 4, '2', ''),
-(7, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-10 12:35:06', '0000-00-00 00:00:00', 1, 20, '', ''),
-(8, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking', '2024-01-10 12:52:25', '0000-00-00 00:00:00', 1, 20, '', ''),
-(9, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-12 10:56:29', '0000-00-00 00:00:00', 1, 18, '', ''),
-(10, 'review\r\n', '2024-01-12 11:48:47', '2024-01-12 15:05:29', 0, 15, '', ''),
-(11, 'Harshitha reviews displying here', '2024-01-16 16:25:48', '0000-00-00 00:00:00', 1, 22, '', '');
+INSERT INTO `teams` (`id`, `review`, `created_at`, `modified_at`, `row_status`, `user_id`, `name`) VALUES
+(1, 'For fresh vegetables and fruit be aware that prices shown are often per 100rs', '2024-01-09 16:26:45', '0000-00-00 00:00:00', 1, 17, ''),
+(2, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% .', '2024-01-09 16:29:49', '0000-00-00 00:00:00', 1, 14, ''),
+(3, 'We went only to the supermarket to buy some groceries. It was not crowded during lunchtime.', '2024-01-09 16:30:26', '0000-00-00 00:00:00', 1, 16, ''),
+(4, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:31:29', '0000-00-00 00:00:00', 1, 14, ''),
+(5, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:32:36', '0000-00-00 00:00:00', 1, 15, ''),
+(6, 'you can get everythng here at decent prices. you need to bargain a lot. 40% of the original price', '2024-01-09 16:35:38', '0000-00-00 00:00:00', 1, 4, ''),
+(7, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-10 12:35:06', '0000-00-00 00:00:00', 1, 20, ''),
+(8, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking', '2024-01-10 12:52:25', '0000-00-00 00:00:00', 1, 20, ''),
+(9, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-12 10:56:29', '0000-00-00 00:00:00', 1, 18, ''),
+(10, 'review\r\n', '2024-01-12 11:48:47', '2024-01-12 15:05:29', 0, 15, ''),
+(11, 'Harshitha reviews displying here', '2024-01-16 16:25:48', '0000-00-00 00:00:00', 1, 22, ''),
+(12, 'Their brunch is awesome, I love the avocado .', '2024-01-17 11:50:44', '0000-00-00 00:00:00', 1, 14, ''),
+(13, 'Their brunch is awesome, I love the avocado .', '2024-01-17 11:51:04', '0000-00-00 00:00:00', 1, 14, ''),
+(14, 'to write reviews; review books, movies, etc., as f...', '2024-01-17 11:54:13', '0000-00-00 00:00:00', 1, 16, ''),
+(15, 'For fresh vegetables and fruit be aware that price...', '2024-01-17 11:55:30', '0000-00-00 00:00:00', 1, 16, ''),
+(16, 'the process of going over a subject again in study..', '2024-01-17 11:58:54', '0000-00-00 00:00:00', 1, 20, '');
 
 -- --------------------------------------------------------
 
@@ -458,7 +467,8 @@ INSERT INTO `testomonial` (`id`, `user_id`, `name`, `review`, `created_at`, `mod
 (5, 15, 'Rakesh', 'to write reviews; review books, movies, etc., as for a newspaper or periodical:', '2024-01-12 16:59:37', '2024-01-12 16:59:37', 1),
 (6, 14, 'Shannu', 'Review, criticism imply careful examination of something, formulation of a judgment, and statement of the judgmen', '2024-01-12 17:00:24', '2024-01-12 17:00:24', 1),
 (7, 16, 'Purushu', 'Their brunch is awesome, I love the avocado .', '2024-01-16 16:42:43', '2024-01-16 16:42:43', 1),
-(8, 22, 'Raghu', 'the process of going over a subject again in study or recitation in order to fix it in the memory or summarize the facts.', '2024-01-16 16:45:56', '2024-01-16 16:45:56', 1);
+(8, 22, 'Raghu', 'the process of going over a subject again in study or recitation in order to fix it in the memory or summarize the facts.', '2024-01-16 16:45:56', '2024-01-16 16:45:56', 1),
+(9, 20, 'Rajesh', 'STO is the Maldives equivalent of a supermarket. G...', '2024-01-17 12:06:05', '2024-01-17 12:06:05', 1);
 
 -- --------------------------------------------------------
 
@@ -657,7 +667,7 @@ ALTER TABLE `aboutus`
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `blog`
@@ -669,7 +679,7 @@ ALTER TABLE `blog`
 -- AUTO_INCREMENT for table `faqs`
 --
 ALTER TABLE `faqs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `feeling_formal`
@@ -681,7 +691,7 @@ ALTER TABLE `feeling_formal`
 -- AUTO_INCREMENT for table `login_details`
 --
 ALTER TABLE `login_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `promocodes`
@@ -735,13 +745,13 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `testomonial`
 --
 ALTER TABLE `testomonial`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`

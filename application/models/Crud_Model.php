@@ -1100,14 +1100,14 @@ return $rating;
     $this->db->where('theme_type', $theme_type);
     $this->db->update('aboutus', $data);
     }*/
-    /*
-       public function get_content_by_theme($user_id)
-    {
+    
+      public function get_content_by_description($user_id)
+{
+    $query = $this->db->get_where('aboutus', array('user_id' => $user_id));
+    $result = $query->row();
+    return $result ? $result->description : '';
+}
 
-        $query = $this->db->get_where('aboutus', array('user_id' => $user_id));
-        $result = $query->row();
-        return $result ? $result->description : '';
-    }*/
     public function get_content_by_theme($user_id)
     {
     $this->db->select('description');
@@ -1120,6 +1120,24 @@ return $rating;
     
     return $result ? $result->description : '';
     }
+    /*public function get_content_by_description($user_id)
+{
+    $this->db->select('description');
+    $this->db->from('aboutus');
+    $this->db->where('user_id', $user_id);
+    $this->db->where('row_status', 1); 
+
+    $query = $this->db->get();
+    $result = $query->row();
+    
+    $description = $result ? $result->description : '';
+
+    
+    log_message('debug', 'get_content_by_theme - Input: ' . $user_id . ', Output: ' . $description);
+
+    return $description;
+}*/
+
     public function get_content_by_about($user_id)
     {
         $this->db->select('description, image');

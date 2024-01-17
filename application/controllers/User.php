@@ -343,9 +343,11 @@ if ($this->form_validation->run() == TRUE) {
                     $input=$this->input->post();
                     $input_data=array(
                         'review'=>$input['answer'],
-                        'user_id'=>$input['theme']
+                        'user_id'=>$input['client_id']
 
                     );
+                    /*print_r($input_data);
+                    die();*/
                    if($id==''){
                     $res=$this->crud_model->saving_insert_details('teams',$input_data);
                     if($res>0){
@@ -357,18 +359,19 @@ if ($this->form_validation->run() == TRUE) {
                     }
                 }elseif($id!=''){
                         $where['id']=$id;
-                        $res=$this->crud_model->update_operation($input_data,'team',$where);
+                        $res=$this->crud_model->update_operation($input_data,'teams',$where);
                     if($res>0){
                         $this->session->set_flashdata('success_message',"team Updated Successfully");
                     }else{
                         $this->session->set_flashdata('error_message',"team Not Updated");
                     }
                     }
-                    redirect('team');
+                    redirect('u_team');
                 }
                 $this->load->view('backend/index', $page_data);
         }
-         public function testomonial($id = '')
+
+        public function testomonial($id = '')
         {
             if($this->session->userdata('role_id')!=2)
             {
@@ -389,11 +392,14 @@ if ($this->form_validation->run() == TRUE) {
                 $input=$this->input->post();
                 $input_data=array(
                     'review'=>$input['client'],
+                    'name'=>$input['name'],
                     'user_id'=>$input['client_id']
 
                 );
                if($id==''){
                     $res=$this->crud_model->saving_insert_details('testomonial',$input_data);
+                    move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/testomonial/". $res.'.jpg');
+
                     if($res>0){
                         $this->session->set_flashdata('success_message',"testomonial's Saved Successfully");
                     }else{
@@ -408,7 +414,7 @@ if ($this->form_validation->run() == TRUE) {
                         $this->session->set_flashdata('error_message',"testomonial's Not Updated");
                     }
                 }
-                redirect('testomonial');
+                redirect('u_testomonial');
             }
             $this->load->view('backend/index', $page_data);
         }
@@ -455,7 +461,50 @@ if ($this->form_validation->run() == TRUE) {
             $this->load->view('backend/index', $page_data);
         }
     /*About us*/
+    /*Banner*/
+    public function add_image($id='')
+        {
+                if($this->session->userdata('role_id')!=2)
+            {
+                redirect('error_404');
+            }
+            if($id!='')
+            {
+                    $id=base64_decode($id);
+                   
+            }else{
+                    $page_data['edit_data']='';
+                }
+                $page_data['page_title'] = "Banner";
+                $page_data['page_name'] = 'addimage';
+                if($this->input->post()){
+                    $input=$this->input->post();
+                    $input_data=array(
+                        'user_id' => $input['client_id']
 
+                    );
+                   if($id==''){
+                    $res=$this->crud_model->saving_insert_details('banner',$input_data);
+                    if($res>0){
+                        $this->session->set_flashdata('success_message',"Banner Saved Successfully");
+                        move_uploaded_file($_FILES["img"]["tmp_name"], "uploads/wrapper/". $res.'.jpg');
+
+                    }else{
+                        $this->session->set_flashdata('error_message',"Banner Not Saved");
+                    }
+                }elseif($id!=''){
+                        $where['id']=$id;
+                        $res=$this->crud_model->update_operation($input_data,'banner',$where);
+                    if($res>0){
+                        $this->session->set_flashdata('success_message',"Banner Updated Successfully");
+                    }else{
+                        $this->session->set_flashdata('error_message',"Banner Not Updated");
+                    }
+                    }
+                    redirect('u_addimage');
+                }
+                $this->load->view('backend/index', $page_data);
+        }
 
 }
 ?>

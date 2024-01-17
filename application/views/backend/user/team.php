@@ -6,7 +6,7 @@ if($edit_data!=''){
     $form_url='u_team/'.base64_encode($edit_data['id']);
 }else{
     $this->session->set_userdata('last_page',current_url());
-    $form_url='u_teamu_team';
+    $form_url='u_team';
 }
 ?>
                     <div class="row">

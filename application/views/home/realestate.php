@@ -1,38 +1,5 @@
 <!-- Carousel Start -->
-<!-- <div id="home" class="container-fluid p-0">
-    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <?php
-            $shopbooks = $this->crud_model->get_shopimages_theme_type(4);
-            $i = 0;
-            foreach ($shopbooks as $book) {
-                $active_class = ($i == 0) ? 'active' : ''; 
-            ?>
-                <div class="carousel-item <?= $active_class; ?>">
-                    <img class="w-100" src="<?= base_url('uploads/banner/' . $book['id'] . '.jpg'); ?>" alt="Image">
-                    <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="text-start p-5" style="max-width: 900px;">
-                            
-                            <a href="<?= base_url('addshopitem'); ?>" class="btn btn-primary py-md-3 px-md-5 me-3" style="margin-left: 250px;">Order</a>
-                        </div>
-                    </div>
-                </div>
-            <?php
-                $i++;
-            }
-            ?>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
- -->
+
  <div id="home" class="container-fluid p-0">
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -73,6 +40,7 @@
         </button>
     </div>
 </div>
+
 
      <!-- Products Start -->
     <div class="container-fluid py-5" id="product">
