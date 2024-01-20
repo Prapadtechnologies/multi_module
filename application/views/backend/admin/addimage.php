@@ -38,6 +38,19 @@
                                                 
                                             </div>
                                             <div class="form-group row">
+                                                    <label class="col-sm-4 control-label text-sm-right pt-2">Tittle: </label>
+                                                    <div class="col-sm-5">
+                                                        <input class="form-control" rows="3" id="tittle" autocomplete="off" required="" name="tittle"><?=$tittle;?>
+                                                    </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                    <label class="col-sm-4 control-label text-sm-right pt-2">Text: </label>
+                                                    <div class="col-sm-5">
+                                                        <textarea class="form-control" rows="3" id="text" autocomplete="off" required="" name="text"><?=$text;?></textarea>
+                                                    </div>
+                                            </div>
+                                            
+                                            <div class="form-group row">
                                                 <label class="col-sm-4 control-label text-sm-right pt-2"> </label>
                                                 <div class="col-sm-5">
                                                     <div class="custom-file">

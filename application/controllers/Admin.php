@@ -350,6 +350,7 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
             'password' => hash('sha256', $input['password']),
             'theme_type' => $input['theme'],
             'role_id'=>$input['role_id'],
+            'address'=>$input['adress'],
             'mobile'=>$input['mobile']
         );
         
@@ -391,6 +392,89 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
        
 
     /*Clients*/
+    /*Products*/
+    public function product($id = '')
+{
+    if ($this->session->userdata('role_id') != 1) {
+        redirect('error_404');
+    }
+
+    if ($id != '') {
+        $id = base64_decode($id);
+        $page_data['edit_data'] = $this->crud_model->get_single_product_info($id);
+    } else {
+        $page_data['edit_data'] = '';
+    }
+
+    $page_data['page_title'] = "Add Product";
+    $page_data['page_name'] = 'product';
+    $page_data['product'] = $this->crud_model->get_product_info();
+
+    // Set validation rules
+    $this->form_validation->set_rules('name', 'Name', 'required');
+    $this->form_validation->set_rules('heading', 'Heading', 'required');
+    $this->form_validation->set_rules('client_id', 'Client Id', 'required');
+    /*echo "string";
+    die();*/
+    if ($this->form_validation->run() === TRUE) {
+        $input = $this->input->post();
+        $input_data = array(
+            'name' => $input['name'],
+            'heading' => $input['heading'],
+            'user_id' => $input['client_id'],
+            'product_rs' => $input['price']
+        );
+          
+        // Check if an image is uploaded
+        if (!empty($_FILES['img']['name'])) {
+            // File upload configuration
+            $config['upload_path']   = './uploads/product/';
+            $config['allowed_types'] = 'jpg|jpeg|png';
+            $config['max_size']      = 1024; // 1 MB
+            $config['encrypt_name']  = TRUE; // Encrypt the file name for security
+
+            $this->load->library('upload', $config);
+
+            if ($this->upload->do_upload('img')) {
+                $input_data['image'] = $this->upload->data('file_name');
+              /*  $input_data['img_width']  = 400; 
+                $input_data['img_height'] = 300; */
+            } else {
+                // File upload error
+                $this->session->set_flashdata('img_error', $this->upload->display_errors());
+                log_message('error', 'Image Upload Error: ' . $this->upload->display_errors());
+                redirect('product');
+            }
+        }
+
+        if ($id == '') {
+            $res = $this->crud_model->saving_insert_details('product', $input_data);
+
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "Product Saved Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "Product Not Saved");
+            }
+        } elseif ($id != '') {
+            $where['id'] = $id;
+            $res = $this->crud_model->update_operation($input_data, 'product', $where);
+
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "Product Updated Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "Product Not Updated");
+            }
+        }
+
+        redirect('product');
+    } 
+   
+    else {
+        $this->load->view('backend/index', $page_data);
+    }
+}
+
+    /*Products*/
     public function trailuser(){
         if($this->session->userdata('role_id')!=1){
         redirect('error_404');
@@ -1180,7 +1264,10 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
                 if($this->input->post()){
                     $input=$this->input->post();
                     $input_data=array(
-                        'user_id' => $input['theme']
+                        'user_id' => $input['theme'],
+                        'title'=>$input['tittle'],
+                        'text' => $input['text']
+
 
                     );
                    if($id==''){
@@ -1201,7 +1288,7 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
                         $this->session->set_flashdata('error_message',"Banner Not Updated");
                     }
                     }
-                    redirect('addimageitem');
+                    redirect('add_image');
                 }
                 $this->load->view('backend/index', $page_data);
         }
@@ -1542,6 +1629,113 @@ function system_settings($param1 = '') {
 
     $this->load->view('backend/index', $page_data);
     }
+    /*Facts*/
+    public function facts($id = '')
+{
+    // Check user role
+    if ($this->session->userdata('role_id') != 1) {
+        redirect('error_404');
+    }
+
+    // Process data based on whether $id is provided or not
+    if ($id != '') {
+        // Editing an existing record
+        $id = base64_decode($id);
+        $page_data['edit_data'] = $this->crud_model->get_single_facts_info($id);
+    } else {
+        // Adding a new record
+        $page_data['edit_data'] = '';
+    }
+
+    // Set page information
+    $page_data['page_title'] = "Facts";
+    $page_data['page_name'] = 'facts';
+
+    // Get facts information with clients
+    $page_data['facts'] = $this->crud_model->get_facts_info_with_clients();
+
+    // Handle form submission
+    if ($this->input->post()) {
+        $input = $this->input->post();
+        $input_data = array(
+            'experince' => $input['experince'],
+            'orders' => $input['orders'],
+            'clients_happy' => $input['happy'],
+            'projects' => $input['projects'],
+            'user_id' => $input['client_id']
+        );
+
+        // Check if a record with the given 'user_id' already exists
+        $existingRecord = $this->crud_model->get_single_facts_info_by_user_id($input['client_id']);
+
+        if (!$existingRecord) {
+            // 'user_id' doesn't exist, so insert a new record
+            $res = $this->crud_model->saving_insert_details('facts', $input_data);
+            $this->handleResultMessage($res, 'Facts Saved Successfully', 'Facts Not Saved');
+        } else {
+            // 'user_id' exists, so update the existing record
+            $where['id'] = $existingRecord['id'];
+            $res = $this->crud_model->update_operation($input_data, 'facts', $where);
+            $this->handleResultMessage($res, 'Facts Updated Successfully', 'Facts Not Updated');
+        }
+
+        // Redirect after form submission
+        redirect('facts');
+    }
+
+    // Load the view
+    $this->load->view('backend/index', $page_data);
+}
+
+
+    /*Facts*/
+    /*Services*/
+    public function services($id = '')
+    {
+    if ($this->session->userdata('role_id') != 1) {
+        redirect('error_404');
+    }
+
+    if ($id != '') {
+        $id = base64_decode($id);
+        $page_data['edit_data'] = $this->crud_model->get_single_service_info($id);
+    } else {
+        $page_data['edit_data'] = '';
+    }
+
+    $page_data['page_title'] = "Services";
+    $page_data['page_name'] = 'services';
+    $page_data['services'] = $this->crud_model->get_service_info_with_clients();
+
+    if ($this->input->post()) {
+        $input = $this->input->post();
+        $input_data = array(
+            'items' => $input['item'],
+            'review' => $input['review'],
+            'user_id' => $input['client_id']
+        );
+
+        if ($id == '') {
+            $res = $this->crud_model->saving_insert_details('services', $input_data);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "Services Saved Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "Services Not Saved");
+            }
+        } elseif ($id != '') {
+            $where['id'] = $id;
+            $res = $this->crud_model->update_operation($input_data, 'services', $where);
+            if ($res > 0) {
+                $this->session->set_flashdata('success_message', "Services Updated Successfully");
+            } else {
+                $this->session->set_flashdata('error_message', "Services Not Updated");
+            }
+        }
+        redirect('services');
+    }
+
+    $this->load->view('backend/index', $page_data);
+    }
 
 
     /*public function delete_operation($id)
@@ -1696,7 +1890,8 @@ function system_settings($param1 = '') {
                 if($this->input->post()){
                     $input=$this->input->post();
                     $input_data=array(
-                        'review'=>$input['review'],
+                        'role'=>$input['review'],
+                        'name'=>$input['name'],
                         'user_id'=>$input['theme']
 
                     );

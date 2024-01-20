@@ -1,10 +1,12 @@
  <!--Trailupload-->
  <?php
 if($edit_data!=''){
-    $name=$edit_data['name'];
+    $name=$edit_data['first_name'];
     $email=$edit_data['email'];
     $password=$edit_data['password'];
     $mobile=$edit_data['mobile'];
+    $adress=$edit_data['address'];
+
 /*'password'=>md5($post['password'])*/
     $form_url='addclient/'.base64_encode($edit_data['id']);
 }else{
@@ -60,15 +62,6 @@ if($edit_data!=''){
                                                 </div>
                                             </div>
                                             <!--  -->
-                                            
-                                            <div class="form-group row">
-                                                <label class="col-sm-4 control-label text-sm-right pt-2">Mobile No: </label>
-                                                <div class="col-sm-5">
-                                                    <input type="Number" id="mobile" class="form-control" name="mobile" value="<?=$mobile;?>" required="">
-                                                </div>
-                                            </div>
-
-                                            <!--  -->
                                             <div class="form-group row">
                                                 
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Client Name: </label>
@@ -76,16 +69,32 @@ if($edit_data!=''){
                                                     <input type="text" id="name" class="form-control"id="name" name="name" value="<?=$name;?>" required=""><?=$name;?>
                                                 </div>
                                             </div>
+                                            
+                                            <div class="form-group row">
+                                                <label class="col-sm-4 control-label text-sm-right pt-2">Mobile No: </label>
+                                                <div class="col-sm-5">
+                                                    <input type="Number" id="mobile" class="form-control" name="mobile" value="<?=$mobile;?>" required="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                
+                                                <label class="col-sm-4 control-label text-sm-right pt-2">Adress: </label>
+                                                <div class="col-sm-5">
+                                                    <input type="text" id="adress" class="form-control"id="adress" name="adress" value="<?=$adress;?>" required="">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            
                                             <div class="form-group row">
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Email: </label>
                                                 <div class="col-sm-5">
-                                                    <input type="email" class="form-control" rows="3" id="email" autocomplete="off" required="" name="email"  value="<?=$email;?>" ><?=$email;?></textarea>
+                                                    <input type="email" class="form-control" rows="3" id="email" autocomplete="off" required="" name="email"  value="<?=$email;?>" >
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-sm-4 control-label text-sm-right pt-2">Password: </label>
                                                 <div class="col-sm-5">
-                                                    <input type="password" class="form-control" rows="3" id="password" autocomplete="off" required="" name="password"  value="<?=$password;?>" ><?=$password;?></textarea>
+                                                    <input type="password" class="form-control" rows="3" id="password" autocomplete="off" required="" name="password"  value="<?=$password;?>" >
                                                 </div>
                                             </div>
                                             <div class="form-group row">

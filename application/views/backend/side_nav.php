@@ -289,7 +289,7 @@ if($this->session->userdata('role_id')=='1'){
                                             
                                         </ul>
                                     </li> -->
-                                    <li class="nav-parent <?php if($page_name=='settings' || $page_name=='faqs' || $page_name=='testomonial' ||  $page_name=='aboutus' ||  $page_name=='addimageitem' || $page_name=='blog' || $page_name=='flash_image' || $page_title=='Terms & Conditions' || $page_title=='Privacy Policy'){echo 'nav-expanded nav-active';}?>">
+                                    <li class="nav-parent <?php if($page_name=='settings' || $page_name=='faqs' || $page_name=='testomonial' ||  $page_name=='aboutus' ||  $page_name=='addimageitem' ||  $page_name=='services' || $page_name=='blog' || $page_name=='flash_image' || $page_title=='Terms & Conditions'|| $page_title=='Terms & Conditions' || $page_title=='Privacy Policy'){echo 'nav-expanded nav-active';}?>">
                                         <a class="nav-link" href="#">
                                             <i class="fas fa-table" aria-hidden="true"></i>
                                             <span>Settings</span>
@@ -316,6 +316,16 @@ if($this->session->userdata('role_id')=='1'){
                                                     Testomonial
                                                 </a>
                                             </li>
+                                            <li class="<?php if($page_name=='services'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('services')?>">
+                                                    Services
+                                                </a>
+                                            </li>
+                                            <!-- <li class="<?php if($page_name=='facts'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('facts')?>">
+                                                    Facts
+                                                </a>
+                                            </li> -->
                                             <li class="<?php if($page_name=='aboutus'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('aboutus')?>">
                                                     About us
@@ -326,6 +336,11 @@ if($this->session->userdata('role_id')=='1'){
                                                     Banner
                                                 </a>
                                             </li>
+                                            <!-- <li class="<?php if($page_name=='product'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('product')?>">
+                                                    Product
+                                                </a>
+                                            </li> -->
                                             <li class="<?php if($page_name=='team'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('team')?>">
                                                     Team
@@ -441,6 +456,17 @@ if($this->session->userdata('role_id')=='1'){
                                                     Banner
                                                 </a>
                                             </li>
+                                            <!-- <li class="<?php if($page_name=='product'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('u_product')?>">
+                                                    Product
+                                                </a>
+                                            </li> -->
+                                            <li class="<?php if($page_name=='services'){echo 'nav-active';}?>">
+                                                <a class="nav-link" href="<?=base_url('u_services')?>">
+                                                    Services
+                                                </a>
+                                            </li>
+                                            
                                             <li class="<?php if($page_name=='aboutus'){echo 'nav-active';}?>">
                                                 <a class="nav-link" href="<?=base_url('u_aboutus')?>">
                                                     Aboutus

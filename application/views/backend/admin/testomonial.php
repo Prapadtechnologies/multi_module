@@ -34,7 +34,7 @@ if ($edit_data != '') {
                     <div class="form-group row">
                         <label class="col-sm-4 control-label text-sm-right pt-2">Client Name: </label>
                         <div class="col-sm-5">
-                            <textarea class="form-control"  id="name" autocomplete="off" required="" name="name"><?= $name; ?></textarea>
+                            <input class="form-control"  id="name" autocomplete="off" required="" name="name" value="<?= $name; ?>">
                         </div>
                     </div>
 

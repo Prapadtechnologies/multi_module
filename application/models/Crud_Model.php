@@ -1,5 +1,4 @@
 <?php
-
 class Crud_Model extends CI_Model{
     protected $system_name;
     protected $login_id;
@@ -924,7 +923,16 @@ return $rating;
         $query = $this->db->get();
         return $query->result_array();
     }
+    public function get_facts_info_with_clients()
+    {
+        $this->db->select('facts.*, users.first_name as first_name, users.theme_type');
+        $this->db->from('facts');
+        $this->db->join('users', 'users.id = facts.user_id', 'left'); 
+        $this->db->where('facts.row_status', 1);
 
+        $query = $this->db->get();
+        return $query->result_array();
+    }
     public function get_team_info_with_clients()
     {
         $this->db->select('teams.*, users.first_name as first_name, users.theme_type, users.id as u_id');
@@ -960,21 +968,40 @@ return $rating;
     
     return $result ? $result : array();
     }
-    public function get_content_by_testomonial($user_id)
-{
-    $this->db->select('testomonial.*, users.first_name as first_name');
-    $this->db->from('testomonial');
-    $this->db->join('users', 'users.id = testomonial.user_id', 'left');
-    $this->db->where('testomonial.user_id', $user_id);
-    $this->db->where('testomonial.row_status', 1); 
+    public function get_service_info_with_clients()
+    {
+        $this->db->select('services.*, users.first_name as first_name, users.theme_type');
+        $this->db->from('services');
+        $this->db->join('users', 'users.id = services.user_id', 'left'); 
+        $this->db->where('services.row_status', 1);
 
-    $query = $this->db->get();
-    $result = $query->result_array();
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+        public function get_content_by_testomonial($user_id)
+    {
+        $this->db->select('testomonial.*, users.first_name as first_name');
+        $this->db->from('testomonial');
+        $this->db->join('users', 'users.id = testomonial.user_id', 'left');
+        $this->db->where('testomonial.user_id', $user_id);
+        $this->db->where('testomonial.row_status', 1); 
 
-    
+        $query = $this->db->get();
+        $result = $query->result_array();
+        return $result ? $result : array();
+    }
+        public function get_content_by_product($user_id)
+    {
+        $this->db->select('product.*, users.first_name as first_name');
+        $this->db->from('product');
+        $this->db->join('users', 'users.id = product.user_id', 'left');
+        $this->db->where('product.user_id', $user_id);
+        $this->db->where('product.row_status', 1); 
 
-    return $result ? $result : array();
-}
+        $query = $this->db->get();
+        $result = $query->result_array();
+        return $result ? $result : array();
+    }
 
     public function get_content_by_banner($user_id) {
         $this->db->select('banner.*');
@@ -1150,6 +1177,7 @@ return $rating;
         
         return $result ? $result : null;
     }
+
     /*
     public function get_content_by_faq($user_id)
     {
@@ -1190,7 +1218,18 @@ return $rating;
         
         return $result ? $result : array();
     }
+    public function get_content_by_services($user_id)
+    {
+        $this->db->select('items, review');
+        $this->db->from('services');
+        $this->db->where('user_id', $user_id);
+        $this->db->where('row_status', 1); 
 
+        $query = $this->db->get();
+        $result = $query->result();  
+        
+        return $result ? $result : array();
+    }
 
 
 
@@ -1237,12 +1276,25 @@ return $rating;
     $query = $this->db->query("SELECT * FROM users WHERE id = $user_id");
     return $query->result_array();
     }
-    public function update_aboutus($user_id, $data)
-{
-    $this->db->where('user_id', $user_id);
-    $this->db->update('aboutus', $data);
-}
+        public function update_aboutus($user_id, $data)
+    {
+        $this->db->where('user_id', $user_id);
+        $this->db->update('aboutus', $data);
+    }
+    function get_single_product_info($id){
+        return $this->db->get_where('product',array('id'=>$id))->row_array();
+    }
+    function get_product_info(){
+        return $this->db->order_by('id','DESC')->get_where('product',array('row_status'=>1))->result_array();
+    }
+    function get_single_service_info($id){
+        return $this->db->get_where('services',array('id'=>$id))->row_array();
 
+    }
+        function get_single_facts_info($id){
+        return $this->db->get_where('facts',array('id'=>$id))->row_array();
+
+    }
 }   
 
 

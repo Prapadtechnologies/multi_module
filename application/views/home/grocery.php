@@ -1,342 +1,494 @@
-<!-- Carousel Start -->
-<div id="home" class="container-fluid p-0">
-    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <?php
-            if (isset($_GET['id'])) {
-                $clientID = $_GET['id'];
+<!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-                $banners = $this->crud_model->get_content_by_banner($clientID);
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-                if ($banners) {
-                    $i = 0;
-                    foreach ($banners as $banner) {
-                        $image_path = base_url('uploads/wrapper/') . $banner['id'] . '.jpg';
-                        $active_class = ($i == 0) ? 'active' : ''; 
-                        echo '<div class="carousel-item ' . $active_class . '">';
-                        echo '<img class="w-100" src="' . $image_path . '" alt="">';
-                        echo '<div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">';
-                        echo '<div class="text-start p-5" style="max-width: 900px;">';
-                        echo '<a href="#" class="btn btn-primary py-md-3 px-md-5 me-3" style="margin-left: 250px;">Order</a>';
-                        echo '</div>';
-                        echo '</div>';
-                        echo '</div>';
-                        $i++;
-                    }
-                } else {
-                    echo '<p>No banners found for the specified ID.</p>';
-                }
-            }
-            ?>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
+            <div class="carousel-inner" role="listbox">
+                <?php
+                if (isset($_GET['id'])) {
+                    $clientID = $_GET['id'];
 
-    <!-- Carousel End -->
+                    $banners = $this->crud_model->get_content_by_banner($clientID);
 
+                    if ($banners) {
+                        foreach ($banners as $index => $banner) {
+                            $activeClass = ($index === 0) ? 'active' : '';
+                            $imagePath = base_url('uploads/wrapper/') . $banner['id'] . '.jpg';
 
-     <!-- Products Start -->
-    <div class="container-fluid py-5" id="product">
-        <div class="container">
-            <div class="mx-auto text-center mb-5" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase">Items</h6>
-                <h1 class="display-5">Grocery</h1>
-            </div>
-            <div class="owl-carousel product-carousel  product-carousel-2 px-5">
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="<?php echo base_url('assets/home/plugins');?>/img/gro/aashi.webp" alt="">
-                        <h6 class="mb-3">AASHIRVVAD WHEAT</h6>
-                        <h5 class="text-primary mb-0">250 Rs</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="<?php echo base_url('assets/home/plugins');?>/img/gro/sug.webp" alt="">
-                        <h6 class="mb-3">SUGAR</h6>
-                        <h5 class="text-primary mb-0">35 Rs</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="<?php echo base_url('assets/home/plugins');?>/img/gro/sun.webp" alt="" >
-                        <h6 class="mb-3">SUN FLOWER</h6>
-                        <h5 class="text-primary mb-0">550 Rs</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="<?php echo base_url('assets/home/plugins');?>/img/gro/maida2.webp" alt="" >
-                        <h6 class="mb-3">MAIDA</h6>
-                        <h5 class="text-primary mb-0">250 Rs</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="<?php echo base_url('assets/home/plugins');?>/img/gro/tume.webp" alt="" >
-                        <h6 class="mb-3">TURMERIC</h6>
-                        <h5 class="text-primary mb-0">5200 Rs</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Products End -->
-
-        <!-- Testimonial Start -->
-    <div class="container-fluid bg-testimonial-gro py-5 my-5">
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="owl-carousel testimonial-carousel p-5">
-                    <?php
-                    if (isset($_GET['id'])) {
-                        $clientID = $_GET['id'];
-                        
-                        $faqs = $this->crud_model->get_content_by_testomonial($clientID);
-
-                        if ($faqs) {
-                            foreach ($faqs as $faq) {
-                                echo '<div class="testimonial-item text-center text-white">';
-                                $image_path = base_url('uploads/testomonial/') . $faq['id'] . '.jpg';
-                                echo '<img class="img-fluid mx-auto p-2 border border-5 rounded-circle mb-4" src="' . $image_path . '" alt="">';
-
-                                echo '<p class="fs-5">' . $faq['name'] . '</p>';
-                                echo '<hr class="mx-auto w-25">';
-                                echo '<h4 class="text-white mb-0">' . $faq['review'] . '</h4>';
-                                echo '</div>';
-                            }
-                        } else {
-                            echo '<p>No team members found for the specified ID.</p>';
+                            echo '<div class="carousel-item ' . $activeClass . '" style="background-image: url(' . $imagePath . ');">';
+                            echo '<div class="carousel-container">';
+                            echo '<div class="carousel-content">';
+                            echo '<h2 class="animate__animated animate__fadeInDown"><span>' . $banner['title'] . '</span></h2>';
+                            echo '<p class="animate__animated animate__fadeInUp">' . $banner['text'] . '</p>';
+                           /* echo '<div>';
+                            echo '<a href="' . $banner['menu_link'] . '" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>';
+                            echo '<a href="' . $banner['table_link'] . '" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>';
+                            echo '</div>';*/
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
                         }
+                    } else {
+                        echo '<p>No banners found for the specified ID.</p>';
                     }
-                    ?>
-                </div>
+                }
+                ?>
             </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
         </div>
     </div>
-</div>
+</section>
 
-    <!-- Testimonial End -->
+<!-- End Hero -->
 
-   
-    <!-- Banner Start -->
+  <main id="main">
 
-
-    <!-- About Start -->
-       <!-- About Start -->
-        <?php
+    <!-- ======= About Section ======= -->
+    <?php
 if (isset($_GET['id'])) {
     $clientID = $_GET['id'];
-    $clientName = $_GET['first_name'];
-    $clientEmail = $_GET['image'];
 
+    
     $clientData = $this->crud_model->get_content_by_about($clientID);
 
-    // Display client details
-    echo '<div class="container-fluid about pt-5" id="about';
-    echo '<div class="container">';
-    echo '<div class="row gx-5">';
-    echo '<div class="col-lg-5 mb-5 mb-lg-0">';
-    echo '<div class="d-flex h-100 border border-5 border-primary border-bottom-0 pt-4">';
+    if ($clientData) {
+        ?>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                                        <?php
+                    $imageFilename = $clientData ? $clientData->image : ''; 
+                    $imagePath = $imageFilename ? base_url('uploads/about/') . $imageFilename : ''; 
 
-    // Display the client image
-    $imageFilename = $clientData ? $clientData->image : ''; // Get the image filename from the fetched data
-    $imagePath = $imageFilename ? base_url('uploads/about/') . $imageFilename  : ''; // Construct the full image path
+                    // Check if the image path is not empty before rendering the div with background image
+                    if (!empty($imagePath)) {
+                        echo '<div class="col-lg-5 align-items-stretch " style="background-image: url(\'' . $imagePath . '\'); background-repeat: no-repeat;">';
 
-    echo '<img class="img-fluid mt-auto mx-auto" src="' . $imagePath . '" style="height: 1000px;">';
-
-    echo '</div>';
-    echo '</div>';
-    echo '<div class="col-lg-7 pb-5">';
-    echo '<div class="mb-3 pb-2">';
-
-    // Display the client description
-    $description = $clientData ? $clientData->description : 'No description available';
-    echo $description;
-
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-}
-?>
-
-    <!-- About End -->
-    
-    <!-- About End -->
-    
-    <!-- About End -->
-
-
-    <!-- Facts Start -->
-    <div class="container-fluid bg-primary facts py-5 mb-5">
-        <div class="container py-5">
-            <div class="row gx-5 gy-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-star fs-4 text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white">Our Experience</h5>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users fs-4 text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white">Orders</h5>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check fs-4 text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white">Complete Project</h5>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-mug-hot fs-4 text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white">Happy Clients</h5>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Facts End -->
-    
-
-   
-
-
-
-    <!-- Team Start -->
-    
-    <div class="container-fluid bg-testimonial-2 py-5 my-5" id="services">
-    <div class="container py-5">
-        <div class="mx-auto text-center mb-5" style="max-width: 500px;">
-            <h1 class="display-5">TEAM</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="owl-carousel testimonial-carousel p-5">
-                    <?php
-                    $teams = $this->crud_model->get_team_info_with_clients();
-                    foreach ($teams as $row) {
-                        if ($row['theme_type'] == 2) {
-                            ?>
-                            <div class="testimonial-item text-center text-white">
-                                <?php
-                                $image_path = base_url('uploads/team2/') . $row['id'] . '.jpg';
-                                /*echo "<p>File Path: $image_path</p>"; */
-                                
-                                ?>
-                                <img class="img-fluid mx-auto p-2 border border-5 rounded-circle mb-4" src="<?= $image_path ?>" alt="">
-                                <p class="fs-5"><?= $row['name']; ?></p>
-                                <hr class="mx-auto w-25">
-                                <h4 class="text-white mb-0"><?= $row['review']; ?></h4>
-                                 <!-- <p><?= $row['id']; ?></p> -->
-                               
-
-
-                            </div>
-                            <?php
-                        }
+                        echo '</div>';
+                    } else {
+                        echo '<p>No image available</p>';
                     }
                     ?>
+
+
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+                        <div class="content">
+                            <h3><?php echo $clientData->title; ?></h3>
+                            <p><?php echo $clientData->description; ?></p>
+                            <p class="fst-italic"><?php echo $clientData->paragraph2; ?></p>
+                            <!-- <ul>
+                                <li><i class="bx bx-check-double"></i> <?php echo $clientData->list_item1; ?></li>
+                                <li><i class="bx bx-check-double"></i> <?php echo $clientData->list_item2; ?></li>
+                                <li><i class="bx bx-check-double"></i> <?php echo $clientData->list_item3; ?></li>
+                            </ul> -->
+                            <p><?php echo $clientData->paragraph3; ?></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </section>
+    <?php
+    }
+}
+?>
+<!-- End About Section -->
 
-    <!-- Team End -->
-    
-    <!-- Dynamic FAQ -->
-   
-        <!-- Dynamic FAQ -->
-<div class="page">
-    <div class="content">
-        <aside>
-            <h1>FAQ</h1>
-            <p>We understand that you may have questions about our baked goods, so we've compiled a list of frequently asked questions to help you find the information you need.</p>
-            <img src="<?php echo base_url('assets/home/plugins'); ?>/img/food/pizza.png">
-        </aside>
-        <main>
-            <h2>Product Information</h2>
+    <!-- ======= Whu Us Section ======= -->
+    <section id="services" class="why-us">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our <span>Services</span></h2>
+            <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
+        <div class="row">
 
             <?php
+            // Check if 'id' parameter is set in the URL
             if (isset($_GET['id'])) {
                 $clientID = $_GET['id'];
+                $clientName = $_GET['first_name'];
+                $clientEmail = $_GET['image'];
 
-                
-                $faqs = $this->crud_model->get_content_by_faq($clientID);
-
-                if ($faqs) {
-                    // Loop through each FAQ and display it
-                    foreach ($faqs as $faq) {
-                        echo '<details>';
-                        echo '<summary>' . $faq->question . '</summary>';
-                        echo '<p>' . $faq->answer . '</p>';
-                        echo '</details>';
-                    }
-                } else {
-                    echo '<p>No FAQs found for the specified ID.</p>';
+                // Assuming $this->crud_model->get_content_by_services() retrieves services for the given clientID
+                $services = $this->crud_model->get_content_by_services($clientID);
+                $i=1;
+                // Loop through each service and display it
+                foreach ($services as $service) {
+                    ?>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <span><?= $i++ ?></span>
+                            <h4><?= $service->items ?></h4>
+                            <p><?= $service->review ?></p>
+                        </div>
+                    </div>
+                    <?php
                 }
             }
             ?>
-        </main>
+
+        </div>
+
     </div>
-</div>
+</section>
+<!-- End Whu Us Section -->
 
-
-
-
-    <!-- Dynamic FAQ -->
     
+
+    <!-- ======= Specials Section ======= -->
+    <section id="faqs" class="specials">
+    <div class="container py-5 mb-5">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Frequently Asked <span>Questions</span></h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="nav nav-tabs flex-column">
+                        <?php
+                        if (isset($_GET['id'])) {
+                            $clientID = $_GET['id'];
+
+                            $faqs = $this->crud_model->get_content_by_faq($clientID);
+
+                            if ($faqs) {
+                                foreach ($faqs as $index => $faq) {
+                                    echo '<li class="nav-item">';
+                                    echo '<a class="nav-link' . ($index == 0 ? ' active show' : '') . '" data-bs-toggle="tab" href="#tab-' . ($index + 1) . '">' . $faq->question . '</a>';
+                                    echo '</li>';
+                                }
+                            } else {
+                                echo '<p>No FAQs found for the specified ID.</p>';
+                            }
+                        }
+                        ?>
+                    </ul>
+                </div>
+                <div class="col-lg-9 mt-4 mt-lg-0">
+                    <div class="tab-content">
+                        <?php
+                        if ($faqs) {
+                            foreach ($faqs as $index => $faq) {
+                                echo '<div class="tab-pane' . ($index == 0 ? ' active show' : '') . '" id="tab-' . ($index + 1) . '">';
+                                echo '<div class="row">';
+                                echo '<div class="col-lg-12  details order-2 order-lg-1">';
+                                /*echo '<h3>' . $faq->question . '</h3>';*/
+                                echo '<p class="fst-italic">' . $faq->answer . '</p>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Specials Section -->
+
+    
+
+    <!-- ======= Gallery Section ======= -->
+    <!-- <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2>Some photos from <span>Our Restaurant</span></h2>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> --><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our Professional <span>Team</span></h2>
+            <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
+        <div class="row">
+
+                <?php
+    if (isset($_GET['id'])) {
+        $clientID = $_GET['id'];
+        $teams = $this->crud_model->get_content_by_team($clientID);
+
+        if ($teams) {
+            foreach ($teams as $team) {
+              /*print_r($team);
+              die();*/
+                ?>
+                <div class="col-lg-4 col-md-6">
+                    <div class="member">
+                        <div class="pic">
+                          <?php 
+                             $image_path = base_url('uploads/team2/') . $team->id . '.jpg';
+                           ?>
+                            <img height="400px" width="350px" src="<?php echo $image_path; ?>"   alt="">
+                        </div>
+                        <div class="member-info">
+                            <h4><?php echo $team->name; ?></h4>
+                            <span><?php echo $team->role; ?></span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <?php
+            }
+        } else {
+            echo '<p>No team members found for the specified ID.</p>';
+        }
+    }
+    ?>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Chefs Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="team" class="testimonials">
+    <div class="container position-relative">
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+                <?php
+                if (isset($_GET['id'])) {
+                    $clientID = $_GET['id'];
+                    $teamMembers = $this->crud_model->get_content_by_testomonial($clientID);
+
+                    if ($teamMembers) {
+                        foreach ($teamMembers as $member) {
+                            echo '<div class="swiper-slide">';
+                            echo '<div class="testimonial-item">';
+                            $imagePath = base_url('uploads/testomonial/') . $member['id'] . '.jpg';
+                            echo '<img src="' . $imagePath . '" class="testimonial-img" alt="">';
+                            echo '<h3>' . $member['name'] . '</h3>';
+                            echo '<h4>' . $member->role . '</h4>';
+                            echo '<div class="stars">';
+                            for ($i = 0; $i < 5; $i++) {
+                                echo '<i class="bi bi-star-fill"></i>';
+                            }
+                            echo '</div>';
+                            echo '<p>';
+                            echo '<i class="bx bxs-quote-alt-left quote-icon-left"></i>';
+                            echo $member['review'] ;
+                            echo '<i class="bx bxs-quote-alt-right quote-icon-right"></i>';
+                            echo '</p>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                    } else {
+                        echo '<p>No team members found for the specified ID.</p>';
+                    }
+                }
+                ?>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>Contact</span> Us</h2>
+          <p>If you require any further information, feel free to contact me.</p>
+        </div>
+      </div>
+              <?php
+        if (isset($_GET['id'])) {
+            $clientID = $_GET['id'];
+            $clients = $this->crud_model->get_client_info();
+
+            foreach ($clients as $client) {
+                if ($client['id'] == $clientID) {
+                    // Retrieve and use client information
+                    $email = $client['email'];
+                    $phoneNumber = $client['mobile'];
+                    $address = $client['address'];
+                }
+            }
+        }
+        ?>
+
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container mt-5">
+
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p><?php echo $address; ?> <!-- <br>New York, NY 535022 --></p>
+            </div>
+
+            <!-- <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
+            </div> -->
+
+            <div class="col-lg-4 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p><?php echo $email; ?><!-- <br>contact@example.com --></p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p><?php echo $phoneNumber; ?><!-- <br>+1 5589 22475 14 --></p>
+            </div>
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <!-- <h3>Delicious</h3> -->
+      <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Prapad Technologies</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,9 +26,7 @@
 <body>
 
     <!-- Navbar Start -->
-    <?php
-    include_once('layouts/nav.php');
-    ?>
+    
 
 
 <div class="row mb-5" >
@@ -102,29 +101,3 @@
         window.location.href = url;
     }
 </script>
- 
- <!-- <script>
-    function redirectToTheme(themeType, clientId, clientName, clientEmail) {
-    var url = '';
-    switch (themeType) {
-        case 1:
-            url = '<?= base_url('food'); ?>';
-            break;
-        case 2:
-            url = '<?= base_url('grocery'); ?>';
-            break;
-        case 3:
-            url = '<?= base_url('ecomecers'); ?>';
-            break;
-        case 4:
-            url = '<?= base_url('real'); ?>';
-            break;
-        default:
-    }
-    
-    url += '?id=' + clientId + '&first_name=' + encodeURIComponent(clientName) + '&email=' + encodeURIComponent(clientEmail);
-        
-        window.location.href = url;
-    }
-</script>
-  -->

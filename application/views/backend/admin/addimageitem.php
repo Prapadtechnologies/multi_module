@@ -12,6 +12,8 @@
                                                     <th>SNo</th>
                                                     
                                                     <th>Name</th>
+                                                    <th>Title</th>
+                                                    <th>Text</th>
                                                     <th>Image</th>
                                                     <!-- <th>Theme</th> -->
                                                      <th>Actions</th>
@@ -28,6 +30,8 @@
                                                     <td><?=$i+1;?></td>
                                                     
                                                     <td><?=$row['first_name'];?></td>
+                                                    <td><?=$row['title'];?></td>
+                                                    <td><?=$row['text'];?></td>
                                                     <td><img  height="60px" width="100px"  src="<?= base_url('uploads/wrapper/' . $row['id'] . '.jpg'); ?> " alt="Image"></td>
                                                     <!-- <td><?=$row['theme_type'];?></td> -->
                                                   

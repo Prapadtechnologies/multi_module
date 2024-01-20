@@ -176,8 +176,14 @@ $route['addshopitem'] = 'admin/addshopitem';
 $route['addimageitem'] = 'admin/addimageitem';
 $route['settings'] = 'admin/system_settings';
 $route['faqs'] = 'admin/faqs';
+$route['facts'] = 'admin/facts';
+$route['facts/(:any)'] = 'admin/facts/$1';
+$route['product'] = 'admin/product';
+$route['product/(:any)'] = 'admin/product/$1';
 $route['testomonial']='admin/testomonial';
 $route['testomonial/(:any)'] = 'admin/testomonial/$1';
+$route['services']='admin/services';
+$route['services/(:any)'] = 'admin/services/$1';
 $route['aboutus']='admin/aboutus';
 $route['team']='admin/team';
 $route['team/(:any)'] = 'admin/team/$1';
@@ -237,6 +243,10 @@ $route['u_team'] = 'user/team';
 $route['u_addimage']= 'user/add_image';
 $route['u_testomonial'] = 'user/testomonial';
 $route['u_aboutus'] = 'user/aboutus';
+$route['u_product']='user/product';
+$route['u_services']='user/services';
+
+
 /*$route['clientlist'] = 'admin/clientlist';*/
 
 /*$route['login_user']='home/login_user';

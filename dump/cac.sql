@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2024 at 07:55 AM
+-- Generation Time: Jan 20, 2024 at 11:44 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,12 +42,35 @@ CREATE TABLE `aboutus` (
 --
 
 INSERT INTO `aboutus` (`id`, `image`, `description`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
-(1, 'chef.jpg', '<h1>Terms &amp; Conditions(Hari)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:30:59', NULL, 1, 15),
-(2, 'about1.jpg', '<h1>Terms &amp; Conditions(Sam)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:31:29', NULL, 1, 17),
-(3, 'about.jpg', '<h1>Terms &amp; Conditions(Shiva)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:32:26', NULL, 1, 16),
-(4, 'about2.jpg', '<h1>Terms &amp; Conditions(Ramesh)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:37:13', NULL, 1, 20),
-(5, 'about3.jpg', '<h1>Terms &amp; Conditions(Harshi)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 14:44:16', NULL, 1, 22),
-(6, 'about4.jpg', '<h1>Terms &amp; Conditions(Ashwin)</h1>\r\n\r\n<ul>\r\n	<li>\r\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n	</li>\r\n</ul>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<ul>\r\n	<li>\r\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\r\n\r\n	<p>a) Free Registration</p>\r\n\r\n	<p>b) Premium Registration</p>\r\n\r\n	<p>c) Special Offers</p>\r\n\r\n	<p>d) Combo registrations with partners</p>\r\n\r\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\r\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\r\n\r\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\r\n	</li>\r\n</ul>\r\n', '2024-01-16 15:39:06', NULL, 1, 18);
+(1, 'chef.jpg', '<h1>Terms &amp; Conditions(Hari)</h1>\n\n<ul>\n	<li>\n	<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\n	</li>\n</ul>\n\n<h2>1) Introduction</h2>\n\n<ul>\n	<li>\n	<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\n	<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\n	</li>\n</ul>\n\n<h2>2) Registration Access and Use</h2>\n\n<ul>\n	<li>\n	<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\n\n	<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\n\n	<p>The nature and volume of Business Standard content services you consume on the digital platforms will vary according to the type of registration you choose, on the geography you reside or the offer you subscribe to.</p>\n\n	<p>a) Free Registration</p>\n\n	<p>b) Premium Registration</p>\n\n	<p>c) Special Offers</p>\n\n	<p>d) Combo registrations with partners</p>\n\n	<p>The details of the services and access offered for each account have been listed on&nbsp;<br />\n	<a href=\"http://www.business-standard.com/subscription-cart/product\" target=\"_blank\">www.business-standard.com/subscription-cart/product</a></p>\n\n	<p>We may in exceptional circumstances cease to provide subscription services. We will give you at least 7 days notice of this, if possible. If we do so, then we will have no further obligation to you.</p>\n	</li>\n</ul>\n', '2024-01-16 14:30:59', NULL, 1, 15),
+(2, 'about1.jpg', '<h1>Terms &amp; Conditions(Sam)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services &nbsp;owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.2) Registration Access and Use</p>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-16 14:31:29', NULL, 1, 17),
+(3, 'about.jpg', '<h1>Terms &amp; Conditions(Shiva)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 14:32:26', NULL, 1, 16),
+(4, 'about2.jpg', '<h1>Terms &amp; Conditions(Ramesh)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 14:37:13', NULL, 1, 20),
+(5, 'about3.jpg', '<h1><span style=\"font-size:28px\"><em><strong>Terms &amp; Conditions</strong></em></span></h1>\r\n\r\n<p><span style=\"font-size:16px\">● All the dishes will be served with in 25 minutes of placing the order.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Outside eatables are not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Liquor is strictly prohibited.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Smoking is not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Please be cooperative with us to serve you the best.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Once an order is placed , it cannot be canceled.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Management is not responsible for any of your personal belongings</span></p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-16 14:44:16', NULL, 1, 22),
+(6, 'about4.jpg', '<h1>Terms &amp; Conditions(Ashwin)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\nwebsite, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 15:39:06', NULL, 1, 18),
+(7, 'about11.jpg', '<h1>Terms &amp; Conditions(Bhanu prakash)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-17 12:48:14', NULL, 1, 14),
+(8, '', '<h1>Terms &amp; Conditions(Bhanu prakash)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-17 12:54:56', NULL, 0, 14),
+(9, 'about5.jpg', '<h1>Terms &amp; Conditions(Pavan)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services &nbsp;owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.2) Registration Access and Use</p>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-20 13:57:19', NULL, 1, 23),
+(10, 'about6.jpg', '<h1>Terms &amp; Conditions(Sam)</h1>\n\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\n\n<h2>1) Introduction</h2>\n\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services &nbsp;owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.2) Registration Access and Use</p>\n\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\n\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\n', '2024-01-20 15:19:47', NULL, 1, 24);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `adress`
+--
+
+CREATE TABLE `adress` (
+  `id` int(11) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `street` varchar(60) NOT NULL,
+  `pincode` int(11) NOT NULL,
+  `whatsapp` int(11) NOT NULL,
+  `telephone` int(11) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime NOT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive,3=Trail,4=Failed	',
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -57,7 +80,8 @@ INSERT INTO `aboutus` (`id`, `image`, `description`, `created_at`, `modified_at`
 
 CREATE TABLE `banner` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text` varchar(200) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `title` varchar(100) NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime NOT NULL DEFAULT current_timestamp(),
   `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive',
@@ -68,17 +92,27 @@ CREATE TABLE `banner` (
 -- Dumping data for table `banner`
 --
 
-INSERT INTO `banner` (`id`, `name`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
-(1, '', '2024-01-10 15:52:41', '2024-01-10 15:52:41', 1, 15),
-(2, '', '2024-01-10 15:52:51', '2024-01-10 15:52:51', 1, 15),
-(3, '', '2024-01-10 15:53:54', '2024-01-10 15:53:54', 1, 14),
-(4, '', '2024-01-10 15:54:06', '2024-01-10 15:54:06', 1, 17),
-(5, '', '2024-01-10 16:21:07', '2024-01-10 16:21:07', 1, 16),
-(6, '', '2024-01-10 16:35:01', '2024-01-10 16:35:01', 1, 4),
-(7, '', '2024-01-12 15:14:40', '2024-01-12 15:16:53', 0, 18),
-(8, '', '2024-01-17 12:08:24', '2024-01-17 12:08:24', 1, 20),
-(9, '', '2024-01-17 12:12:06', '2024-01-17 12:12:06', 1, 22),
-(10, '', '2024-01-17 12:22:23', '2024-01-17 12:22:23', 1, 14);
+INSERT INTO `banner` (`id`, `text`, `title`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
+(1, '', '', '2024-01-10 15:52:41', '2024-01-10 15:52:41', 1, 15),
+(2, '', '', '2024-01-10 15:52:51', '2024-01-20 11:24:44', 0, 15),
+(3, '', '', '2024-01-10 15:53:54', '2024-01-19 17:24:03', 0, 14),
+(4, '', '', '2024-01-10 15:54:06', '2024-01-10 15:54:06', 1, 17),
+(5, '', '', '2024-01-10 16:21:07', '2024-01-20 10:21:12', 0, 16),
+(6, '', '', '2024-01-10 16:35:01', '2024-01-10 16:35:01', 1, 4),
+(7, '', '', '2024-01-12 15:14:40', '2024-01-12 15:16:53', 0, 18),
+(8, '', '', '2024-01-17 12:08:24', '2024-01-17 12:08:24', 1, 20),
+(9, '', '', '2024-01-17 12:12:06', '2024-01-19 14:20:29', 0, 22),
+(10, '', '', '2024-01-17 12:22:23', '2024-01-19 17:24:13', 0, 14),
+(11, '', '', '2024-01-18 15:10:52', '2024-01-19 14:20:17', 0, 22),
+(12, 'velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus', 'Delicious', '2024-01-19 14:24:44', '2024-01-19 14:24:44', 1, 22),
+(13, 'Everything you need to know about restaurant text marketing and links to extra resources on specific topics', 'Delicious', '2024-01-19 14:36:02', '2024-01-19 14:36:02', 1, 22),
+(14, 'If I have free time, I want to go to the beach, walk around a shopping mall, go grocery shopping.', 'Fresh', '2024-01-19 17:25:20', '2024-01-19 17:25:20', 1, 14),
+(15, 'I grew up in Minnesota and everyone is so nice there. It is like Fargo.\r\nRead more at https://www.brainyquote.com/topics/grocery-shopping-quotes', 'Fresh', '2024-01-19 17:27:17', '2024-01-19 17:27:17', 1, 14),
+(16, 'Delivering great service for more than 18 years!', 'Welcome to Ecomercers', '2024-01-20 10:22:55', '2024-01-20 10:22:55', 1, 16),
+(17, 'Delivering great service for more than 18 years!Everything you need to know about restaurant text marketing and links to extra resources on specific topics', 'Ecommerces', '2024-01-20 13:59:34', '2024-01-20 13:59:34', 1, 23),
+(18, 'The world of e-commerce is large and ever-growing and ever-evolving. But the changes in e-commerce over the past year (or year-and-a-half) alone were remarkable.', 'Ecommerces', '2024-01-20 14:04:34', '2024-01-20 14:04:34', 1, 23),
+(19, '“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”', 'Realestate', '2024-01-20 15:20:55', '2024-01-20 15:20:55', 1, 24),
+(20, '“The way we see it, real wealth means having the money and the freedom to live life on your own terms.”', 'Realestate', '2024-01-20 15:21:30', '2024-01-20 15:21:30', 1, 24);
 
 -- --------------------------------------------------------
 
@@ -107,6 +141,33 @@ INSERT INTO `blog` (`id`, `title`, `description`, `created_at`, `modified_at`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `facts`
+--
+
+CREATE TABLE `facts` (
+  `id` int(11) NOT NULL,
+  `experince` int(11) NOT NULL,
+  `orders` int(11) NOT NULL,
+  `projects` int(11) NOT NULL,
+  `clients_happy` int(11) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime NOT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive	',
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `facts`
+--
+
+INSERT INTO `facts` (`id`, `experince`, `orders`, `projects`, `clients_happy`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
+(1, 25648, 15478, 41258, 63214, '2024-01-19 12:01:53', '0000-00-00 00:00:00', 1, 22),
+(2, 25648, 45652, 12547, 45475, '2024-01-19 12:07:30', '0000-00-00 00:00:00', 1, 22),
+(3, 25648, 1111, 12, 2, '2024-01-19 12:10:47', '0000-00-00 00:00:00', 1, 22);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `faqs`
 --
 
@@ -127,17 +188,25 @@ CREATE TABLE `faqs` (
 INSERT INTO `faqs` (`id`, `question`, `answer`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
 (2, 'Free Shipping available', 'No', '2024-01-06 12:58:33', '2024-01-12 14:08:05', 0, 15),
 (3, 'Any Discount', 'No', '2024-01-06 12:58:55', NULL, 1, 15),
-(4, 'Groceries Extra Discount', 'Yes', '2024-01-06 12:59:11', NULL, 1, 14),
+(4, ' How do I cancel/modify an order?', 'This might seem like something that you want to deter, but it’s bound to happen in every business. Therefore, the best thing that you can do, again, is to be transparent and honest with your audience about how it works. Whether it’s because of a shipping delay, a change of heart, or even just an accidental purchase (which usually only happens with “one-click ordering”, but still needs to be considered), some people may want to cancel or change their order. \r\n', '2024-01-06 12:59:11', NULL, 1, 14),
 (5, 'How the Food taste', 'Good', '2024-01-06 13:02:18', NULL, 1, 4),
 (6, 'New Grocery added', 'Yes\r\n', '2024-01-09 12:55:06', NULL, 1, 16),
 (7, 'Grocery', 'Good', '2024-01-09 13:07:14', NULL, 1, 16),
 (8, 'Food', 'food', '2024-01-09 13:08:47', NULL, 1, 15),
-(9, 'How the price of grocery', 'Low price', '2024-01-09 14:04:29', NULL, 1, 22),
+(9, 'Is it open every day of the week ?', 'Depending on the season we open or close some areas.\r\n\r\nPlease consult the gastronomic offer.\r\n\r\nLa Perla is closed 3 days a year: December 25th and January 1st.\r\n24 December night and 31 December night closed.', '2024-01-09 14:04:29', NULL, 1, 22),
 (10, 'Ecommerce have safe delivery', 'yes', '2024-01-09 15:13:43', '2024-01-12 13:06:26', 0, 16),
 (13, 'Ecommerce service good', 'yes', '2024-01-12 13:00:58', NULL, 1, 20),
-(14, 'Ecommerce service good', 'No', '2024-01-12 13:28:30', '2024-01-12 15:03:12', 1, 22),
+(14, 'What are food additives?', 'A food ingredient is any substance that is added to a food to achieve a desired effect.  Direct food additives are used in foods to impart specific technological or functional qualities. For example, stabilizers are used to help prevent separation of nutrients in milk products, while phosphates are used as a leavening agent in baked goods. ', '2024-01-12 13:28:30', '2024-01-12 15:03:12', 1, 22),
 (15, 'How the prices', 'Low only', '2024-01-16 15:38:21', NULL, 1, 18),
-(16, 'Is it high cost', 'No', '2024-01-17 11:42:49', NULL, 1, 14);
+(16, ' How can I track my order?', 'Another thing that people want to know is how to monitor their delivery. From distrust in delivery services to the excitement of their item arriving, people love to track shipments of what they order online. Make sure that you provide them with shipping information that they can track, in the first place, and then use your FAQ to explain to them how to do so. ', '2024-01-17 11:42:49', NULL, 1, 14),
+(17, 'Can I ask a table for view ?', 'You can ask for a table with a view and your request will be noted. However, we cannot guarantee it as the front-of-house manager decides the layout of the tables each day, based on the number of reservations.', '2024-01-19 15:59:08', NULL, 1, 22),
+(18, 'How long will it take to get my order?', 'Everyone’s in a hurry these days. Thanks to giants like Amazon offering next-day (and even same-day) shipping, no one wants to wait. If you charge for shipping, consider offering people a few different delivery options.', '2024-01-20 13:36:03', NULL, 1, 23),
+(19, 'What payment methods do you accept?', 'There are a growing number of options for paying for transactions online. From credit cards and debit cards to electronic wallets, people want more and more versatility in their online shopping. ', '2024-01-20 13:36:27', NULL, 1, 23),
+(20, 'Do you have gift packaging options?', 'People love buying gifts online, and especially if they can ship them straight to the recipient. Therefore, they’ll often want an option where the invoice is left out of the box or pricing is excluded. Perhaps they’re shipping it to themselves but want a gift receipt for the person getting it. ', '2024-01-20 13:36:58', NULL, 1, 23),
+(21, 'Product info Q&A?', 'This one we’re leaving more open-ended because it will be, depending on what products you’re selling specifically. This is a good place to answer the most common questions you get about the products that you sell. Perhaps you sell clothes and people have questions about sizing or materials. Maybe you sell snacks and people want to know about nutrition facts or gluten-free options. These are all worthy of their own Q&A on your website. If you’ve got enough product questions, give this a dedicated section, too. ', '2024-01-20 14:53:41', NULL, 1, 14),
+(22, 'In which cities do you offer your services?', 'Our services are available across 8 cities in India, namely Noida, Gurgaon, Mumbai, Pune, Bangalore, Chennai, Kolkata and Ahmedabad.', '2024-01-20 15:11:06', NULL, 1, 24),
+(23, 'Who should I contact in case I face any issues?', 'We have a dedicated customer care service team, which is available at your service seven days a week from 8:30 am to 7:30 pm. You can call them', '2024-01-20 15:11:49', NULL, 1, 24),
+(24, 'Do you offer home loan services?', 'Yes. We have tie-ups with some of the leading banks in the country such as the HDFC Bank, the ICICI Bank, the Axis Bank, LIC India, Bank of Maharashtra, Indiabulls and PNB.', '2024-01-20 15:12:26', NULL, 1, 24);
 
 -- --------------------------------------------------------
 
@@ -183,7 +252,7 @@ CREATE TABLE `login_details` (
 --
 
 INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
-(1, 1, '2024-01-17 12:07:55', '2024-01-17 12:12:24'),
+(1, 1, '2024-01-20 10:16:02', '2024-01-17 12:48:24'),
 (2, 2, '2020-01-03 15:35:27', '2020-01-03 12:39:29'),
 (3, 3, '2019-12-20 16:39:05', '2019-12-20 16:40:17'),
 (4, 4, '2019-12-26 18:44:32', '2019-12-26 18:38:58'),
@@ -192,9 +261,37 @@ INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
 (7, 8, '2024-01-09 17:07:34', '2024-01-09 17:09:26'),
 (8, 7, '2024-01-11 10:29:45', '2024-01-11 10:30:51'),
 (9, 18, '2024-01-11 16:12:56', '0000-00-00 00:00:00'),
-(10, 14, '2024-01-17 12:12:36', '2024-01-17 11:52:46'),
-(11, 16, '2024-01-17 11:53:27', '2024-01-17 11:57:59'),
-(12, 20, '2024-01-17 11:58:25', '2024-01-17 12:07:48');
+(10, 14, '2024-01-19 10:16:30', '2024-01-18 10:02:27'),
+(11, 16, '2024-01-17 14:25:21', '2024-01-17 16:19:56'),
+(12, 20, '2024-01-17 11:58:25', '2024-01-17 12:07:48'),
+(13, 22, '2024-01-18 10:02:56', '2024-01-18 10:16:46');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `heading` varchar(150) NOT NULL,
+  `product_rs` int(11) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime NOT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive	',
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `name`, `heading`, `product_rs`, `image`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
+(1, 'Burger', 'VEG AND NON_VEG', 110, 'bf1c2136f4526ae7c6c759787e945e15.png', '2024-01-17 16:54:32', '0000-00-00 00:00:00', 1, 22),
+(2, 'Cheese Burger', '', 210, '3a8b7c6f676fd53989c6403d924a5ec7.png', '2024-01-17 17:38:06', '0000-00-00 00:00:00', 1, 22),
+(3, 'Cheese Pizza', 'VEG AND NON_VEG', 250, '23c9d7c8bfdb0a24cdef8d8fb8abe679.jpg', '2024-01-18 08:47:46', '0000-00-00 00:00:00', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -286,6 +383,42 @@ INSERT INTO `roles` (`id`, `role`, `code`, `unique_id`) VALUES
 (1, 'Super Admin', '', ''),
 (2, 'Client', 'PPC', 'PPC_100000'),
 (3, 'Evaluator', 'EVA', 'EVA_100001');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `services`
+--
+
+CREATE TABLE `services` (
+  `id` int(11) NOT NULL,
+  `items` varchar(100) NOT NULL,
+  `review` varchar(300) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime NOT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive	',
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `items`, `review`, `created_at`, `modified_at`, `row_status`, `user_id`) VALUES
+(1, 'Sea Food', '\"Fresh seafood is the best!\".Fish, to taste good, must swim in a pot or a pan with water, butter.Keep your family and friends close and your food closer.', '2024-01-18 14:36:43', '0000-00-00 00:00:00', 1, 22),
+(2, 'Panner', 'Indulge in paneer paradise! ... Cheesy delights that melt your heart. ... Paneer lovers unite! Keep your family and friends close and your food closer.', '2024-01-18 14:45:09', '0000-00-00 00:00:00', 1, 22),
+(3, 'Biriyani', '.\"Life is too short to miss out on biryani moments.\r\nBiryani is not just a dish; it’s an emotion.”Keep your family and friends close and your food closer.', '2024-01-18 14:45:31', '0000-00-00 00:00:00', 1, 22),
+(4, 'Best Grocery Variety', 'Instacart is a grocery delivery service in which personal shoppers select your items from the store and then deliver them to your door. Depending on your location (Instacart works with over 80,000 stores from local grocers to larger chains),', '2024-01-19 18:16:07', '0000-00-00 00:00:00', 1, 14),
+(5, 'Fresh Vegetables', 'Vegetables are a must on a diet. ...\r\nWe don\'t need a melting pot in this country, folks. ...\r\nThe majority of my diet is probably vegetables, but I\'m not a vegetarian or vegan', '2024-01-19 18:16:30', '0000-00-00 00:00:00', 1, 14),
+(6, 'Best Grocery Delivery Service for Families', 'Available in over 5,000 cities, Shipt grocery delivery service allows you shop from different stores depending on where you live, including via an exclusive partnership with Target. You\'ll also find options like Costco, CVS and Petco.', '2024-01-19 18:17:41', '0000-00-00 00:00:00', 1, 14),
+(7, 'Fast Delivery', 'With in one day iphone delivery', '2024-01-20 10:46:19', '0000-00-00 00:00:00', 1, 16),
+(8, 'Panner', 'Indulge in paneer paradise! ...\r\nCheesy delights that melt your heart. ...\r\nPaneer lovers unite! \r\nKeep your family and friends close and your food closer.', '2024-01-20 12:42:12', '2024-01-20 12:43:36', 0, 22),
+(9, '24*7', 'No matter which platform you are running your eCommerce business, customer service is essential. Prioritizing the customers via 24/7 customer service can boost your sales notably. It can also create loyal customers and bring positive feedback to your business as well.', '2024-01-20 13:51:19', '0000-00-00 00:00:00', 1, 23),
+(10, 'Customer Service', 'If you are not valuing your customers via customer service, they will indeed move on to your competitors. Currently, there are thousands of options available on the web where customers can get their products.', '2024-01-20 13:52:02', '0000-00-00 00:00:00', 1, 23),
+(11, 'Exchange ', 'So, your approach should include a multi-channel communicational approach to serve the customers. Customers feel comfortable communicating in their preferred channel because they can multitask under one significant channel.', '2024-01-20 13:52:43', '0000-00-00 00:00:00', 1, 23),
+(12, 'Raw Land', 'As the world progresses, the need for shelter and land ownership continues to grow. Investing in real estate has become a popular means of wealth creation and preservation.\r\nHowever, while some investors focus on buying already developed properties, investing in raw land has proven to be a smart cho', '2024-01-20 15:15:05', '0000-00-00 00:00:00', 1, 24),
+(13, 'Residential', 'Residential real estate is property (both land and buildings) used for housing. This is in contrast to commercial or industrial real estate, where the land and buildings are zoned for operating a business, such as a store, an office or a factory.', '2024-01-20 15:16:06', '0000-00-00 00:00:00', 1, 24),
+(14, 'Customer Service', '24/7 customer support is a service that provides customers with assistance at all times of the day, regardless of time zone. It\'s crucial for businesses that offer online services and international customers', '2024-01-20 15:17:24', '0000-00-00 00:00:00', 1, 24);
 
 -- --------------------------------------------------------
 
@@ -409,7 +542,7 @@ INSERT INTO `support` (`id`, `from_id`, `to_id`, `message`, `read_status`, `crea
 
 CREATE TABLE `teams` (
   `id` int(11) NOT NULL,
-  `review` varchar(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `role` varchar(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `modified_at` datetime NOT NULL,
   `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '	0=Deleted,1=Active,2=Inactive',
@@ -421,23 +554,40 @@ CREATE TABLE `teams` (
 -- Dumping data for table `teams`
 --
 
-INSERT INTO `teams` (`id`, `review`, `created_at`, `modified_at`, `row_status`, `user_id`, `name`) VALUES
-(1, 'For fresh vegetables and fruit be aware that prices shown are often per 100rs', '2024-01-09 16:26:45', '0000-00-00 00:00:00', 1, 17, ''),
-(2, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% .', '2024-01-09 16:29:49', '0000-00-00 00:00:00', 1, 14, ''),
-(3, 'We went only to the supermarket to buy some groceries. It was not crowded during lunchtime.', '2024-01-09 16:30:26', '0000-00-00 00:00:00', 1, 16, ''),
-(4, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:31:29', '0000-00-00 00:00:00', 1, 14, ''),
-(5, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:32:36', '0000-00-00 00:00:00', 1, 15, ''),
-(6, 'you can get everythng here at decent prices. you need to bargain a lot. 40% of the original price', '2024-01-09 16:35:38', '0000-00-00 00:00:00', 1, 4, ''),
-(7, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-10 12:35:06', '0000-00-00 00:00:00', 1, 20, ''),
-(8, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking', '2024-01-10 12:52:25', '0000-00-00 00:00:00', 1, 20, ''),
-(9, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-12 10:56:29', '0000-00-00 00:00:00', 1, 18, ''),
+INSERT INTO `teams` (`id`, `role`, `created_at`, `modified_at`, `row_status`, `user_id`, `name`) VALUES
+(1, 'For fresh vegetables and fruit be aware that prices shown are often per 100rs', '2024-01-09 16:26:45', '2024-01-19 18:09:04', 0, 17, ''),
+(2, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% .', '2024-01-09 16:29:49', '2024-01-19 18:09:08', 0, 14, ''),
+(3, 'We went only to the supermarket to buy some groceries. It was not crowded during lunchtime.', '2024-01-09 16:30:26', '2024-01-19 18:09:12', 0, 16, ''),
+(4, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:31:29', '2024-01-19 18:09:18', 0, 14, ''),
+(5, 'This is not a tourist attraction. It\'s a normal honest to goodness supermarket with basic needs, including many imported items', '2024-01-09 16:32:36', '2024-01-19 18:09:22', 0, 15, ''),
+(6, 'you can get everythng here at decent prices. you need to bargain a lot. 40% of the original price', '2024-01-09 16:35:38', '2024-01-19 18:09:26', 0, 4, ''),
+(7, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-10 12:35:06', '2024-01-19 18:09:30', 0, 20, ''),
+(8, 'STO is the Maldives equivalent of a supermarket. Good sized shop with plenty of choice, there\'s a 99% chance they\'ll have what you are looking', '2024-01-10 12:52:25', '2024-01-19 18:09:37', 0, 20, ''),
+(9, 'For fresh vegetables and fruit be aware that prices shown are often per 100g', '2024-01-12 10:56:29', '2024-01-19 18:09:41', 0, 18, ''),
 (10, 'review\r\n', '2024-01-12 11:48:47', '2024-01-12 15:05:29', 0, 15, ''),
-(11, 'Harshitha reviews displying here', '2024-01-16 16:25:48', '0000-00-00 00:00:00', 1, 22, ''),
-(12, 'Their brunch is awesome, I love the avocado .', '2024-01-17 11:50:44', '0000-00-00 00:00:00', 1, 14, ''),
-(13, 'Their brunch is awesome, I love the avocado .', '2024-01-17 11:51:04', '0000-00-00 00:00:00', 1, 14, ''),
-(14, 'to write reviews; review books, movies, etc., as f...', '2024-01-17 11:54:13', '0000-00-00 00:00:00', 1, 16, ''),
-(15, 'For fresh vegetables and fruit be aware that price...', '2024-01-17 11:55:30', '0000-00-00 00:00:00', 1, 16, ''),
-(16, 'the process of going over a subject again in study..', '2024-01-17 11:58:54', '0000-00-00 00:00:00', 1, 20, '');
+(11, 'Harshitha reviews displying here', '2024-01-16 16:25:48', '2024-01-19 18:03:55', 0, 22, ''),
+(12, 'Their brunch is awesome, I love the avocado .', '2024-01-17 11:50:44', '2024-01-19 18:09:45', 0, 14, ''),
+(13, 'Their brunch is awesome, I love the avocado .', '2024-01-17 11:51:04', '2024-01-19 18:08:59', 0, 14, ''),
+(14, 'to write reviews; review books, movies, etc., as f...', '2024-01-17 11:54:13', '2024-01-19 18:09:48', 0, 16, ''),
+(15, 'For fresh vegetables and fruit be aware that price...', '2024-01-17 11:55:30', '2024-01-19 18:09:52', 0, 16, ''),
+(16, 'the process of going over a subject again in study..', '2024-01-17 11:58:54', '2024-01-19 18:09:56', 0, 20, ''),
+(17, 'Cheif Master', '2024-01-18 10:03:29', '2024-01-19 18:04:08', 0, 22, 'Ramesh'),
+(18, 'Master Chef', '2024-01-19 18:08:16', '0000-00-00 00:00:00', 1, 22, 'Raghu'),
+(19, 'Asst.Chef', '2024-01-19 18:10:15', '0000-00-00 00:00:00', 1, 22, 'Shirisha'),
+(20, 'Cook', '2024-01-19 18:11:39', '0000-00-00 00:00:00', 1, 22, 'Yogi'),
+(21, 'Incharge', '2024-01-20 12:26:35', '2024-01-20 12:28:22', 0, 14, 'Suresh'),
+(22, 'Incharge', '2024-01-20 12:28:40', '2024-01-20 12:30:52', 0, 14, 'Suresh'),
+(23, 'Incharge', '2024-01-20 12:31:11', '2024-01-20 14:36:33', 0, 14, 'Suresh'),
+(24, 'Head', '2024-01-20 14:35:37', '0000-00-00 00:00:00', 1, 14, 'Sharif'),
+(25, 'Incharge', '2024-01-20 14:36:54', '2024-01-20 14:43:07', 0, 14, 'Krish'),
+(26, 'Manager', '2024-01-20 14:40:38', '0000-00-00 00:00:00', 1, 14, 'Raghava'),
+(27, 'Incharge', '2024-01-20 14:42:47', '0000-00-00 00:00:00', 1, 14, 'Krish'),
+(28, 'Manager', '2024-01-20 15:03:15', '0000-00-00 00:00:00', 1, 23, 'Ranga'),
+(29, 'Product Manager', '2024-01-20 15:03:34', '0000-00-00 00:00:00', 1, 23, 'Mohan'),
+(30, 'Incharge', '2024-01-20 15:03:56', '0000-00-00 00:00:00', 1, 23, 'Kalyan'),
+(31, 'Home Inspecter', '2024-01-20 15:56:35', '0000-00-00 00:00:00', 1, 24, 'Ashok'),
+(32, ' Compliance officer', '2024-01-20 15:57:43', '0000-00-00 00:00:00', 1, 24, 'Teja'),
+(33, 'Leasing manager', '2024-01-20 15:58:25', '0000-00-00 00:00:00', 1, 24, 'Somesh');
 
 -- --------------------------------------------------------
 
@@ -468,7 +618,15 @@ INSERT INTO `testomonial` (`id`, `user_id`, `name`, `review`, `created_at`, `mod
 (6, 14, 'Shannu', 'Review, criticism imply careful examination of something, formulation of a judgment, and statement of the judgmen', '2024-01-12 17:00:24', '2024-01-12 17:00:24', 1),
 (7, 16, 'Purushu', 'Their brunch is awesome, I love the avocado .', '2024-01-16 16:42:43', '2024-01-16 16:42:43', 1),
 (8, 22, 'Raghu', 'the process of going over a subject again in study or recitation in order to fix it in the memory or summarize the facts.', '2024-01-16 16:45:56', '2024-01-16 16:45:56', 1),
-(9, 20, 'Rajesh', 'STO is the Maldives equivalent of a supermarket. G...', '2024-01-17 12:06:05', '2024-01-17 12:06:05', 1);
+(9, 20, 'Rajesh', 'STO is the Maldives equivalent of a supermarket. G...', '2024-01-17 12:06:05', '2024-01-17 12:06:05', 1),
+(10, 22, 'Raghava', 'Their brunch is awesome, I love the avocado .', '2024-01-18 14:03:36', '2024-01-18 14:03:36', 1),
+(11, 22, 'Sohe;', 'a critical article or report, as in a periodical, on a book, play, recital, or the like; critique', '2024-01-18 14:04:06', '2024-01-18 14:04:06', 1),
+(12, 14, 'Tharun', 'I like the organic vegetables.Here i found\r\n', '2024-01-19 18:19:48', '2024-01-19 18:19:48', 1),
+(13, 23, 'Martina', '“We are quite happy with your team’s work in the content creation process of our listing content, A+ images, and videos. The work done was quite creative which wasn\'t very easy for someone who does not know much about this category. We hope to continue working the same way in the near future too. But for now, it\'s really good going.”', '2024-01-20 13:46:21', '2024-01-20 13:46:21', 1),
+(14, 23, 'Frank', '“Once again, your hard work does not go unnoticed, and I genuinely appreciate your dedication. All the team members did their best to deliver quality descriptions for the products. Really impressed with the quality and timely work.”', '2024-01-20 13:46:56', '2024-01-20 13:46:56', 1),
+(15, 23, 'Ellie Price', '“Can’t believe that I am actually able to double my sales on Amazon. All thanks to your marketing team. You delivered just as you promised. Highly impressed with the outcomes. Great work team!”', '2024-01-20 13:47:48', '2024-01-20 13:47:48', 1),
+(16, 24, 'Chandra', '“While I was really struggling to manage multiple sales channels, I do not have to worry about it at all. All thanks to your team! You guys have been doing an excellent job in effortlessly managing all my channels and bringing in smooth sales. Highly impressed with your services.”', '2024-01-20 15:13:02', '2024-01-20 15:13:02', 1),
+(17, 24, 'Swetha', '“All the listings of my store are live now. The data and images look accurate, just as your team always does great work! Thank you to all the team members for your detailed, timely, and accurate attention to our projects.”', '2024-01-20 15:13:36', '2024-01-20 15:13:36', 1);
 
 -- --------------------------------------------------------
 
@@ -504,14 +662,16 @@ INSERT INTO `users` (`id`, `role_id`, `unique_id`, `icai_reg_no`, `first_name`, 
 (3, 2, 'ipcc19_100002', 123, 'sujith', '', 'yeswanth@gmail.com', '8143671872', '2', '7ca49b480f4ad303e77d35fc0ba426e30332ec95051a34a75affedf485054e2a', '', '', '2019-12-20 16:38:43', '2019-12-20 16:38:43', 4),
 (4, 3, 'EVA_100001', 0, 'Mahesh', '', 'mahie@gmail.com', '8121815555', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '', '2019-12-24 16:12:09', '2024-01-12 16:30:09', 0),
 (5, 2, 'ipcc19_100003', 45556556, 'mahesh', '', 'maheshbt.grepthor@gmail.com', '8121815500', '2', '101b6224f1df589da6537ab8a72aaeb8e36ebf169d85d8c0d7d04d8fd21ac62c', '3', '', '2019-12-27 16:11:19', '2019-12-27 16:11:19', 4),
-(14, 2, '', 0, 'Bhanu', '', 'bhanu@gmail.com', '7788554477', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '', '2024-01-11 14:01:06', NULL, 3),
+(14, 2, '', 0, 'Bhanu', '', 'bhanu@gmail.com', '7788554477', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', 'Hyderabad', '2024-01-11 14:01:06', NULL, 3),
 (15, 2, '', 0, 'Hari', '', 'hari@gmail.com', '8855224411', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-11 14:02:07', NULL, 3),
 (16, 2, '', 0, 'Shiva', '', 'shiva@gmail.com', '7788221144', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', '', '2024-01-11 14:03:03', NULL, 3),
 (17, 2, '', 0, 'Sam', '', 'sam@gmail.com', '6302154897', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '2', '', '2024-01-11 14:03:39', NULL, 3),
 (18, 2, '', 0, 'Ashwin', '', 'ashwin@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', '', '2024-01-11 14:04:18', NULL, 3),
 (20, 2, '', 0, 'Ramesh', '', 'ramesh@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '', '2024-01-12 12:06:31', NULL, 3),
 (21, 2, '', 0, 'Vinay', '', 'vinay@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-12 12:15:40', '2024-01-12 16:04:44', 0),
-(22, 2, '', 0, 'Harshi', '', 'harshi@gmail.com', '7780668877', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-16 10:23:59', NULL, 3);
+(22, 2, '', 0, 'Harshi', '', 'harshi@gmail.com', '7780668877', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', 'Dharmavaram', '2024-01-16 10:23:59', NULL, 3),
+(23, 2, '', 0, 'Pavan', '', 'pavan@gmail.com', '8789542145', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', 'Kadapa', '2024-01-20 13:34:21', NULL, 3),
+(24, 2, '', 0, 'Gowtham', '', 'gowtham@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', 'Mumbai', '2024-01-20 15:09:51', NULL, 3);
 
 -- --------------------------------------------------------
 
@@ -552,6 +712,12 @@ ALTER TABLE `aboutus`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `adress`
+--
+ALTER TABLE `adress`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `banner`
 --
 ALTER TABLE `banner`
@@ -561,6 +727,12 @@ ALTER TABLE `banner`
 -- Indexes for table `blog`
 --
 ALTER TABLE `blog`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `facts`
+--
+ALTER TABLE `facts`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -579,6 +751,12 @@ ALTER TABLE `feeling_formal`
 -- Indexes for table `login_details`
 --
 ALTER TABLE `login_details`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -603,6 +781,12 @@ ALTER TABLE `requestcallback`
 -- Indexes for table `roles`
 --
 ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `services`
+--
+ALTER TABLE `services`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -661,13 +845,19 @@ ALTER TABLE `users_plan_relation`
 -- AUTO_INCREMENT for table `aboutus`
 --
 ALTER TABLE `aboutus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `adress`
+--
+ALTER TABLE `adress`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `blog`
@@ -676,10 +866,16 @@ ALTER TABLE `blog`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `facts`
+--
+ALTER TABLE `facts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `faqs`
 --
 ALTER TABLE `faqs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `feeling_formal`
@@ -691,7 +887,13 @@ ALTER TABLE `feeling_formal`
 -- AUTO_INCREMENT for table `login_details`
 --
 ALTER TABLE `login_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `promocodes`
@@ -716,6 +918,12 @@ ALTER TABLE `requestcallback`
 --
 ALTER TABLE `roles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `services`
+--
+ALTER TABLE `services`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `settings`
@@ -745,19 +953,19 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `testomonial`
 --
 ALTER TABLE `testomonial`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `users_plan_relation`
