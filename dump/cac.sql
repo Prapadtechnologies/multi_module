@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 22, 2024 at 07:39 AM
+-- Generation Time: Jan 23, 2024 at 06:20 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -46,12 +46,12 @@ INSERT INTO `aboutus` (`id`, `image`, `description`, `created_at`, `modified_at`
 (2, 'about1.jpg', '<h1>Terms &amp; Conditions(Sam)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services &nbsp;owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.2) Registration Access and Use</p>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-16 14:31:29', NULL, 1, 17),
 (3, 'about.jpg', '<h1>Terms &amp; Conditions(Shiva)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 14:32:26', NULL, 1, 16),
 (4, 'about2.jpg', '<h1>Terms &amp; Conditions(Ramesh)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 14:37:13', NULL, 1, 20),
-(5, 'chef-jason-ludiwg-profile-1.jpg', '<h1><span style=\"font-size:28px\"><em><strong>Terms &amp; Conditions</strong></em></span></h1>\r\n\r\n<p><span style=\"font-size:16px\">● All the dishes will be served with in 25 minutes of placing the order.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Outside eatables are not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Liquor is strictly prohibited.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Smoking is not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Please be cooperative with us to serve you the best.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Once an order is placed , it cannot be canceled.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Management is not responsible for any of your personal belongings</span></p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-16 14:44:16', NULL, 1, 22),
+(5, 'chef-jason-ludiwg-profile-1.jpg', '<h1><span style=\"font-size:16px\">● All the dishes will be served with in 25 minutes of placing the order.</span></h1>\r\n\r\n<p><span style=\"font-size:16px\">● Outside eatables are not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Liquor is strictly prohibited.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Smoking is not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Please be cooperative with us to serve you the best.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Once an order is placed , it cannot be canceled.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Management is not responsible for any of your personal belongings</span></p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-16 14:44:16', NULL, 1, 22),
 (6, 'about4.jpg', '<h1>Terms &amp; Conditions(Ashwin)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\nwebsite, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 15:39:06', NULL, 1, 18),
-(7, 'about11.jpg', '<h1>Terms &amp; Conditions(Bhanu prakash)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-17 12:48:14', NULL, 1, 14),
-(8, '', '<h1>Terms &amp; Conditions(Bhanu prakash)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-17 12:54:56', NULL, 0, 14),
-(9, 'about5.jpg', '<h1>Terms &amp; Conditions(Pavan)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services &nbsp;owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.2) Registration Access and Use</p>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-20 13:57:19', NULL, 1, 23),
-(10, 'about6.jpg', '<h1>Terms &amp; Conditions(Sam)</h1>\n\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\n\n<h2>1) Introduction</h2>\n\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services &nbsp;owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.2) Registration Access and Use</p>\n\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\n\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\n', '2024-01-20 15:19:47', NULL, 1, 24);
+(7, 'about11.jpg', '<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-17 12:48:14', NULL, 1, 14),
+(8, '', '<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-17 12:54:56', NULL, 0, 14),
+(9, 'about5.jpg', '<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-20 13:57:19', NULL, 1, 23),
+(10, 'about6.jpg', '<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-20 15:19:47', NULL, 1, 24);
 
 -- --------------------------------------------------------
 
@@ -112,8 +112,10 @@ INSERT INTO `banner` (`id`, `text`, `title`, `created_at`, `modified_at`, `row_s
 (17, 'Delivering great service for more than 18 years!Everything you need to know about restaurant text marketing and links to extra resources on specific topics', 'Ecommerces', '2024-01-20 13:59:34', '2024-01-20 13:59:34', 1, 23),
 (18, 'The world of e-commerce is large and ever-growing and ever-evolving. But the changes in e-commerce over the past year (or year-and-a-half) alone were remarkable.', 'Ecommerces', '2024-01-20 14:04:34', '2024-01-20 14:04:34', 1, 23),
 (19, '“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”', 'Realestate', '2024-01-20 15:20:55', '2024-01-21 12:13:27', 0, 24),
-(20, '“The way we see it, real wealth means having the money and the freedom to live life on your own terms.”', 'Realestate', '2024-01-20 15:21:30', '2024-01-20 15:21:30', 1, 24),
-(21, '“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”', 'Real estate', '2024-01-21 12:14:59', '2024-01-21 12:14:59', 1, 24);
+(20, '“The way we see it, real wealth means having the money and the freedom to live life on your own terms.”', 'Realestate', '2024-01-20 15:21:30', '2024-01-22 18:04:30', 0, 24),
+(21, '“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”', 'Real estate', '2024-01-21 12:14:59', '2024-01-22 18:04:42', 0, 24),
+(22, '“The way we see it, real wealth means having the money and the freedom to live life on your own terms.”', 'Realestate', '2024-01-22 18:05:32', '2024-01-22 18:05:32', 1, 24),
+(23, '“The way we see it, real wealth means having the money and the freedom to live life on your own terms.”', 'Realestate', '2024-01-22 18:06:18', '2024-01-22 18:06:18', 1, 24);
 
 -- --------------------------------------------------------
 
@@ -138,6 +140,174 @@ INSERT INTO `blog` (`id`, `title`, `description`, `created_at`, `modified_at`, `
 (1, 'Blog1', '<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n', '2019-12-24 15:05:48', NULL, 1),
 (2, 'bhkbh', '<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n', '2019-12-24 15:11:45', NULL, 1),
 (3, 'Blog 3 For testing', '<p>&nbsp;</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p><img alt=\"blog-details\" src=\"http://localhost/ca/uploads/blog/2.jpg\" style=\"height:750px; width:1000px\" /></p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n\r\n<p>As a WordPress developer, whenever you build a new theme, plugin or even if you are testing out new features of WordPress that you might not be familiar with. There&rsquo;s one task that get&rsquo;s extremely repetitive, cumbersome and mundane.</p>\r\n\r\n<p>You will always need to create some custom dummy data to test whether your plugin is working as expected, and as developers ourselves we have had this problem quite a lot. Thankfully, there are easy ways to solve it.</p>\r\n', '2019-12-26 11:49:07', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `courses`
+--
+
+CREATE TABLE `courses` (
+  `id` int(11) NOT NULL,
+  `course` varchar(100) NOT NULL,
+  `code` varchar(20) NOT NULL,
+  `main_code` varchar(20) NOT NULL,
+  `unique_id` varchar(20) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=deleted,1=active,2=inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `courses`
+--
+
+INSERT INTO `courses` (`id`, `course`, `code`, `main_code`, `unique_id`, `created_at`, `row_status`) VALUES
+(1, 'CPT', 'CPT', '12001', '', '2019-07-22 12:55:20', 1),
+(2, 'IPCC', 'IPCC', '12005', 'ipcc19_100003', '2019-07-22 12:55:20', 1),
+(3, 'Final', 'FINAL', '', '', '2019-07-22 12:55:20', 1),
+(4, 'CPT(New)', 'CPTN', '', '', '2019-07-22 12:55:20', 1),
+(5, 'IPCC(New)', 'INTER', '', '', '2019-07-22 12:55:20', 1),
+(6, 'Final(New)', 'FINALN', '', '', '2019-07-22 12:55:20', 1),
+(1, 'CPT', 'CPT', '12001', '', '2019-07-22 12:55:20', 1),
+(2, 'IPCC', 'IPCC', '12005', 'ipcc19_100003', '2019-07-22 12:55:20', 1),
+(3, 'Final', 'FINAL', '', '', '2019-07-22 12:55:20', 1),
+(4, 'CPT(New)', 'CPTN', '', '', '2019-07-22 12:55:20', 1),
+(5, 'IPCC(New)', 'INTER', '', '', '2019-07-22 12:55:20', 1),
+(6, 'Final(New)', 'FINALN', '', '', '2019-07-22 12:55:20', 1),
+(1, 'CPT', 'CPT', '12001', '', '2019-07-22 12:55:20', 1),
+(2, 'IPCC', 'IPCC', '12005', 'ipcc19_100003', '2019-07-22 12:55:20', 1),
+(3, 'Final', 'FINAL', '', '', '2019-07-22 12:55:20', 1),
+(4, 'CPT(New)', 'CPTN', '', '', '2019-07-22 12:55:20', 1),
+(5, 'IPCC(New)', 'INTER', '', '', '2019-07-22 12:55:20', 1),
+(6, 'Final(New)', 'FINALN', '', '', '2019-07-22 12:55:20', 1),
+(1, 'CPT', 'CPT', '12001', '', '2019-07-22 12:55:20', 1),
+(2, 'IPCC', 'IPCC', '12005', 'ipcc19_100003', '2019-07-22 12:55:20', 1),
+(3, 'Final', 'FINAL', '', '', '2019-07-22 12:55:20', 1),
+(4, 'CPT(New)', 'CPTN', '', '', '2019-07-22 12:55:20', 1),
+(5, 'IPCC(New)', 'INTER', '', '', '2019-07-22 12:55:20', 1),
+(6, 'Final(New)', 'FINALN', '', '', '2019-07-22 12:55:20', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exams`
+--
+
+CREATE TABLE `exams` (
+  `id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `scheduled_date` datetime DEFAULT NULL,
+  `subject_id` int(11) NOT NULL,
+  `subject_code` varchar(60) NOT NULL,
+  `syllabus` varchar(60) NOT NULL,
+  `max_marks` int(11) NOT NULL,
+  `time_out` int(11) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `exams`
+--
+
+INSERT INTO `exams` (`id`, `course_id`, `scheduled_date`, `subject_id`, `subject_code`, `syllabus`, `max_marks`, `time_out`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 2, NULL, 1, 'AC123', 'Accounts Haly Yearly', 50, 111, '2019-12-26 13:22:56', NULL, 1),
+(2, 2, NULL, 1, 'AC122', 'Accounts Yearly', 50, 120, '2019-12-26 13:29:23', NULL, 1),
+(1, 2, NULL, 1, 'AC123', 'Accounts Haly Yearly', 50, 111, '2019-12-26 13:22:56', NULL, 1),
+(2, 2, NULL, 1, 'AC122', 'Accounts Yearly', 50, 120, '2019-12-26 13:29:23', NULL, 1),
+(1, 2, NULL, 1, 'AC123', 'Accounts Haly Yearly', 50, 111, '2019-12-26 13:22:56', NULL, 1),
+(2, 2, NULL, 1, 'AC122', 'Accounts Yearly', 50, 120, '2019-12-26 13:29:23', NULL, 1),
+(1, 2, NULL, 1, 'AC123', 'Accounts Haly Yearly', 50, 111, '2019-12-26 13:22:56', NULL, 1),
+(2, 2, NULL, 1, 'AC122', 'Accounts Yearly', 50, 120, '2019-12-26 13:29:23', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exam_category`
+--
+
+CREATE TABLE `exam_category` (
+  `id` int(11) NOT NULL,
+  `exam_type_id` int(11) NOT NULL,
+  `exam_category` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exam_downloads`
+--
+
+CREATE TABLE `exam_downloads` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `exam_id` int(11) NOT NULL,
+  `plan_id` int(11) NOT NULL,
+  `evaluator_id` int(11) NOT NULL,
+  `marks` decimal(5,2) NOT NULL,
+  `out_of` decimal(5,2) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Downloaded,2= Answer Upload, 3 = Eva Download, 4 = Eva Upload, 5= Closed tab'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exam_plan_relation`
+--
+
+CREATE TABLE `exam_plan_relation` (
+  `id` bigint(20) NOT NULL,
+  `exam_id` bigint(20) NOT NULL,
+  `plan_id` int(11) NOT NULL,
+  `scheduled_date` date DEFAULT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0 = deleted, 1 = Active, 2 = Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exam_type`
+--
+
+CREATE TABLE `exam_type` (
+  `id` int(11) NOT NULL,
+  `exam` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `e_brochers`
+--
+
+CREATE TABLE `e_brochers` (
+  `id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `course` varchar(100) NOT NULL,
+  `file_name` varchar(100) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `e_brochers`
+--
+
+INSERT INTO `e_brochers` (`id`, `course_id`, `course`, `file_name`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 0, 'IPCC(NEW)', 'IPCC(NEW)-2020-01-02.pdf', '2020-01-02 19:20:48', NULL, 1),
+(2, 0, 'Pass Guarantee Inter', 'Pass Guarantee Inter-2020-01-02.pdf', '2020-01-02 19:20:55', NULL, 1),
+(1, 0, 'IPCC(NEW)', 'IPCC(NEW)-2020-01-02.pdf', '2020-01-02 19:20:48', NULL, 1),
+(2, 0, 'Pass Guarantee Inter', 'Pass Guarantee Inter-2020-01-02.pdf', '2020-01-02 19:20:55', NULL, 1),
+(1, 0, 'IPCC(NEW)', 'IPCC(NEW)-2020-01-02.pdf', '2020-01-02 19:20:48', NULL, 1),
+(2, 0, 'Pass Guarantee Inter', 'Pass Guarantee Inter-2020-01-02.pdf', '2020-01-02 19:20:55', NULL, 1),
+(1, 0, 'IPCC(NEW)', 'IPCC(NEW)-2020-01-02.pdf', '2020-01-02 19:20:48', NULL, 1),
+(2, 0, 'Pass Guarantee Inter', 'Pass Guarantee Inter-2020-01-02.pdf', '2020-01-02 19:20:55', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -212,6 +382,31 @@ INSERT INTO `faqs` (`id`, `question`, `answer`, `created_at`, `modified_at`, `ro
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `message` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 2 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `user_id`, `message`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 2, 'gfgfg', '2019-12-18 17:46:55', '2019-12-31 16:13:26', 1),
+(1, 2, 'gfgfg', '2019-12-18 17:46:55', '2019-12-31 16:13:26', 1),
+(1, 2, 'gfgfg', '2019-12-18 17:46:55', '2019-12-31 16:13:26', 1),
+(1, 2, 'gfgfg', '2019-12-18 17:46:55', '2019-12-31 16:13:26', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `feeling_formal`
 --
 
@@ -253,7 +448,7 @@ CREATE TABLE `login_details` (
 --
 
 INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
-(1, 1, '2024-01-22 11:26:28', '2024-01-17 12:48:24'),
+(1, 1, '2024-01-22 17:36:58', '2024-01-22 18:08:38'),
 (2, 2, '2020-01-03 15:35:27', '2020-01-03 12:39:29'),
 (3, 3, '2019-12-20 16:39:05', '2019-12-20 16:40:17'),
 (4, 4, '2019-12-26 18:44:32', '2019-12-26 18:38:58'),
@@ -266,6 +461,411 @@ INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
 (11, 16, '2024-01-17 14:25:21', '2024-01-17 16:19:56'),
 (12, 20, '2024-01-17 11:58:25', '2024-01-17 12:07:48'),
 (13, 22, '2024-01-18 10:02:56', '2024-01-18 10:16:46');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `main_videos`
+--
+
+CREATE TABLE `main_videos` (
+  `id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `subject_id` int(11) NOT NULL,
+  `title` text NOT NULL,
+  `url` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Completed,2=Pending'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `main_videos`
+--
+
+INSERT INTO `main_videos` (`id`, `course_id`, `subject_id`, `title`, `url`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 2, 1, 'Video1', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:13:57', NULL, 1),
+(2, 2, 1, 'bhkbh', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:14:16', NULL, 1),
+(3, 2, 4, 'TTTTT', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 16:50:41', NULL, 1),
+(1, 2, 1, 'Video1', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:13:57', NULL, 1),
+(2, 2, 1, 'bhkbh', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:14:16', NULL, 1),
+(3, 2, 4, 'TTTTT', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 16:50:41', NULL, 1),
+(1, 2, 1, 'Video1', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:13:57', NULL, 1),
+(2, 2, 1, 'bhkbh', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:14:16', NULL, 1),
+(3, 2, 4, 'TTTTT', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 16:50:41', NULL, 1),
+(1, 2, 1, 'Video1', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:13:57', NULL, 1),
+(2, 2, 1, 'bhkbh', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 15:14:16', NULL, 1),
+(3, 2, 4, 'TTTTT', 'https://www.youtube.com/embed/6Q5hwAo1WE0', '2019-12-18 16:50:41', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mcq`
+--
+
+CREATE TABLE `mcq` (
+  `id` int(11) NOT NULL,
+  `type_id` int(11) NOT NULL,
+  `question` varchar(225) NOT NULL,
+  `choice1` varchar(225) NOT NULL,
+  `choice2` varchar(225) NOT NULL,
+  `choice3` varchar(225) NOT NULL,
+  `choice4` varchar(225) NOT NULL,
+  `answer` varchar(225) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `mcq`
+--
+
+INSERT INTO `mcq` (`id`, `type_id`, `question`, `choice1`, `choice2`, `choice3`, `choice4`, `answer`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 1, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(2, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(3, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
+(4, 1, 'Question4', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
+(5, 1, 'Question5', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(6, 1, 'Question6', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(7, 1, 'Question7', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
+(8, 1, 'Question8', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
+(9, 1, 'Question9', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(10, 1, 'Question10', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(11, 2, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:52:50', NULL, 1),
+(12, 2, 'Question2', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:52:50', NULL, 1),
+(13, 3, 'dfgdfdsafds', 'sdsds', 'sdsdsd', 'sdsdsdsds', 'sdsdsdsds', 'sdsds', '2020-01-02 19:38:51', NULL, 1),
+(14, 3, 'Question2', 'xcxzcxzcx', 'xcxzcxzcxzcxc', 'xzczxcxzcxzcxzcxzcxz', 'xcxzcxzcxzcxzcxzcxzcxzcxzc', 'xcxzcxzcxzcxc', '2020-01-02 19:38:51', NULL, 1),
+(1, 1, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(2, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(3, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
+(4, 1, 'Question4', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
+(5, 1, 'Question5', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(6, 1, 'Question6', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(7, 1, 'Question7', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
+(8, 1, 'Question8', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
+(9, 1, 'Question9', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(10, 1, 'Question10', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(11, 2, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:52:50', NULL, 1),
+(12, 2, 'Question2', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:52:50', NULL, 1),
+(13, 3, 'dfgdfdsafds', 'sdsds', 'sdsdsd', 'sdsdsdsds', 'sdsdsdsds', 'sdsds', '2020-01-02 19:38:51', NULL, 1),
+(14, 3, 'Question2', 'xcxzcxzcx', 'xcxzcxzcxzcxc', 'xzczxcxzcxzcxzcxzcxz', 'xcxzcxzcxzcxzcxzcxzcxzcxzc', 'xcxzcxzcxzcxc', '2020-01-02 19:38:51', NULL, 1),
+(1, 1, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(2, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(3, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
+(4, 1, 'Question4', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
+(5, 1, 'Question5', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(6, 1, 'Question6', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(7, 1, 'Question7', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
+(8, 1, 'Question8', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
+(9, 1, 'Question9', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(10, 1, 'Question10', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(11, 2, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:52:50', NULL, 1),
+(12, 2, 'Question2', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:52:50', NULL, 1),
+(13, 3, 'dfgdfdsafds', 'sdsds', 'sdsdsd', 'sdsdsdsds', 'sdsdsdsds', 'sdsds', '2020-01-02 19:38:51', NULL, 1),
+(14, 3, 'Question2', 'xcxzcxzcx', 'xcxzcxzcxzcxc', 'xzczxcxzcxzcxzcxzcxz', 'xcxzcxzcxzcxzcxzcxzcxzcxzc', 'xcxzcxzcxzcxc', '2020-01-02 19:38:51', NULL, 1),
+(1, 1, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(2, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(3, 1, 'Question3', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
+(4, 1, 'Question4', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
+(5, 1, 'Question5', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(6, 1, 'Question6', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(7, 1, 'Question7', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice3', '2019-12-13 17:51:43', NULL, 1),
+(8, 1, 'Question8', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice4', '2019-12-13 17:51:43', NULL, 1),
+(9, 1, 'Question9', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:51:43', NULL, 1),
+(10, 1, 'Question10', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:51:43', NULL, 1),
+(11, 2, 'Question1', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice1', '2019-12-13 17:52:50', NULL, 1),
+(12, 2, 'Question2', 'Choice1', 'Choice2', 'Choice3', 'Choice4', 'Choice2', '2019-12-13 17:52:50', NULL, 1),
+(13, 3, 'dfgdfdsafds', 'sdsds', 'sdsdsd', 'sdsdsdsds', 'sdsdsdsds', 'sdsds', '2020-01-02 19:38:51', NULL, 1),
+(14, 3, 'Question2', 'xcxzcxzcx', 'xcxzcxzcxzcxc', 'xzczxcxzcxzcxzcxzcxz', 'xcxzcxzcxzcxzcxzcxzcxzcxzc', 'xcxzcxzcxzcxc', '2020-01-02 19:38:51', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mcq_results`
+--
+
+CREATE TABLE `mcq_results` (
+  `id` int(11) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `mobile` varchar(20) NOT NULL,
+  `type_id` int(11) NOT NULL,
+  `total` int(11) NOT NULL,
+  `scored` int(11) NOT NULL,
+  `answers` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `mcq_results`
+--
+
+INSERT INTO `mcq_results` (`id`, `name`, `email`, `mobile`, `type_id`, `total`, `scored`, `answers`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 'Mahesh', 'mahi@g.com', '8121815502', 1, 10, 4, '[\"Choice1\",\"Choice3\",\"Choice3\",\"Choice1\",\"Choice1\",\"Choice3\",\"Choice1\",\"Choice4\",\"Choice4\",\"Choice1\"]', '2019-12-13 17:54:14', NULL, 1),
+(2, 'Yesh', 'tgy@gmai.com', '1234567892', 1, 10, 4, '[\"Choice2\",\"Choice1\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\"]', '2019-12-20 16:29:53', NULL, 1),
+(3, 'mahesh', 'maheshbt.grepthor@gmail.com', '8121815502', 3, 2, 1, '[\"sdsds\",\"xcxzcxzcxzcxzcxzcxzcxzcxzc\"]', '2020-01-02 19:44:36', NULL, 1),
+(1, 'Mahesh', 'mahi@g.com', '8121815502', 1, 10, 4, '[\"Choice1\",\"Choice3\",\"Choice3\",\"Choice1\",\"Choice1\",\"Choice3\",\"Choice1\",\"Choice4\",\"Choice4\",\"Choice1\"]', '2019-12-13 17:54:14', NULL, 1),
+(2, 'Yesh', 'tgy@gmai.com', '1234567892', 1, 10, 4, '[\"Choice2\",\"Choice1\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\"]', '2019-12-20 16:29:53', NULL, 1),
+(3, 'mahesh', 'maheshbt.grepthor@gmail.com', '8121815502', 3, 2, 1, '[\"sdsds\",\"xcxzcxzcxzcxzcxzcxzcxzcxzc\"]', '2020-01-02 19:44:36', NULL, 1),
+(1, 'Mahesh', 'mahi@g.com', '8121815502', 1, 10, 4, '[\"Choice1\",\"Choice3\",\"Choice3\",\"Choice1\",\"Choice1\",\"Choice3\",\"Choice1\",\"Choice4\",\"Choice4\",\"Choice1\"]', '2019-12-13 17:54:14', NULL, 1),
+(2, 'Yesh', 'tgy@gmai.com', '1234567892', 1, 10, 4, '[\"Choice2\",\"Choice1\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\"]', '2019-12-20 16:29:53', NULL, 1),
+(3, 'mahesh', 'maheshbt.grepthor@gmail.com', '8121815502', 3, 2, 1, '[\"sdsds\",\"xcxzcxzcxzcxzcxzcxzcxzcxzc\"]', '2020-01-02 19:44:36', NULL, 1),
+(1, 'Mahesh', 'mahi@g.com', '8121815502', 1, 10, 4, '[\"Choice1\",\"Choice3\",\"Choice3\",\"Choice1\",\"Choice1\",\"Choice3\",\"Choice1\",\"Choice4\",\"Choice4\",\"Choice1\"]', '2019-12-13 17:54:14', NULL, 1),
+(2, 'Yesh', 'tgy@gmai.com', '1234567892', 1, 10, 4, '[\"Choice2\",\"Choice1\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\",\"Choice3\",\"Choice4\",\"Choice4\",\"Choice3\"]', '2019-12-20 16:29:53', NULL, 1),
+(3, 'mahesh', 'maheshbt.grepthor@gmail.com', '8121815502', 3, 2, 1, '[\"sdsds\",\"xcxzcxzcxzcxzcxzcxzcxzcxzc\"]', '2020-01-02 19:44:36', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mcq_type`
+--
+
+CREATE TABLE `mcq_type` (
+  `id` int(11) NOT NULL,
+  `course` varchar(60) NOT NULL,
+  `test` varchar(60) NOT NULL,
+  `no_of_questions` int(11) NOT NULL,
+  `description` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `mcq_type`
+--
+
+INSERT INTO `mcq_type` (`id`, `course`, `test`, `no_of_questions`, `description`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 'IPCC', 'Test1', 10, 'Noting', '2019-12-13 17:51:43', NULL, 1),
+(2, 'IPCC', 'Test2', 2, 'noting', '2019-12-13 17:52:50', NULL, 1),
+(3, 'IPCC', 'Test3', 2, 'sdssdsdsdsdsdsdsdsd', '2020-01-02 19:38:51', NULL, 1),
+(1, 'IPCC', 'Test1', 10, 'Noting', '2019-12-13 17:51:43', NULL, 1),
+(2, 'IPCC', 'Test2', 2, 'noting', '2019-12-13 17:52:50', NULL, 1),
+(3, 'IPCC', 'Test3', 2, 'sdssdsdsdsdsdsdsdsd', '2020-01-02 19:38:51', NULL, 1),
+(1, 'IPCC', 'Test1', 10, 'Noting', '2019-12-13 17:51:43', NULL, 1),
+(2, 'IPCC', 'Test2', 2, 'noting', '2019-12-13 17:52:50', NULL, 1),
+(3, 'IPCC', 'Test3', 2, 'sdssdsdsdsdsdsdsdsd', '2020-01-02 19:38:51', NULL, 1),
+(1, 'IPCC', 'Test1', 10, 'Noting', '2019-12-13 17:51:43', NULL, 1),
+(2, 'IPCC', 'Test2', 2, 'noting', '2019-12-13 17:52:50', NULL, 1),
+(3, 'IPCC', 'Test3', 2, 'sdssdsdsdsdsdsdsdsd', '2020-01-02 19:38:51', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notes`
+--
+
+CREATE TABLE `notes` (
+  `id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `subject_id` int(11) NOT NULL,
+  `title` text NOT NULL,
+  `url` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `notes`
+--
+
+INSERT INTO `notes` (`id`, `course_id`, `subject_id`, `title`, `url`, `created_at`, `row_status`) VALUES
+(1, 2, 1, 'bhkbh', '', '2019-12-18 15:11:54', 1),
+(2, 2, 2, 'Law', '', '2019-12-18 15:12:35', 1),
+(1, 2, 1, 'bhkbh', '', '2019-12-18 15:11:54', 1),
+(2, 2, 2, 'Law', '', '2019-12-18 15:12:35', 1),
+(1, 2, 1, 'bhkbh', '', '2019-12-18 15:11:54', 1),
+(2, 2, 2, 'Law', '', '2019-12-18 15:12:35', 1),
+(1, 2, 1, 'bhkbh', '', '2019-12-18 15:11:54', 1),
+(2, 2, 2, 'Law', '', '2019-12-18 15:12:35', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notifications`
+--
+
+CREATE TABLE `notifications` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `notification` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `row_status` tinyint(4) NOT NULL DEFAULT 2 COMMENT '0=Deleted,1=Completed,2=Pending'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `notifications`
+--
+
+INSERT INTO `notifications` (`id`, `user_id`, `title`, `notification`, `created_at`, `row_status`) VALUES
+(1, 1, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-12 11:12:27', 2),
+(2, 2, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-13 17:30:07', 2),
+(3, 3, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-20 16:39:05', 2),
+(4, 4, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-24 16:36:47', 2),
+(5, 5, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-27 16:12:25', 2),
+(1, 1, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-12 11:12:27', 2),
+(2, 2, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-13 17:30:07', 2),
+(3, 3, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-20 16:39:05', 2),
+(4, 4, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-24 16:36:47', 2),
+(5, 5, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-27 16:12:25', 2),
+(1, 1, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-12 11:12:27', 2),
+(2, 2, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-13 17:30:07', 2),
+(3, 3, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-20 16:39:05', 2),
+(4, 4, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-24 16:36:47', 2),
+(5, 5, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-27 16:12:25', 2),
+(1, 1, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-12 11:12:27', 2),
+(2, 2, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-13 17:30:07', 2),
+(3, 3, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-20 16:39:05', 2),
+(4, 4, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-24 16:36:47', 2),
+(5, 5, 'Welcome To CA Exam Series', 'CA Exam Series Heartly Welcoming You.', '2019-12-27 16:12:25', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `packages`
+--
+
+CREATE TABLE `packages` (
+  `id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `plan_id` int(11) NOT NULL,
+  `type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '0 = General, 1 = Group 1, 2 = Group 2, 3 = Both Groups',
+  `subject_id` int(11) DEFAULT NULL,
+  `subject_name` varchar(100) NOT NULL,
+  `actual_price` float NOT NULL,
+  `discount_price` float NOT NULL,
+  `description` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `packages`
+--
+
+INSERT INTO `packages` (`id`, `course_id`, `plan_id`, `type`, `subject_id`, `subject_name`, `actual_price`, `discount_price`, `description`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 2, 5, 1, NULL, 'Group 1', 1996, 1799, '12 Unit Exams:@8 Full Syllabus Exams:@100% Coverage:@Systematic Schedule:@Description5', '2019-12-13 13:33:47', NULL, 1),
+(2, 2, 5, 2, NULL, 'Group 2', 1500, 1200, 'Description1:@Description2:@Description3:@Description4:@Description5', '2019-12-13 18:52:35', NULL, 1),
+(3, 2, 1, 1, 0, 'Group 1', 1500, 1200, 'Description5:@Description5:@Description5:@Description5:@Description5', '2019-12-27 16:15:38', NULL, 1),
+(1, 2, 5, 1, NULL, 'Group 1', 1996, 1799, '12 Unit Exams:@8 Full Syllabus Exams:@100% Coverage:@Systematic Schedule:@Description5', '2019-12-13 13:33:47', NULL, 1),
+(2, 2, 5, 2, NULL, 'Group 2', 1500, 1200, 'Description1:@Description2:@Description3:@Description4:@Description5', '2019-12-13 18:52:35', NULL, 1),
+(3, 2, 1, 1, 0, 'Group 1', 1500, 1200, 'Description5:@Description5:@Description5:@Description5:@Description5', '2019-12-27 16:15:38', NULL, 1),
+(1, 2, 5, 1, NULL, 'Group 1', 1996, 1799, '12 Unit Exams:@8 Full Syllabus Exams:@100% Coverage:@Systematic Schedule:@Description5', '2019-12-13 13:33:47', NULL, 1),
+(2, 2, 5, 2, NULL, 'Group 2', 1500, 1200, 'Description1:@Description2:@Description3:@Description4:@Description5', '2019-12-13 18:52:35', NULL, 1),
+(3, 2, 1, 1, 0, 'Group 1', 1500, 1200, 'Description5:@Description5:@Description5:@Description5:@Description5', '2019-12-27 16:15:38', NULL, 1),
+(1, 2, 5, 1, NULL, 'Group 1', 1996, 1799, '12 Unit Exams:@8 Full Syllabus Exams:@100% Coverage:@Systematic Schedule:@Description5', '2019-12-13 13:33:47', NULL, 1),
+(2, 2, 5, 2, NULL, 'Group 2', 1500, 1200, 'Description1:@Description2:@Description3:@Description4:@Description5', '2019-12-13 18:52:35', NULL, 1),
+(3, 2, 1, 1, 0, 'Group 1', 1500, 1200, 'Description5:@Description5:@Description5:@Description5:@Description5', '2019-12-27 16:15:38', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `package_purchase`
+--
+
+CREATE TABLE `package_purchase` (
+  `id` int(11) NOT NULL,
+  `track_id` varchar(30) NOT NULL,
+  `cart_packages` text NOT NULL,
+  `subtotal` decimal(10,0) NOT NULL,
+  `discount` decimal(10,0) NOT NULL,
+  `grand_total` decimal(10,0) NOT NULL,
+  `discount_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `package_purchase`
+--
+
+INSERT INTO `package_purchase` (`id`, `track_id`, `cart_packages`, `subtotal`, `discount`, `grand_total`, `discount_id`, `user_id`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, '123456', '2', 1200, 120, 1080, 1, 1, '2020-01-03 15:14:11', NULL, 1),
+(2, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:35:52', NULL, 1),
+(3, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:37:24', NULL, 1),
+(4, '123456', '2', 1200, 0, 1200, 0, 1, '2020-01-03 15:48:49', NULL, 1),
+(5, '123456', '', 0, 0, 0, 0, 1, '2020-01-03 15:48:56', NULL, 1),
+(6, '123456', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:16:38', NULL, 1),
+(7, '2020010351', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:17:32', NULL, 1),
+(1, '123456', '2', 1200, 120, 1080, 1, 1, '2020-01-03 15:14:11', NULL, 1),
+(2, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:35:52', NULL, 1),
+(3, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:37:24', NULL, 1),
+(4, '123456', '2', 1200, 0, 1200, 0, 1, '2020-01-03 15:48:49', NULL, 1),
+(5, '123456', '', 0, 0, 0, 0, 1, '2020-01-03 15:48:56', NULL, 1),
+(6, '123456', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:16:38', NULL, 1),
+(7, '2020010351', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:17:32', NULL, 1),
+(1, '123456', '2', 1200, 120, 1080, 1, 1, '2020-01-03 15:14:11', NULL, 1),
+(2, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:35:52', NULL, 1),
+(3, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:37:24', NULL, 1),
+(4, '123456', '2', 1200, 0, 1200, 0, 1, '2020-01-03 15:48:49', NULL, 1),
+(5, '123456', '', 0, 0, 0, 0, 1, '2020-01-03 15:48:56', NULL, 1),
+(6, '123456', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:16:38', NULL, 1),
+(7, '2020010351', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:17:32', NULL, 1),
+(1, '123456', '2', 1200, 120, 1080, 1, 1, '2020-01-03 15:14:11', NULL, 1),
+(2, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:35:52', NULL, 1),
+(3, '123456', '2', 1200, 120, 1080, 1, 2, '2020-01-03 15:37:24', NULL, 1),
+(4, '123456', '2', 1200, 0, 1200, 0, 1, '2020-01-03 15:48:49', NULL, 1),
+(5, '123456', '', 0, 0, 0, 0, 1, '2020-01-03 15:48:56', NULL, 1),
+(6, '123456', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:16:38', NULL, 1),
+(7, '2020010351', '2', 1200, 0, 1200, 0, 2, '2020-01-03 16:17:32', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `plans`
+--
+
+CREATE TABLE `plans` (
+  `id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `module` tinyint(4) NOT NULL COMMENT '1=Chapter, 2=Section, 3=Unit ',
+  `plan_code` varchar(20) NOT NULL,
+  `plan_type` enum('scheduled','unscheduled','','') NOT NULL,
+  `plan` varchar(150) NOT NULL,
+  `headerbox` text NOT NULL,
+  `downbox` text NOT NULL,
+  `description` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `plans`
+--
+
+INSERT INTO `plans` (`id`, `course_id`, `module`, `plan_code`, `plan_type`, `plan`, `headerbox`, `downbox`, `description`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 2, 1, 'ipcc_superior', 'unscheduled', 'Superior', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@Each Chapter = 1 Exam:@120+ Exams:@14 Mock Exams :@100% Coverage ', '2019-12-02 15:33:43', NULL, 1),
+(2, 2, 1, 'ipcc_premier', 'scheduled', 'Premier', 'Achiever\'s Choice ', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:34:54', NULL, 1),
+(3, 2, 2, 'ipcc_dimand', 'unscheduled', 'Dimand', 'Succeeder\'s   Choice ', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:35:58', NULL, 1),
+(4, 2, 2, 'ipcc_platinum', 'scheduled', 'Platinum', 'Performance\'s Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:36:58', NULL, 1),
+(5, 2, 3, 'ipcc_gold', 'unscheduled', 'GOLD', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-13 13:30:34', NULL, 1),
+(6, 2, 3, 'ipcc_silver', 'scheduled', 'SILVER', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-13 13:30:04', NULL, 1),
+(1, 2, 1, 'ipcc_superior', 'unscheduled', 'Superior', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@Each Chapter = 1 Exam:@120+ Exams:@14 Mock Exams :@100% Coverage ', '2019-12-02 15:33:43', NULL, 1),
+(2, 2, 1, 'ipcc_premier', 'scheduled', 'Premier', 'Achiever\'s Choice ', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:34:54', NULL, 1),
+(3, 2, 2, 'ipcc_dimand', 'unscheduled', 'Dimand', 'Succeeder\'s   Choice ', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:35:58', NULL, 1),
+(4, 2, 2, 'ipcc_platinum', 'scheduled', 'Platinum', 'Performance\'s Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:36:58', NULL, 1),
+(5, 2, 3, 'ipcc_gold', 'unscheduled', 'GOLD', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-13 13:30:34', NULL, 1),
+(6, 2, 3, 'ipcc_silver', 'scheduled', 'SILVER', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-13 13:30:04', NULL, 1),
+(1, 2, 1, 'ipcc_superior', 'unscheduled', 'Superior', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@Each Chapter = 1 Exam:@120+ Exams:@14 Mock Exams :@100% Coverage ', '2019-12-02 15:33:43', NULL, 1),
+(2, 2, 1, 'ipcc_premier', 'scheduled', 'Premier', 'Achiever\'s Choice ', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:34:54', NULL, 1),
+(3, 2, 2, 'ipcc_dimand', 'unscheduled', 'Dimand', 'Succeeder\'s   Choice ', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:35:58', NULL, 1),
+(4, 2, 2, 'ipcc_platinum', 'scheduled', 'Platinum', 'Performance\'s Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:36:58', NULL, 1),
+(5, 2, 3, 'ipcc_gold', 'unscheduled', 'GOLD', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-13 13:30:34', NULL, 1),
+(6, 2, 3, 'ipcc_silver', 'scheduled', 'SILVER', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-13 13:30:04', NULL, 1),
+(1, 2, 1, 'ipcc_superior', 'unscheduled', 'Superior', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@Each Chapter = 1 Exam:@120+ Exams:@14 Mock Exams :@100% Coverage ', '2019-12-02 15:33:43', NULL, 1),
+(2, 2, 1, 'ipcc_premier', 'scheduled', 'Premier', 'Achiever\'s Choice ', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:34:54', NULL, 1),
+(3, 2, 2, 'ipcc_dimand', 'unscheduled', 'Dimand', 'Succeeder\'s   Choice ', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:35:58', NULL, 1),
+(4, 2, 2, 'ipcc_platinum', 'scheduled', 'Platinum', 'Performance\'s Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-02 15:36:58', NULL, 1),
+(5, 2, 3, 'ipcc_gold', 'unscheduled', 'GOLD', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-13 13:30:34', NULL, 1),
+(6, 2, 3, 'ipcc_silver', 'scheduled', 'SILVER', 'Winners Choice', 'Winners Choice', 'You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam:@You Plan Your Exam', '2019-12-13 13:30:04', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -384,6 +984,34 @@ INSERT INTO `roles` (`id`, `role`, `code`, `unique_id`) VALUES
 (1, 'Super Admin', '', ''),
 (2, 'Client', 'PPC', 'PPC_100000'),
 (3, 'Evaluator', 'EVA', 'EVA_100001');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `schedules`
+--
+
+CREATE TABLE `schedules` (
+  `id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `plan_id` int(11) NOT NULL,
+  `file_name` varchar(100) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified_at` datetime DEFAULT NULL,
+  `row_status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=Deleted,1=Active,2=Inactive'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `schedules`
+--
+
+INSERT INTO `schedules` (`id`, `course_id`, `plan_id`, `file_name`, `created_at`, `modified_at`, `row_status`) VALUES
+(1, 2, 2, 'dummy.pdf', '2019-12-13 16:18:48', NULL, 1),
+(2, 2, 3, 'dummy.pdf', '2019-12-13 16:19:10', NULL, 1),
+(1, 2, 2, 'dummy.pdf', '2019-12-13 16:18:48', NULL, 1),
+(2, 2, 3, 'dummy.pdf', '2019-12-13 16:19:10', NULL, 1),
+(1, 2, 2, 'dummy.pdf', '2019-12-13 16:18:48', NULL, 1),
+(2, 2, 3, 'dummy.pdf', '2019-12-13 16:19:10', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -863,7 +1491,7 @@ ALTER TABLE `adress`
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `blog`
