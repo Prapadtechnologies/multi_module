@@ -670,7 +670,7 @@ section {
 }
 
 .about .content p {
-  font-size: 15px;
+  font-size: 17px;
   color: #848484;
 }
 
@@ -1302,7 +1302,318 @@ section {
     background-attachment: fixed;
   }
 }
+/*Grocery */
+.grocery {
+  background: url("../img/banner-03.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
 
+.grocery::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9;
+}
+
+.grocery .container {
+  position: relative;
+  z-index: 10;
+}
+
+.grocery .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.grocery .member .pic {
+  overflow: hidden;
+}
+
+.grocery .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #433f39;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.grocery .member h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #6c665c;
+  position: relative;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.grocery .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffcf88;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.grocery .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.grocery .member .social {
+  margin-top: 15px;
+}
+
+.grocery .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+.grocery .member .social a:hover {
+  color: #ffb03b;
+}
+
+.grocery .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .grocery .member {
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grocery {
+    background-attachment: fixed;
+  }
+}
+/*Grocery*/
+/*Ecom*/
+.ecom {
+  background: url("../img/E-Commerce.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.ecom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9;
+}
+
+.ecom .container {
+  position: relative;
+  z-index: 10;
+}
+
+.ecom .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.ecom .member .pic {
+  overflow: hidden;
+}
+
+.ecom .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #433f39;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.ecom .member h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #6c665c;
+  position: relative;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ecom .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffcf88;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.ecom .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.ecom .member .social {
+  margin-top: 15px;
+}
+
+.ecom .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+.ecom .member .social a:hover {
+  color: #ffb03b;
+}
+
+.ecom .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .ecom .member {
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ecom {
+    background-attachment: fixed;
+  }
+}
+/*Ecom*/
+/*Real Estate*/
+.estate {
+  background: url("../img/estate-bg.png") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.estate::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9;
+}
+
+.estate .container {
+  position: relative;
+  z-index: 10;
+}
+
+.estate .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.estate .member .pic {
+  overflow: hidden;
+}
+
+.estate .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #433f39;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.estate .member h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #6c665c;
+  position: relative;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.estate .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffcf88;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.estate .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.estate .member .social {
+  margin-top: 15px;
+}
+
+.estate .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+.estate .member .social a:hover {
+  color: #ffb03b;
+}
+
+.estate .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .estate .member {
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .estate {
+    background-attachment: fixed;
+  }
+}
+/*Real Estate*/
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1411,7 +1722,330 @@ section {
     width: 80%;
   }
 }
+/*Grocery Testomonial*/
+.testimonials-grocery {
+  padding: 80px 0;
+  background: url("../img/groc.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
 
+.testimonials-grocery::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(12, 11, 10, 0.7);
+}
+
+.testimonials-grocery .section-header {
+  margin-bottom: 40px;
+}
+
+.testimonials-grocery .testimonials-grocery-carousel,
+.testimonials-grocery .testimonials-grocery-slider {
+  overflow: hidden;
+}
+
+.testimonials-grocery .testimonial-item {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials-grocery .testimonial-item .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+.testimonials-grocery .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonials-grocery .testimonial-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+  font-family: "Comic Neue", sans-serif;
+}
+
+.testimonials-grocery .testimonial-item .stars {
+  color: #ffb03b;
+  margin-bottom: 10px;
+}
+
+.testimonials-grocery .testimonial-item .quote-icon-left,
+.testimonials-grocery .testimonial-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 26px;
+}
+
+.testimonials-grocery .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials-grocery .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials-grocery .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
+}
+
+.testimonials-grocery .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials-grocery .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.testimonials-grocery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffb03b;
+}
+
+@media (min-width: 992px) {
+  .testimonials-grocery .testimonial-item p {
+    width: 80%;
+  }
+}
+
+/*Grocery Testomonial*/
+/*Ecom Testomonial*/
+.testimonials-ecom {
+  padding: 80px 0;
+  background: url("../img/ecom.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.testimonials-ecom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(12, 11, 10, 0.7);
+}
+
+.testimonials-ecom .section-header {
+  margin-bottom: 40px;
+}
+
+.testimonials-ecom .testimonials-ecom-carousel,
+.testimonials-ecom .testimonials-ecom-slider {
+  overflow: hidden;
+}
+
+.testimonials-ecom .testimonial-item {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials-ecom .testimonial-item .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+.testimonials-ecom .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonials-ecom .testimonial-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+  font-family: "Comic Neue", sans-serif;
+}
+
+.testimonials-ecom .testimonial-item .stars {
+  color: #ffb03b;
+  margin-bottom: 10px;
+}
+
+.testimonials-ecom .testimonial-item .quote-icon-left,
+.testimonials-ecom .testimonial-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 26px;
+}
+
+.testimonials-ecom .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials-ecom .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials-ecom .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
+}
+
+.testimonials-ecom .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials-ecom .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.testimonials-ecom .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffb03b;
+}
+
+@media (min-width: 992px) {
+  .testimonials-ecom .testimonial-item p {
+    width: 80%;
+  }
+}
+
+/*Ecom Testomonial*/
+/*RealEstate Testomonial*/
+.testimonials-estate {
+  padding: 80px 0;
+  background: url("../img/estate.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.testimonials-estate::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+ /* background: rgba(12, 11, 10, 0.7);*/
+}
+
+.testimonials-estate .section-header {
+  margin-bottom: 40px;
+}
+
+.testimonials-estate .testimonials-estate-carousel,
+.testimonials-estate .testimonials-estate-slider {
+  overflow: hidden;
+}
+
+.testimonials-estate .testimonial-item {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials-estate .testimonial-item .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+.testimonials-estate .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonials-estate .testimonial-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+  font-family: "Comic Neue", sans-serif;
+}
+
+.testimonials-estate .testimonial-item .stars {
+  color: #ffb03b;
+  margin-bottom: 10px;
+}
+
+.testimonials-estate .testimonial-item .quote-icon-left,
+.testimonials-estate .testimonial-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 26px;
+}
+
+.testimonials-estate .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials-estate .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials-estate .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
+}
+
+.testimonials-estate .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials-estate .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.testimonials-estate .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffb03b;
+}
+
+@media (min-width: 992px) {
+  .testimonials-estate .testimonial-item p {
+    width: 80%;
+  }
+}
+
+/*RealEstate Testomonial*/
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1601,4 +2235,8 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+/**/
+.text-orang{
+  color: #ffb03b;
 }

@@ -62,7 +62,7 @@ if (isset($_GET['id'])) {
 
     if ($clientData) {
         ?>
-        <section id="about" class="about">
+        <section  id="about" class="about animate__animated animate__fadeInUp">
             <div class="container">
                 <div class="row">
                     <?php
@@ -80,6 +80,8 @@ if (isset($_GET['id'])) {
 
                     <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
                         <div class="content">
+                            <h1 class="text-orang">Terms & Conditions</h1>
+
                             <?php echo $clientData->description; ?>
                             <?php echo $clientData->paragraph2; ?>
 
@@ -306,7 +308,7 @@ if (isset($_GET['id'])) {
                           <?php 
                              $image_path = base_url('uploads/team2/') . $team->id . '.jpg';
                            ?>
-                            <img height="600px" width="600" src="<?php echo $image_path; ?>" class="img-fluid"  alt="">
+                            <img height="400px" width="600" src="<?php echo $image_path; ?>"   alt="">
                         </div>
                         <div class="member-info">
                             <h4><?php echo $team->name; ?></h4>
@@ -384,7 +386,7 @@ if (isset($_GET['id'])) {
       <div class="container">
 
         <div class="section-title">
-          <h2><span>Contact</span> Us</h2>
+          <h2>Contact <span>Us</span></h2>
           <p>If you require any further information, feel free to contact me.</p>
         </div>
       </div>
@@ -405,7 +407,8 @@ if (isset($_GET['id'])) {
         ?>
 
       <div class="map">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        <!-- <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe> -->
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.0355445450496!2d77.7157753748691!3d14.425114586040722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb143b223992667%3A0xa8ec7dce5a904857!2sDharmavaram%20railwaystation!5e0!3m2!1sen!2sin!4v1705901577899!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="container mt-5">

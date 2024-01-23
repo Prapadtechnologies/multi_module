@@ -83,6 +83,7 @@ if (isset($_GET['id'])) {
 
                     <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
                         <div class="content">
+                            <h1 class="text-orang">Terms & Conditions</h1>
                             <h3><?php echo $clientData->title; ?></h3>
                             <p><?php echo $clientData->description; ?></p>
                             <p class="fst-italic"><?php echo $clientData->paragraph2; ?></p>
@@ -284,7 +285,7 @@ if (isset($_GET['id'])) {
     </section> --><!-- End Gallery Section -->
 
     <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs">
+    <section id="chefs" class="ecom">
     <div class="container">
 
         <div class="section-title">
@@ -339,7 +340,7 @@ if (isset($_GET['id'])) {
 <!-- End Chefs Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="team" class="testimonials">
+    <section id="team" class="testimonials-ecom">
     <div class="container position-relative">
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
@@ -388,7 +389,7 @@ if (isset($_GET['id'])) {
       <div class="container">
 
         <div class="section-title">
-          <h2><span>Contact</span> Us</h2>
+          <h2>Contact <span>Us</span></h2>
           <p>If you require any further information, feel free to contact me.</p>
         </div>
       </div>
@@ -409,7 +410,8 @@ if (isset($_GET['id'])) {
         ?>
 
       <div class="map">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        <!-- <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe> -->
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15452.614373679773!2d78.79162619574014!3d14.475868325931042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb37225f5323601%3A0x81386ee9292bb7f6!2sMariapuram%2C%20Kadapa%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1705905495710!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="container mt-5">

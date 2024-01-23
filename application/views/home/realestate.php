@@ -83,6 +83,7 @@ if (isset($_GET['id'])) {
 
                     <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
                         <div class="content">
+                          <h1 class="text-orang">Terms & Conditions</h1>
                             <h3><?php echo $clientData->title; ?></h3>
                             <p><?php echo $clientData->description; ?></p>
                             <p class="fst-italic"><?php echo $clientData->paragraph2; ?></p>
@@ -284,7 +285,7 @@ if (isset($_GET['id'])) {
     </section> --><!-- End Gallery Section -->
 
     <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs">
+    <section id="chefs" class="estate">
     <div class="container">
 
         <div class="section-title">
@@ -339,7 +340,7 @@ if (isset($_GET['id'])) {
 <!-- End Chefs Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="team" class="testimonials">
+    <section id="team" class="testimonials-estate">
     <div class="container position-relative">
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
@@ -388,7 +389,7 @@ if (isset($_GET['id'])) {
       <div class="container">
 
         <div class="section-title">
-          <h2><span>Contact</span> Us</h2>
+          <h2>Contact <span>Us</span></h2>
           <p>If you require any further information, feel free to contact me.</p>
         </div>
       </div>
@@ -416,8 +417,8 @@ if (isset($_GET['id'])) {
 
         <div class="info-wrap">
           <div class="row">
-            <div class="col-lg-3 col-md-6 info">
-              <i class="bi bi-geo-alt"></i>
+            <div class="col-lg-4 col-md-6 info ">
+              <i class="bi bi-geo-alt "></i>
               <h4>Location:</h4>
               <p><?php echo $address; ?> <!-- <br>New York, NY 535022 --></p>
             </div>
@@ -428,13 +429,13 @@ if (isset($_GET['id'])) {
               <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
             </div>
  -->
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+            <div class="col-lg-4 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
               <p><?php echo $email; ?><!-- <br>contact@example.com --></p>
             </div>
 
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+            <div class="col-lg-4 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-phone"></i>
               <h4>Call:</h4>
               <p><?php echo $phoneNumber; ?><!-- <br>+1 5589 22475 14 --></p>

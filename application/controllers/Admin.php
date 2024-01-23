@@ -378,8 +378,7 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
         }
 
         redirect('addclient');
-        
-       
+         
     } 
 
     else {
@@ -388,10 +387,8 @@ if(isset($_FILES['qp']['name']) && $_FILES['qp']['name']!=""){
         
     }
     }
-
-       
-
     /*Clients*/
+    
     /*Products*/
     public function product($id = '')
 {

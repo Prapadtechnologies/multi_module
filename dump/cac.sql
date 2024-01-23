@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2024 at 11:44 AM
+-- Generation Time: Jan 22, 2024 at 07:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -46,7 +46,7 @@ INSERT INTO `aboutus` (`id`, `image`, `description`, `created_at`, `modified_at`
 (2, 'about1.jpg', '<h1>Terms &amp; Conditions(Sam)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services &nbsp;owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.2) Registration Access and Use</p>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-16 14:31:29', NULL, 1, 17),
 (3, 'about.jpg', '<h1>Terms &amp; Conditions(Shiva)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 14:32:26', NULL, 1, 16),
 (4, 'about2.jpg', '<h1>Terms &amp; Conditions(Ramesh)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 14:37:13', NULL, 1, 20),
-(5, 'about3.jpg', '<h1><span style=\"font-size:28px\"><em><strong>Terms &amp; Conditions</strong></em></span></h1>\r\n\r\n<p><span style=\"font-size:16px\">● All the dishes will be served with in 25 minutes of placing the order.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Outside eatables are not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Liquor is strictly prohibited.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Smoking is not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Please be cooperative with us to serve you the best.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Once an order is placed , it cannot be canceled.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Management is not responsible for any of your personal belongings</span></p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-16 14:44:16', NULL, 1, 22),
+(5, 'chef-jason-ludiwg-profile-1.jpg', '<h1><span style=\"font-size:28px\"><em><strong>Terms &amp; Conditions</strong></em></span></h1>\r\n\r\n<p><span style=\"font-size:16px\">● All the dishes will be served with in 25 minutes of placing the order.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Outside eatables are not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Liquor is strictly prohibited.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Smoking is not allowed.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Please be cooperative with us to serve you the best.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Once an order is placed , it cannot be canceled.</span></p>\r\n\r\n<p><span style=\"font-size:16px\">● Management is not responsible for any of your personal belongings</span></p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-16 14:44:16', NULL, 1, 22),
 (6, 'about4.jpg', '<h1>Terms &amp; Conditions(Ashwin)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\nwebsite, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n', '2024-01-16 15:39:06', NULL, 1, 18),
 (7, 'about11.jpg', '<h1>Terms &amp; Conditions(Bhanu prakash)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-17 12:48:14', NULL, 1, 14),
 (8, '', '<h1>Terms &amp; Conditions(Bhanu prakash)</h1>\r\n\r\n<p>Please read the following terms and conditions carefully as it sets out the terms of a legally binding agreement between you (the reader) and Business Standard Private Limited.</p>\r\n\r\n<h2>1) Introduction</h2>\r\n\r\n<p>This following sets out the terms and conditions on which you may use the content on&nbsp;<br />\r\n<a href=\"http://www.business-standard.com/\" target=\"_blank\">business-standard.com</a>&nbsp;website, business-standard.com&#39;s mobile browser site, Business Standard instore Applications and other digital publishing services (<a href=\"http://www.smartinvestor.in/\" target=\"_blank\">www.smartinvestor.in</a>,&nbsp;<a href=\"http://www.bshindi.com/\" target=\"_blank\">www.bshindi.com</a>&nbsp;and&nbsp;<a href=\"http://www.bsmotoring.com/\" target=\"_blank\">www.bsmotoring,com</a>) owned by Business Standard Private Limited, all the services herein will be referred to as Business Standard Content Services.</p>\r\n\r\n<h2>2) Registration Access and Use</h2>\r\n\r\n<p>We welcome users to register on our digital platforms. We offer the below mentioned registration services which may be subject to change in the future. All changes will be appended in the terms and conditions page and communicated to existing users by email.</p>\r\n\r\n<p>Registration services are offered for individual subscribers only. If multiple individuals propose to access the same account or for corporate accounts kindly contact or write in to us. Subscription rates will vary for multiple same time access.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2024-01-17 12:54:56', NULL, 0, 14),
@@ -104,15 +104,16 @@ INSERT INTO `banner` (`id`, `text`, `title`, `created_at`, `modified_at`, `row_s
 (9, '', '', '2024-01-17 12:12:06', '2024-01-19 14:20:29', 0, 22),
 (10, '', '', '2024-01-17 12:22:23', '2024-01-19 17:24:13', 0, 14),
 (11, '', '', '2024-01-18 15:10:52', '2024-01-19 14:20:17', 0, 22),
-(12, 'velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus', 'Delicious', '2024-01-19 14:24:44', '2024-01-19 14:24:44', 1, 22),
+(12, 'Some people ask the secret of our long marriage. We take time to go to a restaurant two times a week.', 'Delicious', '2024-01-19 14:24:44', '2024-01-19 14:24:44', 1, 22),
 (13, 'Everything you need to know about restaurant text marketing and links to extra resources on specific topics', 'Delicious', '2024-01-19 14:36:02', '2024-01-19 14:36:02', 1, 22),
 (14, 'If I have free time, I want to go to the beach, walk around a shopping mall, go grocery shopping.', 'Fresh', '2024-01-19 17:25:20', '2024-01-19 17:25:20', 1, 14),
 (15, 'I grew up in Minnesota and everyone is so nice there. It is like Fargo.\r\nRead more at https://www.brainyquote.com/topics/grocery-shopping-quotes', 'Fresh', '2024-01-19 17:27:17', '2024-01-19 17:27:17', 1, 14),
 (16, 'Delivering great service for more than 18 years!', 'Welcome to Ecomercers', '2024-01-20 10:22:55', '2024-01-20 10:22:55', 1, 16),
 (17, 'Delivering great service for more than 18 years!Everything you need to know about restaurant text marketing and links to extra resources on specific topics', 'Ecommerces', '2024-01-20 13:59:34', '2024-01-20 13:59:34', 1, 23),
 (18, 'The world of e-commerce is large and ever-growing and ever-evolving. But the changes in e-commerce over the past year (or year-and-a-half) alone were remarkable.', 'Ecommerces', '2024-01-20 14:04:34', '2024-01-20 14:04:34', 1, 23),
-(19, '“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”', 'Realestate', '2024-01-20 15:20:55', '2024-01-20 15:20:55', 1, 24),
-(20, '“The way we see it, real wealth means having the money and the freedom to live life on your own terms.”', 'Realestate', '2024-01-20 15:21:30', '2024-01-20 15:21:30', 1, 24);
+(19, '“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”', 'Realestate', '2024-01-20 15:20:55', '2024-01-21 12:13:27', 0, 24),
+(20, '“The way we see it, real wealth means having the money and the freedom to live life on your own terms.”', 'Realestate', '2024-01-20 15:21:30', '2024-01-20 15:21:30', 1, 24),
+(21, '“Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.”', 'Real estate', '2024-01-21 12:14:59', '2024-01-21 12:14:59', 1, 24);
 
 -- --------------------------------------------------------
 
@@ -252,7 +253,7 @@ CREATE TABLE `login_details` (
 --
 
 INSERT INTO `login_details` (`id`, `user_id`, `login_at`, `logout_at`) VALUES
-(1, 1, '2024-01-20 10:16:02', '2024-01-17 12:48:24'),
+(1, 1, '2024-01-22 11:26:28', '2024-01-17 12:48:24'),
 (2, 2, '2020-01-03 15:35:27', '2020-01-03 12:39:29'),
 (3, 3, '2019-12-20 16:39:05', '2019-12-20 16:40:17'),
 (4, 4, '2019-12-26 18:44:32', '2019-12-26 18:38:58'),
@@ -572,9 +573,9 @@ INSERT INTO `teams` (`id`, `role`, `created_at`, `modified_at`, `row_status`, `u
 (15, 'For fresh vegetables and fruit be aware that price...', '2024-01-17 11:55:30', '2024-01-19 18:09:52', 0, 16, ''),
 (16, 'the process of going over a subject again in study..', '2024-01-17 11:58:54', '2024-01-19 18:09:56', 0, 20, ''),
 (17, 'Cheif Master', '2024-01-18 10:03:29', '2024-01-19 18:04:08', 0, 22, 'Ramesh'),
-(18, 'Master Chef', '2024-01-19 18:08:16', '0000-00-00 00:00:00', 1, 22, 'Raghu'),
-(19, 'Asst.Chef', '2024-01-19 18:10:15', '0000-00-00 00:00:00', 1, 22, 'Shirisha'),
-(20, 'Cook', '2024-01-19 18:11:39', '0000-00-00 00:00:00', 1, 22, 'Yogi'),
+(18, 'Master Chef', '2024-01-19 18:08:16', '2024-01-22 11:41:19', 0, 0, 'Raghu'),
+(19, 'Asst.Chef', '2024-01-19 18:10:15', '2024-01-22 11:41:24', 0, 22, 'Shirisha'),
+(20, 'Cook', '2024-01-19 18:11:39', '2024-01-22 11:41:29', 0, 22, 'Yogi'),
 (21, 'Incharge', '2024-01-20 12:26:35', '2024-01-20 12:28:22', 0, 14, 'Suresh'),
 (22, 'Incharge', '2024-01-20 12:28:40', '2024-01-20 12:30:52', 0, 14, 'Suresh'),
 (23, 'Incharge', '2024-01-20 12:31:11', '2024-01-20 14:36:33', 0, 14, 'Suresh'),
@@ -587,7 +588,12 @@ INSERT INTO `teams` (`id`, `role`, `created_at`, `modified_at`, `row_status`, `u
 (30, 'Incharge', '2024-01-20 15:03:56', '0000-00-00 00:00:00', 1, 23, 'Kalyan'),
 (31, 'Home Inspecter', '2024-01-20 15:56:35', '0000-00-00 00:00:00', 1, 24, 'Ashok'),
 (32, ' Compliance officer', '2024-01-20 15:57:43', '0000-00-00 00:00:00', 1, 24, 'Teja'),
-(33, 'Leasing manager', '2024-01-20 15:58:25', '0000-00-00 00:00:00', 1, 24, 'Somesh');
+(33, 'Leasing manager', '2024-01-20 15:58:25', '0000-00-00 00:00:00', 1, 24, 'Somesh'),
+(34, 'Master', '2024-01-22 11:42:32', '2024-01-22 11:44:31', 0, 22, 'Ragava'),
+(35, 'Cook', '2024-01-22 11:43:14', '0000-00-00 00:00:00', 1, 22, 'Ramesh'),
+(36, 'Chef', '2024-01-22 11:44:50', '2024-01-22 11:46:29', 0, 22, 'Raghava'),
+(37, 'Chef', '2024-01-22 11:46:51', '0000-00-00 00:00:00', 1, 22, 'Raghava'),
+(38, 'Asst.Chef', '2024-01-22 11:48:11', '0000-00-00 00:00:00', 1, 22, 'Suresh');
 
 -- --------------------------------------------------------
 
@@ -669,7 +675,7 @@ INSERT INTO `users` (`id`, `role_id`, `unique_id`, `icai_reg_no`, `first_name`, 
 (18, 2, '', 0, 'Ashwin', '', 'ashwin@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', '', '2024-01-11 14:04:18', NULL, 3),
 (20, 2, '', 0, 'Ramesh', '', 'ramesh@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', '', '2024-01-12 12:06:31', NULL, 3),
 (21, 2, '', 0, 'Vinay', '', 'vinay@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', '', '2024-01-12 12:15:40', '2024-01-12 16:04:44', 0),
-(22, 2, '', 0, 'Harshi', '', 'harshi@gmail.com', '7780668877', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', 'Dharmavaram', '2024-01-16 10:23:59', NULL, 3),
+(22, 2, '', 0, 'Harshi', '', 'harshi@gmail.com', '9390060633', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '1', 'Dharmavaram', '2024-01-16 10:23:59', NULL, 3),
 (23, 2, '', 0, 'Pavan', '', 'pavan@gmail.com', '8789542145', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '3', 'Kadapa', '2024-01-20 13:34:21', NULL, 3),
 (24, 2, '', 0, 'Gowtham', '', 'gowtham@gmail.com', '7744112255', '', '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', '4', 'Mumbai', '2024-01-20 15:09:51', NULL, 3);
 
@@ -857,7 +863,7 @@ ALTER TABLE `adress`
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `blog`
@@ -953,7 +959,7 @@ ALTER TABLE `support`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `testomonial`
